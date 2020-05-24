@@ -9,7 +9,6 @@ $almostblack: #252525;
 }
 
 #background {
-    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,6 +19,7 @@ $almostblack: #252525;
     z-index: -1;}
 
 body {
+    background-color: white;
     font-family: 'Lora', serif;
     text-rendering: optimizeLegibility; 
     margin-left: 8%;
