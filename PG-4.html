@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS -->
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
+        <!--Link fonts + styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>dan putnam - PG-4</title>
+    </head>
+    <body>
+        <div class="header">
+            <ul class="nav">
+                <li id="logo_block" class="nav-item">
+                    <a class="logo" href="index.html">dan|putnam</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="col-11">
+                <p><span class="title">PG-4 Gated Probabilistic Pattern Generator</span> is a four-channel, 8-to-32-step drum sequencer 
+                    designed to produce interesting rhythms out of just a few controls.</p>
+                
+                    <img class="project-img" src="img/full/PG4.png">
+    
+    
+                <p>Each step is assigned a random value between 0 and 1, indicated by the slider bank in each column. 
+                    With the threshold set to 12 o’clock, any value over 0.5 will pass to the output. As you adjust 
+                    the threshold and accent parameters, you affect the density of the pattern for that voice. 
+                    The number of steps can be varied per-channel, producing more complex polymetric sequences.</p>
+    
+                <p>All parameters allow for MIDI control and are re-mappable. Using the built-in ReWire functionality, 
+                    you can use this application within your DAW of choice to either record the internal signal chain 
+                    or send MIDI data to your favorite drum machine.</p>
+    
+                <p>Full documentation to come! In the meantime, send me an email if you have any questions.</p>
+    
+                <p>This app is free for non-commercial use:<br>
+                <b><a href="https://www.dropbox.com/sh/sevh8psw6dont3h/AACBI5lutHgapD3aHAFq7teea?dl=0" target="blank"> download OS X app (via dropbox) </a></b></p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"  target="_blank">
+                    <input type="hidden" name="cmd" value="_donations" />
+                    <input type="hidden" name="business" value="6Y68PC2NYSYYC" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
+                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+        </div>
+        <!--Gradient background -->
+        <div id="background">
+            <svg viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" >
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(100 .5 .5)">
+                        <animateTransform attributeName="gradientTransform" 
+                                            id="spin"
+                                            attributeType="XML"
+                                            type="rotate"
+                                            from="100 .5 .5"
+                                            to="460 .5 .5"
+                                            dur="35s"
+                                            repeatCount="indefinite" />
+                        <stop id="stop1" offset="0" stop-color="rgba(35, 137, 89, 0.15)"/>
+                        <stop id="stop2" offset=".3" stop-color="rgba(59, 13, 93, 0.15)">
+                            <animate attributeName="offset" 
+                                     id="breath" 
+                                     dur="40s" 
+                                     values="0.40; 0.50; 0.40" 
+                                     repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop id="stop3" offset="1" stop-color="rgba(13, 8, 32, 0.15)"/>     
+                    </linearGradient> 
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)"/>
+            </svg>
+        </div>
+        <!--Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                crossorigin="anonymous"></script> 
+        <!--Custom JS -->
+        <script src="js/scripts.js"></script>
+        <script>
+            // On link hover, go dark
+            $("a").hover(
+                function() {
+                    $(this).css("color", colors[4]);  
+                }, function() {
+                    $(this).css("color", colors[5]);  
+                }
+            );
+
+
+            // On hover, cycle text color through slightly more
+            // saturated versions of the background colors
+            let hover = false;
+            $(".logo").hover(
+                async function() {
+                    hover = true;
+                    let i = 0;
+                    while (hover === true) {
+                        $(this).css("color", colors[i+6]);
+                        i++;
+                        if (i === 5) {
+                            i = 0;
+                        }
+                        await sleep(100);
+                    };
+                    $(this).css("color", "#252525");
+                }, function(){
+                hover = false;
+                }
+            );
+        </script>
+    </body>
+</html>
