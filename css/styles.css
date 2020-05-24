@@ -82,6 +82,7 @@ body a {
   margin-right: 0px;
 }
 .container .project {
+  position: relative;
   margin-right: 15px;
   margin-bottom: 30px;
   border: 1px solid rgba(25, 25, 25, 0.75);
