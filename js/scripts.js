@@ -24,7 +24,7 @@ $(document).ready(function() {
         // Add the new color to our array
         rgbArr[i] = rgb;
         // Pack the rgb values into a string  0.15 OPACITY
-        colors[i] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b, 0.15);
+        colors[i] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b, 1);
         // Update each gradient stop
         $(rgbArr[i].target).attr("stop-color", colors[i]);
     }
