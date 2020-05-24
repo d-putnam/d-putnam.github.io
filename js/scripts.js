@@ -24,7 +24,7 @@ $(document).ready(function() {
         // Add the new color to our array
         rgbArr[i] = rgb;
         // Pack the rgb values into a string  0.15 OPACITY
-        colors[i] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b, 0.15);
+        colors[i] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b,0.15);
         // Update each gradient stop
         $(rgbArr[i].target).attr("stop-color", colors[i]);
     }
@@ -35,10 +35,10 @@ $(document).ready(function() {
     color.b = Math.min.apply(Math, [rgbArr[0].b, rgbArr[1].b, rgbArr[2].b]);
     rgbArr[3] = color;
     // Set thumbnail to dark color 0.15 OPACITY
-    colors[3] = packRGBA(rgbArr[3].r, rgbArr[3].g, rgbArr[3].b, 0.15);
+    colors[3] = packRGBA(rgbArr[3].r, rgbArr[3].g, rgbArr[3].b,0.15);
     $(".thumb").css("background-color", colors[3]);
     // Set overlay to dark color FULL OPACITY
-    colors[4] = packRGBA(rgbArr[3].r, rgbArr[3].g, rgbArr[3].b, 1);
+    colors[4] = packRGBA(rgbArr[3].r, rgbArr[3].g, rgbArr[3].b,1);
     $(".overlay").css("background-color", colors[4]);
     // Reveal the lables now to mitigate flash 
     $(".label").css("background-color", "white");     
@@ -50,14 +50,14 @@ $(document).ready(function() {
     lcolor.b = Math.max.apply(Math, [rgbArr[0].b, rgbArr[1].b, rgbArr[2].b]);
     rgbArr[4] = lcolor;
     // Set links to light color FULL OPACITY
-    colors[5] = packRGBA(rgbArr[4].r, rgbArr[4].g, rgbArr[4].b, 1);
+    colors[5] = packRGBA(rgbArr[4].r, rgbArr[4].g, rgbArr[4].b,1);
     $(".nav-link").css("color", colors[5]);
     $(".content a").css("color", colors[5]);
 
     // Get colors for logo hover - colors[6-10]
     for (let i=0; i<5; i++){
         index = i + 6;
-        colors[index] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b, 0.55);
+        colors[index] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b,0.55);
     }
 });
 
