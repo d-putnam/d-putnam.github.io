@@ -103,7 +103,7 @@ body a {
   margin-bottom: 30px;
   border: 1px solid rgba(25, 25, 25, 0.75);
   border-radius: 2px;
-  max-width: 280px;
+  max-height: 182px;
 }
 .container .project a {
   text-decoration: none;
@@ -126,7 +126,7 @@ body a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 88%;
+  height: 89%;
   width: 100%;
   opacity: 0;
   transition: 0.9s ease;
