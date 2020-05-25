@@ -18,8 +18,11 @@ $almostblack: #252525;
     min-height: 100vh;
     z-index: -1;}
 
-body {
+#background-wrap {
     background-color: white;
+}
+
+body {
     font-family: 'Lora', serif;
     text-rendering: optimizeLegibility; 
     margin-left: 8%;
