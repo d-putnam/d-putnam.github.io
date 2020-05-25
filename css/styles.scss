@@ -80,6 +80,9 @@ body {
 .content {
     @extend %content-shared;
     max-width: 900px;
+    a {
+        margin-right: 2px;
+    }
 }
 
 .kana {

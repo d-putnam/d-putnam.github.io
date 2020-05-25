@@ -82,6 +82,9 @@ body a {
 .content {
   max-width: 900px;
 }
+.content a {
+  margin-right: 2px;
+}
 
 .kana {
   font-size: 0.95em;
