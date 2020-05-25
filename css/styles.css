@@ -21,6 +21,10 @@
   background-color: white;
 }
 
+rect {
+  fill-opacity: 0.15;
+}
+
 body {
   font-family: "Lora", serif;
   text-rendering: optimizeLegibility;

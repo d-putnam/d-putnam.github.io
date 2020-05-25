@@ -22,6 +22,10 @@ $almostblack: #252525;
     background-color: white;
 }
 
+rect {
+    fill-opacity: .15;
+}
+
 body {
     font-family: 'Lora', serif;
     text-rendering: optimizeLegibility; 
