@@ -5,7 +5,11 @@ $almostblack: #252525;
     line-height: 2;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin-left: 2px;
+    margin-left: 2px; 
+}
+
+#background-wrap {
+    background-color: white;
 }
 
 #background {
@@ -16,10 +20,7 @@ $almostblack: #252525;
     min-width: 100vw;
     height: 100vh;
     min-height: 100vh;
-    z-index: -1;}
-
-#background-wrap {
-    background-color: white;
+    z-index: -1; 
 }
 
 rect {
@@ -31,7 +32,7 @@ body {
     text-rendering: optimizeLegibility; 
     margin-left: 8%;
     margin-right: 8%;
-    color: $almostblack;
+    padding-bottom: 80px;
 
     a {
         font-style: oblique; 
@@ -40,7 +41,13 @@ body {
 
 .header {
     margin-top: 1.5em;
-    margin-bottom: 1.5em; }
+    margin-bottom: 1.5em; 
+}
+
+.footer {
+    text-align: center;
+    font-size: .5em;
+}
 
 .nav-item {
     font-size: 18px;
@@ -93,15 +100,10 @@ body {
         margin-bottom: 30px;
         border: 1px solid rgba(25,25,25,0.75);
         border-radius: 2px;
-        /*
-
-        */
         max-width: 280px;
-        max-height: 200px;
 
         a {
-            text-decoration: none;
-        }
+            text-decoration: none; }
 
         .thumb {
             width: 100%;
@@ -109,9 +111,8 @@ body {
             color: $almostblack;
             font-style: normal;
             font-size: .9em;
-            line-height: 1.4;
-            
-        }
+            line-height: 1.4; }
+
         img {
             width: 100%;
             display: block }
@@ -126,16 +127,29 @@ body {
             width: 100%;
             opacity: 0;
             transition: .9s ease;
-            z-index: 10;
-            }
-         
-        }
+            z-index: 10; }     
+    }
 
-        .project:hover .overlay{
-            opacity: 0.9;
-        }
+    .project:hover .overlay{
+        opacity: 0.9; }
 }
-
+@media (max-width: 415px) {
+    .container {
+        .project:hover .overlay{
+            opacity: 0; }
+        padding-left: 5%; }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;}
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;}
+}
+.container > .project {
+    filter: drop-shadow(1px 1px 2px rgba(25,25,25,0.75));
+}
 
 
 .label {
@@ -147,17 +161,6 @@ body {
 .hidden {
     display: none;
 }
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 100%;}
-}
-
-.container > .project {
-    filter: drop-shadow(1px 1px 2px rgba(25,25,25,0.75));
-}
-
-
 
 .text {
     color: white;
@@ -182,13 +185,7 @@ body {
         padding-top: 5%; }
 }
 
-.row {
-    max-width: 900px;
-    margin-right: 6%;
-    margin-left: 0;
-    font-size: 0.95em;
-}
-.col-7 {
+.col-7, .col-11 {
     padding-left: 0px;
 }
 
@@ -196,23 +193,19 @@ body {
     padding-top: 5px;
     height: 40%;
     filter: drop-shadow(0px 0px 2px rgba(25,25,25,0.15));
+    float: right;
+    width: 40%;
 }
-
 @media (max-width: 768px) {
     .pic {
-        width: 100%;
-        height: auto;}
+        width: 95%;
+        max-width: 338px;
+        height: auto;
+        display: block;
+        float: none; 
+        padding-bottom: 22px; }
 }
 
-.hidden {
-    display: none;
-}
-
-#smpic {
-    margin-bottom: 20px;
-    max-width: 70%;
-    filter: drop-shadow(0px 0px 2px rgba(25,25,25,0.15));
-}
 
 #carouselvideo {
     max-width: 1000px;
@@ -235,15 +228,18 @@ body {
 #indicators {
     max-width: 1000px;
 }
+
 .carousel-indicators {
     position: relative;
     margin-top: 5px;
+    
     li {
         height: 12px;
         width: 12px;
         border-radius: 100%;
         background-color: grey; }
 }
+
 .carousel-control-prev, .carousel-control-next {
     height: 45%;
     margin-top: 16%;
@@ -256,6 +252,13 @@ body {
     padding-bottom: 5px;
     padding-top: 10px;
     filter: drop-shadow(0px 0px 2px rgba(25,25,25,0.15));
+}
+@media (max-width: 768px) {
+    .project-img {
+        float: none;
+        width: 90%;
+        padding-left: 0px;
+    }
 }
 
 .project-img-center {
@@ -270,14 +273,5 @@ body {
     font-weight: 700;
 }
 
-.col-11 {
-    padding-left: 0px;
-}
 
-@media (max-width: 768px) {
-    .project-img {
-        float: none;
-        width: 90%;
-        padding-left: 0px;
-    }
-}
+
