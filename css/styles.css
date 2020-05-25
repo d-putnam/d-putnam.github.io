@@ -185,12 +185,6 @@ body a {
     visibility: hidden;
   }
 }
-@media (max-width: 340px) {
-  .text {
-    font-size: 16px;
-    padding-top: 5%;
-  }
-}
 .col-7, .col-11 {
   padding-left: 0px;
 }
@@ -206,6 +200,7 @@ body a {
 
 @media (max-width: 768px) {
   .pic {
+    margin-left: 0px;
     width: 95%;
     max-width: 338px;
     height: auto;
@@ -216,6 +211,7 @@ body a {
 }
 #carouselvideo {
   max-width: 1000px;
+  width: 89%;
 }
 
 .carousel-item {
@@ -247,6 +243,16 @@ body a {
   background-color: grey;
 }
 
+@media (max-width: 340px) {
+  .text {
+    font-size: 16px;
+    padding-top: 5%;
+  }
+
+  #carouselvideo {
+    width: 100%;
+  }
+}
 .carousel-control-prev, .carousel-control-next {
   height: 45%;
   margin-top: 16%;
@@ -257,7 +263,7 @@ body a {
   float: right;
   padding-left: 15px;
   padding-bottom: 5px;
-  padding-top: 10px;
+  padding-top: 5px;
   filter: drop-shadow(0px 0px 2px rgba(25, 25, 25, 0.15));
 }
 
@@ -266,6 +272,7 @@ body a {
     float: none;
     width: 90%;
     padding-left: 0px;
+    padding-bottom: 20px;
   }
 }
 .project-img-center {
