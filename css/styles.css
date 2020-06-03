@@ -1,4 +1,5 @@
-.container, .content {
+.container,
+.content {
   margin-top: 1em;
   line-height: 2;
   font-family: "Montserrat", sans-serif;
@@ -28,17 +29,20 @@ rect {
 body {
   font-family: "Lora", serif;
   text-rendering: optimizeLegibility;
-  margin-left: 8%;
-  margin-right: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-bottom: 80px;
+  width: 100vw;
+  height: 100vh;
 }
+
 body a {
   font-style: oblique;
   font-weight: 500;
 }
 
 .header {
-  margin-top: 1.5em;
+  padding-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
@@ -51,9 +55,11 @@ body a {
   font-size: 18px;
   margin-right: 35px;
 }
+
 .nav-item .nav-link {
   padding: 16px 0px 0px 0px;
 }
+
 @media (max-width: 768px) {
   .nav-item .nav-link {
     padding: 0px 0px 0px 0em;
@@ -65,6 +71,7 @@ body a {
   font-style: normal;
   color: #252525;
 }
+
 .nav-item .logo:hover {
   text-decoration: none;
 }
@@ -82,6 +89,7 @@ body a {
 .content {
   max-width: 900px;
 }
+
 .content a {
   margin-right: 2px;
 }
@@ -97,6 +105,7 @@ body a {
   padding-left: 0px;
   margin-right: 0px;
 }
+
 .container .project {
   position: relative;
   margin-right: 15px;
@@ -105,9 +114,11 @@ body a {
   border-radius: 2px;
   max-height: 182px;
 }
+
 .container .project a {
   text-decoration: none;
 }
+
 .container .project .thumb {
   width: 100%;
   padding-left: 3px;
@@ -116,10 +127,12 @@ body a {
   font-size: 0.9em;
   line-height: 1.4;
 }
+
 .container .project img {
   width: 100%;
   display: block;
 }
+
 .container .project .overlay {
   position: absolute;
   top: 0;
@@ -132,6 +145,7 @@ body a {
   transition: 0.9s ease;
   z-index: 10;
 }
+
 .container .project:hover .overlay {
   opacity: 0.9;
 }
@@ -140,6 +154,7 @@ body a {
   .container {
     padding-left: 5%;
   }
+
   .container .project:hover .overlay {
     opacity: 0;
   }
@@ -185,7 +200,8 @@ body a {
     visibility: hidden;
   }
 }
-.col-7, .col-11 {
+.col-7,
+.col-11 {
   padding-left: 0px;
 }
 
@@ -219,6 +235,7 @@ body a {
   padding-top: 56.25%;
   position: relative;
 }
+
 .carousel-item iframe {
   border: 0;
   height: 100%;
@@ -236,6 +253,7 @@ body a {
   position: relative;
   margin-top: 5px;
 }
+
 .carousel-indicators li {
   height: 12px;
   width: 12px;
@@ -253,7 +271,8 @@ body a {
     width: 100%;
   }
 }
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   height: 45%;
   margin-top: 16%;
 }
@@ -286,5 +305,83 @@ body a {
 .title {
   font-weight: 700;
 }
+
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
 
 /*# sourceMappingURL=styles.css.map */

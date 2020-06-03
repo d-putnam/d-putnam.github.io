@@ -13,7 +13,7 @@ let packRGBA = function(r, g, b, a=0.25) {
 // On page load, get three random RGB triples
 // Use them to set the background and link colors
 let colors = [];
-$(document).ready(function() {
+let open = function() {
     let rgbArr = [];
     for (let i = 0; i < 3; i++) {
         let rgb = {r: 0, g: 0, b: 0, target: "stop[n]"};
@@ -59,8 +59,9 @@ $(document).ready(function() {
         index = i + 6;
         colors[index] = packRGBA(rgbArr[i].r, rgbArr[i].g, rgbArr[i].b,0.55);
     }
-});
+};
 
+$(document).ready(open());
 
 
 

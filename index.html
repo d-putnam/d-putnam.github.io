@@ -32,7 +32,7 @@
         <div class="content">
             <p>Welcome to my programming and design sandbox!<br>
                This site generates a 
-               <a href=".">new color pallette</a> on each visit 
+               <a id="reload" href="#">new color pallette</a> on each visit 
                <span class="kana">&#12484;</span>
             </p>
             <p>Check out a few of my projects below:</p>
@@ -179,6 +179,13 @@
         <!--Custom JS -->
         <script src="js/scripts.js"></script>
         <script>
+            $(document).ready(function() {
+                $("#reload").click(function(){
+                    open();
+                    return false;
+                })
+            });
+
             // On link hover, go dark
             $("a").hover(
                 function() {
