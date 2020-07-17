@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>+ Haundso +</title>
+    <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+    <!--3928, 1666, 4285, 500, 3333, 500, 3333, 1000, 1666, 1875, 1875-->
+    <div class="slidecontainer">
+      <input type="range" min="0" max="5000" data-min="10" data-max="300" value="0" class="slider" data-target="u_sliderOne">Ψ<sub>1</sub>
+      <input type="range" min="0" max="5000" data-min="1500" data-max="100" value="1192" class="slider" data-target="u_sliderTwo">Ψ<sub>2</sub>
+      <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="4327" class="slider" data-target="u_sliderThree">Ψ<sub>3</sub>
+      <input type="range" min="0" max="5000" data-min="2000" data-max="500" value="4671" class="slider" data-target="u_sliderFour">Ψ<sub>4</sub>
+      <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="1031" class="slider" data-target="u_sliderFive">Ψ<sub>5</sub>
+      <input type="range" min="0" max="5000" data-min="20" data-max="3" value="4410" class="slider" data-target="u_sliderSix">Zoom
+      <input type="range" min="0" max="5000" data-min="0" data-max="10" value="3046" class="slider" data-target="u_sliderSeven">Red
+      <input type="range" min="0" max="5000" data-min="0" data-max="10" value="4223" class="slider" data-target="u_sliderEight">Green
+      <input type="range" min="0" max="5000" data-min="0" data-max = "10" value="4568" class="slider" data-target="u_sliderNine">Blue
+      <input type="range" min="0" max="5000" data-min="-10" data-max="10" value="5000" class="slider" data-target="u_sliderTen">Bias
+      <input type="range" min="0" max="5000" data-min="-20" data-max="20" value="1768" class="slider" data-target="u_sliderEleven">μ
+      <div class="linkbox">
+        <a href="haundso.html">1</a>
+        <a href="segment.html">2</a>
+        <a href="wavepool.html">3</a>
+      </div>
+    </div>    
+    <script src="js/three.js"></script>
+    <script id="sliders">
+      const scale = (inputY, yRange, xRange) => {
+        const [xMin, xMax] = xRange;
+        const [yMin, yMax] = yRange;
+        console.log(xRange)
+
+        const percent = (inputY - yMin) / (yMax - yMin);
+        const outputX = percent * (xMax - xMin) + xMin;
+
+        return outputX;
+      };
+
+      document.querySelectorAll('input').forEach(input => {
+        //do something
+        input.oninput = function() {
+          const yRange = [Number(0), Number(5000)]
+          const xRange = [Number(input.dataset.min), input.dataset.max -1]
+          const value = scale(input.value, yRange, xRange);
+          const target = input.dataset.target;
+          console.log(`input ${input.value} / 1500`)
+          console.log(`output ${value / 10.0} / ${input.dataset.max}`)
+
+
+
+          material.uniforms[target].value = value / 10.0;
+        };
+      });
+
+
+    </script>
+    <script type="x-shader/x-fragment" id="fShader">
+      uniform float u_time;
+      uniform vec2 u_resolution;
+      uniform vec2 u_mouse;
+      uniform float u_sliderOne;
+      uniform float u_sliderTwo;
+      uniform float u_sliderThree;
+      uniform float u_sliderFour;
+      uniform float u_sliderFive;
+      uniform float u_sliderSix;
+      uniform float u_sliderSeven;
+      uniform float u_sliderEight;
+      uniform float u_sliderNine;
+      uniform float u_sliderTen;
+      uniform float u_sliderEleven;
+
+
+  
+      void main(){
+        vec2 coord = (gl_FragCoord.xy / u_resolution.xy) * u_sliderSix;
+        float color = 0.0;
+      
+        color += sin(coord.x * u_sliderOne + cos(u_time + coord.y * u_sliderTwo + sin(coord.x * u_sliderThree + u_time * 2.0))) * 2.0;
+        color += cos(coord.x * u_sliderFour + sin(u_time + coord.y * u_sliderFive + cos(coord.x * 20.0 + u_time * 2.0))) * 2.0;
+      
+        gl_FragColor = vec4(vec3(color + u_sliderSeven, color + u_sliderEight, color + u_sliderNine) * u_sliderTen + u_sliderEleven, 1.0 );
+      }
+    </script>
+    <script type="x-shader/x-vertex" id="vShader">
+      varying vec2 v_uv;
+
+      void main() {
+        v_uv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  
+      }
+    </script>
+		<script>
+    // GLSL \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    const vShader = document.querySelector('#vShader').innerHTML;
+    const fShader = document.querySelector('#fShader').innerHTML;
+
+    // shader uniforms
+    // [120, 10, 120, 10, 120, 20, 120, 40, 0.5, -0.5, -0.5]
+    let uniforms = {
+      u_mouse: { value: { x: window.innerWidth / 2, y: window.innerHeight / 2 } },
+      u_resolution: { value: { x: window.innerWidth, y: window.innerHeight } },
+      u_time: { value: 0.0 },
+      u_color: { value: new THREE.Color(0xFF0000) },
+      u_sliderOne: { value: 1.0 },
+      u_sliderTwo: { value: 116.6 },
+      u_sliderThree: { value: 173.13 },
+      u_sliderFour: { value: 59.77 },
+      u_sliderFive: { value: 42.01 },
+      u_sliderSix: { value: 0.41 },
+      u_sliderSeven: { value: 0.55 },
+      u_sliderEight: { value: 0.76 },
+      u_sliderNine: { value: 0.82 },
+      u_sliderTen: { value: 0.9 },
+      u_sliderEleven: { value: -0.62 },
+    }
+
+    // THREE.JS \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    const scene = new THREE.Scene();
+    const clock = new THREE.Clock();
+
+    // camera
+    let aspect = window.innerWidth / window.innerHeight;
+    const camera = new THREE.PerspectiveCamera( 15, aspect, 1, 1000 );
+    camera.position.z = 10;
+
+    // renderer
+    const renderer = new THREE.WebGLRenderer({
+      alpha: true,
+      antialias: true,
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // geometry and material
+		const geometry = new THREE.PlaneGeometry( window.screen.width, window.screen.height, 32 );
+    const material = new THREE.ShaderMaterial({
+      vertexShader: vShader,
+      fragmentShader: fShader,
+      uniforms
+    });
+
+    // mesh
+    var plane = new THREE.Mesh( geometry, material );
+    scene.add( plane );
+
+    // render
+    function render() {
+      // update time uniform
+      uniforms.u_time.value = clock.getElapsedTime();
+      // animation loop
+      requestAnimationFrame( render );
+      renderer.render( scene, camera );
+    }
+
+
+    // EVENT LISTENERS \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    // mousemove
+    document.addEventListener('mousemove', (e) => {
+      uniforms.u_mouse.value.x = e.clientX;
+      uniforms.u_mouse.value.y = e.clientY;
+    })
+    // window resize
+    const onWindowResize = () => {
+      const aspectRatio = window.innerWidth/window.innerHeight;
+      let width, height;
+      if (aspectRatio >= 1) {
+        width = 1;
+        height = (window.innerHeight/window.innerWidth) * width;
+      } else {
+        width = aspectRatio;
+        height = 1;
+      }
+      camera.left = -width;
+      camera.right = width;
+      camera.top = height;
+      camera.bottom = -height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      if (uniforms.u_resolution !== undefined) {
+        uniforms.u_resolution.value.x = window.innerWidth;
+        uniforms.u_resolution.value.y = window.innerHeight;
+      }
+    }
+    window.onresize = onWindowResize;
+
+    // run everything
+    render();
+    </script>
+	</body>
+</html>
