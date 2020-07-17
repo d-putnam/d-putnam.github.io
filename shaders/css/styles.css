@@ -84,31 +84,33 @@ a {
 
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 18px;
-    width: 18px;
-    background: rgb(110, 102, 64);
+    height: 2em;
+    width: 2em;
+    background: rgb(136, 126, 78);
     cursor: pointer;
-    margin-top: -6px;
+    margin-top: -0.8em;
     border-radius: 0.9rem;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 1px black;
   }
 
   input[type="range"]::-moz-range-thumb {
-    height: 18px;
-    width: 18px;
-    background: #555;
+    height: 2em;
+    width: 2em;
+    background: rgb(136, 126, 78);
     cursor: pointer;
+    margin-top: -0.8em;
     border-radius: 0.9rem;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 1px black;
   }
 
   input[type="range"]::-ms-thumb {
-    height: 18px;
-    width: 18px;
-    background: #555;
+    height: 2em;
+    width: 2em;
+    background: rgb(136, 126, 78);
     cursor: pointer;
+    margin-top: -0.8em;
     border-radius: 0.9rem;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 1px black;
   }
   /*#############Track##############*/
 
