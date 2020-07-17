@@ -23,7 +23,7 @@
       <div class="linkbox">
         <a href="hounds.html">1</a>
         <a href="segment.html">2</a>
-        <a href="wavepool.html">3</a>
+        <a href="wavepool.html" class="active">3</a>
       </div>
     </div>    
     <script src="js/three.js"></script>
@@ -58,6 +58,10 @@
 
     </script>
     <script type="x-shader/x-fragment" id="fShader">
+      #ifdef GL_ES
+        precision highp float;
+      #endif
+
       uniform float u_time;
       uniform vec2 u_resolution;
       uniform vec2 u_mouse;
@@ -127,6 +131,7 @@
     // THREE.JS \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
     const scene = new THREE.Scene();
     const clock = new THREE.Clock();
+
 
     // camera
     let aspect = window.innerWidth / window.innerHeight;

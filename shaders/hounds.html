@@ -9,19 +9,19 @@
 	<body>
     <!--3928, 1666, 4285, 500, 3333, 500, 3333, 1000, 1666, 1875, 1875-->
     <div class="slidecontainer">
-      <input type="range" min="0" max="5000" data-min="10" data-max="300" value="0" class="slider" data-target="u_sliderOne">Ψ<sub>1</sub>
+      <input type="range" min="0" max="5000" data-min="10" data-max="1000" value="0" class="slider" data-target="u_sliderOne">Ψ<sub>1</sub>
       <input type="range" min="0" max="5000" data-min="1500" data-max="100" value="1192" class="slider" data-target="u_sliderTwo">Ψ<sub>2</sub>
       <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="4327" class="slider" data-target="u_sliderThree">Ψ<sub>3</sub>
       <input type="range" min="0" max="5000" data-min="2000" data-max="500" value="4671" class="slider" data-target="u_sliderFour">Ψ<sub>4</sub>
       <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="1031" class="slider" data-target="u_sliderFive">Ψ<sub>5</sub>
-      <input type="range" min="0" max="5000" data-min="20" data-max="3" value="4410" class="slider" data-target="u_sliderSix">Zoom
+      <input type="range" min="0" max="5000" data-min="10" data-max="2" value="4410" class="slider" data-target="u_sliderSix">Zoom
       <input type="range" min="0" max="5000" data-min="0" data-max="10" value="3046" class="slider" data-target="u_sliderSeven">Red
       <input type="range" min="0" max="5000" data-min="0" data-max="10" value="4223" class="slider" data-target="u_sliderEight">Green
       <input type="range" min="0" max="5000" data-min="0" data-max = "10" value="4568" class="slider" data-target="u_sliderNine">Blue
       <input type="range" min="0" max="5000" data-min="-10" data-max="10" value="5000" class="slider" data-target="u_sliderTen">Bias
       <input type="range" min="0" max="5000" data-min="-20" data-max="20" value="1768" class="slider" data-target="u_sliderEleven">μ
       <div class="linkbox">
-        <a href="hounds.html">1</a>
+        <a href="hounds.html" class="active">1</a>
         <a href="segment.html">2</a>
         <a href="wavepool.html">3</a>
       </div>
@@ -58,6 +58,10 @@
 
     </script>
     <script type="x-shader/x-fragment" id="fShader">
+      #ifdef GL_ES
+        precision highp float;
+      #endif
+
       uniform float u_time;
       uniform vec2 u_resolution;
       uniform vec2 u_mouse;

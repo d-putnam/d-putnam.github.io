@@ -9,7 +9,7 @@
 	<body>
     <!--3928, 1666, 4285, 500, 3333, 500, 3333, 1000, 1666, 1875, 1875-->
     <div class="slidecontainer">
-      <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="37" class="slider" data-target="u_sliderOne">Ψ<sub>1</sub>
+      <input type="range" min="0" max="5000" data-min="10" data-max="900" value="37" class="slider" data-target="u_sliderOne">Ψ<sub>1</sub>
       <input type="range" min="0" max="5000" data-min="11" data-max="2" value="2500" class="slider" data-target="u_sliderTwo">Ψ<sub>2</sub>
       <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="3400" class="slider" data-target="u_sliderThree">Ψ<sub>3</sub>
       <input type="range" min="0" max="5000" data-min="10" data-max="2000" value="5000" class="slider" data-target="u_sliderFour">Ψ<sub>4</sub>
@@ -25,7 +25,7 @@
       <input type="range" min="0" max="5000" data-min="-20" data-max="20" value="2690" class="slider" data-target="u_sliderEleven">μ
       <div class="linkbox">
         <a href="hounds.html">1</a>
-        <a href="segment.html">2</a>
+        <a href="segment.html" class="active">2</a>
         <a href="wavepool.html">3</a>
       </div>
     </div>    
@@ -61,6 +61,10 @@
 
     </script>
     <script type="x-shader/x-fragment" id="fShader">
+      #ifdef GL_ES
+        precision highp float;
+      #endif
+
       uniform float u_time;
       uniform vec2 u_resolution;
       uniform vec2 u_mouse;
