@@ -95,12 +95,8 @@
       }
     </script>
     <script type="x-shader/x-vertex" id="vShader">
-      varying vec2 v_uv;
-
       void main() {
-        v_uv = uv;
         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-  
       }
     </script>
 		<script>
@@ -141,7 +137,7 @@
     // renderer
     const renderer = new THREE.WebGLRenderer({
       alpha: true,
-      antialias: true,
+      //antialias: true,
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
@@ -167,13 +163,7 @@
       renderer.render( scene, camera );
     }
 
-
     // EVENT LISTENERS \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-    // mousemove
-    document.addEventListener('mousemove', (e) => {
-      uniforms.u_mouse.value.x = e.clientX;
-      uniforms.u_mouse.value.y = e.clientY;
-    })
     // window resize
     const onWindowResize = () => {
       const aspectRatio = window.innerWidth/window.innerHeight;
@@ -197,6 +187,7 @@
       }
     }
     window.onresize = onWindowResize;
+    onWindowResize();
 
     // run everything
     render();
