@@ -567,7 +567,7 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .more-box.show {
     width: 85vw;
-    margin-right: 2rem;
+    margin-right: 0rem;
     margin-left: 0rem;
   }
   #fbx-wrap {
@@ -583,14 +583,14 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   #info-wrap {
     width: 75vw;
-    height: 85vh;
+    height: 73vh;
     padding-left: 0.3rem;
     padding-right: 0rem;
     margin-left: auto;
     margin-right: auto;
   }
   #info-container.show{
-    max-height: 87vh;
+    max-height: 75vh;
     margin-left: 0rem;
     margin-right: 0rem;
     width: 90vw;
@@ -876,3 +876,19 @@ input[type="range"]:focus::-ms-fill-upper {
       height: 8px;
     }
 }
+
+/* tiny phones in regular orientation */
+@media only screen and (max-width: 320px) {
+  #info-wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0rem;
+    width: 90%;
+  }
+  p {
+    margin-left: 2rem;
+  }
+  #about {
+    margin-left: 2rem;
+  }
+ }
