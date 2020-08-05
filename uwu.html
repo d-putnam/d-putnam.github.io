@@ -129,7 +129,7 @@
 					<h4 class="about head">ABOUT</h4>
 					<p>uwu-VS is a semi-modular video synthesis instrument for web browsers.</p>  
 					<p>Inspired by ojack's live coding environment <a href="https://hydra.ojack.xyz/" target="blank">HYDRA</a>, I wanted to make a
-						 browser app flexible enough for live performance but accessible to users with no prior video synth experience (no coding required, but MIDI scripting is encouraged :)</p>
+						 browser app flexible enough for live performance but accessible to users without any prior video synth experience (no coding required, but MIDI scripting is encouraged :)</p>
 					<p>Built using GLSL and three.js, the structure is as follows:</p>
 					<ul>
 						<li>Our {drawShader} creates an initial texture based on the sliders in the {WAVES} table
@@ -160,18 +160,23 @@
 							<td>hide all UI elements</td>
 						</tr>
 						<tr>
+							<td>[s]</td>
+							<td>40 <br> (trigger value: 127)</td>
+							<td>save current preset</td>
+						</tr>
+						<tr>
+							<td>[1]-[0]</td>
+							<td>20-29 <br> (trigger value: 127)</td>
+							<td>recall preset</td>
+						</tr>
+						<tr>
 							<td>[z] [x] [c]</td>
 							<td>30, 21, 32 <br> (trigger value: 127)</td>
 							<td>select active drawShader</td>
 						</tr>
 						<tr>
-							<td>[1]-[0]</td>
-							<td>30-29 <br> (trigger value: 127)</td>
-							<td>recall preset</td>
-						</tr>
-						<tr>
 							<td>-</td>
-							<td>0-10 (value 0-127)</td>
+							<td>0-11 (value 0-127)</td>
 							<td>drawShader sliders</td>
 						</tr>
 						<tr>
