@@ -6,7 +6,7 @@
 	<meta name="author" content="D Putnam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>uwu-VS</title>
-	<link rel="stylesheet" href="css/uwu_styles.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="nav">
 			<div id="shader-nav-button" class="nav-button nav-inactive" tabindex="1" data-target="shader" title="Shader select [d]">
-					<img id="shader-icon" src="img/labels/three-dots-svgrepo-com.svg">
+					<img id="shader-icon" src="./img/three-dots-svgrepo-com.svg">
 			</div>
 			<div id="wave-nav-button" class="nav-button nav-active" tabindex="2" data-target="wave" title="Wave controls [w]">
 					<span id="wave-icon">∿</lg>
@@ -23,7 +23,7 @@
 					<span id="fbx-icon">ƒ<sm>x</sm></span>
 			</div>
 			<div id="save-nav-button" class="nav-button nav-inactive" tabindex="4" data-target="save" title="Save preset [p]">
-					<img id="save-icon" src="img/labels/code-svgrepo-com.svg">
+					<img id="save-icon" src="./img/code-svgrepo-com.svg">
 			</div>
 			<div id="info-nav-button" class="nav-button nav-inactive" tabindex="5" data-target="info" title="Info [i]">
 					<span id="info-icon">ⓘ</span>
@@ -190,7 +190,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
 	<script id="UI-helpers">
 		// Scaling function for sliders
 		const scale = (inputY, xRange, yRange) => {

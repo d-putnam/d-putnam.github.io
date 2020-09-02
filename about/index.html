@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/styles.css">
-        <title>dan putnam - CVX-1</title>
+        <title>dan putnam - about</title>
     </head>
     <body>
         <div class="header">
@@ -25,27 +25,22 @@
                   <a class="nav-link" href="..">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../about.html">About</a>
+                  <a class="nav-link" href=".">About</a>
                 </li>
             </ul>
         </div>
         <div class="content">
-            <div class="col-11">
-                <img class="project-img" src="../img/full/polymtr.png">
-                <p><span class="title"><a href="https://dputnam.net/polymtr" target="blank">Polymtr</a></span> is an algorithmic, polymetric
-                    drum sequencer that runs in your web browser.</p>
-
-                <p>Utilizing Tone.JS, all audio synthesis and processing occurs in real-time on the client machine.</p>
-
-                <p>Each voice is assigned an array of random values. Based on the threshold settings on each channel, 
-                    this is translated to a pattern of notes. Raising the threshold to 100% will allow a steady stream
-                of 16th notes.</p>
-
-                <p>Each voice has a variable pattern length, allowing for longer phrases with polymetric phasing.</p>
-
-                <p>For best performance, Google Chrome desktop is suggested.</p>
-
-
+            <div class="about">
+                <div class="col-11">
+                        <img class="pic" src="./img/me.jpg">
+                        <p>I'm a media artist and programmer based in Providence, Rhode Island!</p>
+                        <p>I have a deep interest in toolmaking and using 
+                           aleatoric/chance operations to create unique experiences.</p>
+                        <p>I graduated from Brown University in 2015, where I studied algorithmic music composition
+                           in the Computer Music and Multimedia program.</p>
+                        <p>I'm always open to collaboration, so feel free to reach out!</p>
+                        <p><a href="mailto:dan@dputnam.net">/ / dan@dputnam.net</a></p>
+                </div>
             </div>
         </div>
         <!--Gradient background -->
@@ -64,15 +59,15 @@
                                                 to="460 .5 .5"
                                                 dur="35s"
                                                 repeatCount="indefinite" />
-                            <stop id="stop1" offset="0" stop-color="rgba(35, 137, 89, 0.2)"/>
-                            <stop id="stop2" offset=".3" stop-color="rgba(59, 13, 93, 0.2)">
+                            <stop id="stop1" offset="0" stop-color="rgba(35, 137, 89, 0.15)"/>
+                            <stop id="stop2" offset=".3" stop-color="rgba(59, 13, 93, 0.15)">
                                 <animate attributeName="offset" 
                                          id="breath" 
                                          dur="40s" 
                                          values="0.40; 0.50; 0.40" 
                                          repeatCount="indefinite"></animate>
                             </stop>
-                            <stop id="stop3" offset="1" stop-color="rgba(13, 8, 32, 0.2)"/>     
+                            <stop id="stop3" offset="1" stop-color="rgba(13, 8, 32, 0.15)"/>     
                         </linearGradient> 
                     </defs>
                     <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)"/>
@@ -86,6 +81,11 @@
         <!--Custom JS -->
         <script src="../js/scripts.js"></script>
         <script>
+            // Window resizing
+            let x = window.matchMedia("(max-width: 768px)")
+            reSize(x) // Call listener function at run time
+            x.addListener(reSize) // Attach listener function on state changes
+
             // On link hover, go dark
             $("a").hover(
                 function() {

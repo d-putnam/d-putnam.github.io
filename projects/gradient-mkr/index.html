@@ -12,36 +12,35 @@
         <!--Link fonts + styles -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/styles.css">
-        <title>uwu-VS - browser video synth</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <title>dan putnam - gradient-mkr</title>
     </head>
     <body>
         <div class="header">
             <ul class="nav">
                 <li id="logo_block" class="nav-item">
-                    <a class="logo" href="..">dan|putnam</a>
+                    <a class="logo" href="../..">dan|putnam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="..">Work</a>
+                  <a class="nav-link" href="../..">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../about.html">About</a>
+                  <a class="nav-link" href="../../about">About</a>
                 </li>
             </ul>
         </div>
         <div class="content">
             <div class="col-11">
-                <p><a href="https://dputnam.net/uwu-vs" target="blank">uwu-VS</a> is an in-browser video instrument inspired by analog video synthesis techniques.</p>
-
-                <p>The animations are written in the OpenGL Shading Language and can be controlled via the provided user interface or 
-                    external MIDI control. Ten user-defined presets allow for further performance flexibility.</p>
-
-                <p><Check it out here</a>
-
-                <p>Below you can find a short demonstration in which uwu-VS is modulated by four MIDI LFOs sent by Max/MSP. Future versions of uwu-VS
-                    will add built-in modulation sources and server-side video export rendering, avoiding the dropped frames caused by video capture software.
-                </p>
-                <iframe src="https://player.vimeo.com/video/445293885" width="640" height="564" style="display: block; margin-left: auto; margin-right:auto; margin-top:-3rem" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                <img class="project-img-center" src="./img/gradient-mkr.png">
+                <p><span class="title">SVG gradient-mkr</span> is a JavaScript web app designed to simplify the process
+                    of creating SVG gradients.</p> 
+                <p>The user can manipulate the gradient via the UI, and the changes will be reflected
+                    in the page background.</p>
+                <p>The "show code" button will reveal the inline HTML producing the current image. 
+                    Alternatively, the user can export the image to a static 4000 x 4000px .png 
+                    (sans animation).</p>
+                <p><a href="https://dputnam.net/gradient-mkr/" target="blank">Try it out here</a>
+                    or <a href="https://github.com/d-putnam/gradient-mkr" target="blank">view the source code</a></p>
             </div>
         </div>
         <!--Gradient background -->
@@ -80,7 +79,7 @@
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
                 crossorigin="anonymous"></script> 
         <!--Custom JS -->
-        <script src="../js/scripts.js"></script>
+        <script src="../../js/scripts.js"></script>
         <script>
             // On link hover, go dark
             $("a").hover(

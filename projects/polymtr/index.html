@@ -12,58 +12,40 @@
         <!--Link fonts + styles -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../../css/styles.css">
         <title>dan putnam - CVX-1</title>
     </head>
     <body>
         <div class="header">
             <ul class="nav">
                 <li id="logo_block" class="nav-item">
-                    <a class="logo" href="..">dan|putnam</a>
+                    <a class="logo" href="../..">dan|putnam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="..">Work</a>
+                  <a class="nav-link" href="../..">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../about.html">About</a>
+                  <a class="nav-link" href="../../about">About</a>
                 </li>
             </ul>
         </div>
         <div class="content">
             <div class="col-11">
-                <img class="project-img" src="../img/full/CVX1.png">
-                <p><span class="title">CVX-1 Chaotic Video Processor</span> is a desktop application writtten in Max/MSP, allowing real-time manipulation of recorded 
-                    or live video input based on a feedback loop of OpenGL shaders.</p>
+                <img class="project-img" src="./img/polymtr.png">
+                <p><span class="title"><a href="https://dputnam.net/polymtr" target="blank">Polymtr</a></span> is an algorithmic, polymetric
+                    drum sequencer that runs in your web browser.</p>
 
-                <p>It features control over the following parameters:
-                    <ul>
-                        <li>RGB bias filter</li>
-                        <li>X/Y tesselation and rotation angle</li>
-                        <li>Saturation, Contrast, & Blur</li> 
-                        <li>Luminance-based distortion</li>
-                        <li>Feedback path</li>
-                    </ul>
-                </p>
-                <p>The modulation section contains three low frequency oscillators which can be used to automate 
-                    each of the above parameters.
-                </p>
-                <p>All parameters feature MIDI control and can be re-mapped to suit your device of choice, 
-                    meaning this can be played as a video instrument using a faderbox, controlled by your 
-                    hardware synthesizers, or receive real-time messages from another program such as Max/MSP 
-                    or PureData.</p>
+                <p>Utilizing Tone.JS, all audio synthesis and processing occurs in real-time on the client machine.</p>
 
-                <p>Full documentation to come! In the meantime, send me an email if you have any questions.</p>
+                <p>Each voice is assigned an array of random values. Based on the threshold settings on each channel, 
+                    this is translated to a pattern of notes. Raising the threshold to 100% will allow a steady stream
+                of 16th notes.</p>
 
-                <p>This app is free for non-commercial use:<br>
-                <b><a href="https://www.dropbox.com/sh/t2mn1mgj0jrid7x/AABMNm9qmYP2quz4bPV-Dw8Pa?dl=0" target="blank"> download OS X app (via dropbox) </a></b></p>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"  target="_blank">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="6Y68PC2NYSYYC" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
-                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
+                <p>Each voice has a variable pattern length, allowing for longer phrases with polymetric phasing.</p>
+
+                <p>For best performance, Google Chrome desktop is suggested.</p>
+
+
             </div>
         </div>
         <!--Gradient background -->
@@ -102,7 +84,7 @@
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
                 crossorigin="anonymous"></script> 
         <!--Custom JS -->
-        <script src="../js/scripts.js"></script>
+        <script src="../../js/scripts.js"></script>
         <script>
             // On link hover, go dark
             $("a").hover(

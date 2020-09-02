@@ -12,36 +12,75 @@
         <!--Link fonts + styles -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/styles.css">
-        <title>dan putnam - fetcher</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <title>dan putnam - video</title>
     </head>
     <body>
         <div class="header">
             <ul class="nav">
                 <li id="logo_block" class="nav-item">
-                    <a class="logo" href="..">dan|putnam</a>
+                    <a class="logo" href="../..">dan|putnam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="..">Work</a>
+                  <a class="nav-link" href="../..">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../about.html">About</a>
+                  <a class="nav-link" href="../../about">About</a>
                 </li>
             </ul>
         </div>
         <div class="content">
             <div class="col-11">
-                <img class="project-img-center" src="../img/full/fetcher.png">
-                <p><span class="title">Fetcher</span> is a JavaScript web app powered by the 
-                    <a href="https://deepai.org/machine-learning-model/text-generator" target="blank">
-                        DeepAI text generation API</a></p>
-                <p>It requests user input, then produces a fever-dream story based
-                    on the seed text.</p>
-                <p>The resulting story is printed one character at a time at random intervals, 
-                    producing the effect of chatting with a bot.</p>
-                <p><a href="https://dputnam.net/fetcher/" target="blank">Try it out here</a> or 
-                <a href="https://github.com/d-putnam/fetcher" target="blank">view the source code</a></p>
+                <p>This is a collection of videos created by manipulating feedback loops 
+                    of OpenGL shaders using the Max/MSP programming language.</p>
+                <p>Shader parameters are mapped to MIDI control knobs, allowing the video
+                    to be "played" with a musical interface and recorded in real-time.</p>
+                <p>*Please be warned that these videos contain frequent strobing*</p>
             </div>
+            <!--Carousel Wrapper-->
+            <div id="carouselvideo" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <iframe class="video-fluid" src="https://player.vimeo.com/video/184250772?byline=false" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe class="video-fluid" src="https://player.vimeo.com/video/210262791?byline=false" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe class="video-fluid" src="https://player.vimeo.com/video/183585614?byline=false" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe class="video-fluid" src="https://player.vimeo.com/video/198124962?byline=false" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe class="video-fluid" src="https://player.vimeo.com/video/197636138?byline=false" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carouselvideo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselvideo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+                <!--Indicators-->
+                <div id="indicators">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselvideo" data-slide-to="0" class="active first"></li>
+                        <li data-target="#carouselvideo" data-slide-to="1"></li>
+                        <li data-target="#carouselvideo" data-slide-to="2"></li>
+                        <li data-target="#carouselvideo" data-slide-to="3"></li>
+                        <li data-target="#carouselvideo" data-slide-to="4" class="last"></li>
+                    </ol>
+                </div>
+                <!--/.Indicators-->
+            </div>
+            <!--Carousel Wrapper-->
         </div>
         <!--Gradient background -->
         <div id="background-wrap">
@@ -78,9 +117,14 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
                 crossorigin="anonymous"></script> 
+        <!--Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!--Custom JS -->
-        <script src="../js/scripts.js"></script>
+        <script src="../../js/scripts.js"></script>
         <script>
+            // Disable the carousel cycling
+            $("#carouselvideo").carousel({interval: false});
             // On link hover, go dark
             $("a").hover(
                 function() {
