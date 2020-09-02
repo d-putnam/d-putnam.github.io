@@ -12,52 +12,40 @@
         <!--Link fonts + styles -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>dan putnam - PG-4</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>dan putnam - CVX-1</title>
     </head>
     <body>
         <div class="header">
             <ul class="nav">
                 <li id="logo_block" class="nav-item">
-                    <a class="logo" href=".">dan|putnam</a>
+                    <a class="logo" href="..">dan|putnam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=".">Work</a>
+                  <a class="nav-link" href="..">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="../about.html">About</a>
                 </li>
             </ul>
         </div>
         <div class="content">
             <div class="col-11">
-                <p><span class="title">PG-4 Gated Probabilistic Pattern Generator</span> is a four-channel, 8-to-32-step drum sequencer 
-                    designed to produce interesting rhythms out of just a few controls.</p>
-                
-                    <img class="project-img" src="img/full/PG4.png">
-    
-    
-                <p>Each step is assigned a random value between 0 and 1, indicated by the slider bank in each column. 
-                    With the threshold set to 12 o’clock, any value over 0.5 will pass to the output. As you adjust 
-                    the threshold and accent parameters, you affect the density of the pattern for that voice. 
-                    The number of steps can be varied per-channel, producing more complex polymetric sequences.</p>
-    
-                <p>All parameters allow for MIDI control and are re-mappable. Using the built-in ReWire functionality, 
-                    you can use this application within your DAW of choice to either record the internal signal chain 
-                    or send MIDI data to your favorite drum machine.</p>
-    
-                <p>Full documentation to come! In the meantime, send me an email if you have any questions.</p>
-    
-                <p>This app is free for non-commercial use:<br>
-                <b><a href="https://www.dropbox.com/sh/sevh8psw6dont3h/AACBI5lutHgapD3aHAFq7teea?dl=0" target="blank"> download OS X app (via dropbox) </a></b></p>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"  target="_blank">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="6Y68PC2NYSYYC" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
-                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
+                <img class="project-img" src="../img/full/polymtr.png">
+                <p><span class="title"><a href="https://dputnam.net/polymtr" target="blank">Polymtr</a></span> is an algorithmic, polymetric
+                    drum sequencer that runs in your web browser.</p>
+
+                <p>Utilizing Tone.JS, all audio synthesis and processing occurs in real-time on the client machine.</p>
+
+                <p>Each voice is assigned an array of random values. Based on the threshold settings on each channel, 
+                    this is translated to a pattern of notes. Raising the threshold to 100% will allow a steady stream
+                of 16th notes.</p>
+
+                <p>Each voice has a variable pattern length, allowing for longer phrases with polymetric phasing.</p>
+
+                <p>For best performance, Google Chrome desktop is suggested.</p>
+
+
             </div>
         </div>
         <!--Gradient background -->
@@ -96,7 +84,7 @@
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
                 crossorigin="anonymous"></script> 
         <!--Custom JS -->
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script>
             // On link hover, go dark
             $("a").hover(
