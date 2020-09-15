@@ -13,7 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../css/styles.css">
-        <title>uwu-VS - browser video synth</title>
+        <link rel="shortcut icon" href="../../favicon.ico">
+        <title>uwu-VS</title>
     </head>
     <body>
         <div class="header">
@@ -31,18 +32,23 @@
         </div>
         <div class="content">
             <div class="col-11">
-                <p><a href="https://dputnam.net/uwu-vs" target="blank">uwu-VS</a> is an in-browser video instrument inspired by analog video synthesis techniques.</p>
+                <p><a href="https://dputnam.net/uwu-vs" target="blank">uwu-VS (2020)</a> is an in-browser video instrument inspired by analog video synthesis techniques.</p>
 
                 <p>The animations are written in the OpenGL Shading Language and can be controlled via the provided user interface or 
-                    external MIDI control. Ten user-defined presets allow for further performance flexibility. For full documentation, see the in-app info page.</p>
+                    external MIDI control. Ten user-defined presets allow for further performance flexibility. For full documentation and MIDI implementation, please see the in-app info page.</p>
 
                 <p><a href="https://dputnam.net/uwu-vs/" target="blank">Try it out here</a> or 
                     <a href="https://github.com/d-putnam/uwu-vs" target="blank">view the source code</a></p>
 
-                <p>Below you can find a short demonstration in which uwu-VS is modulated by four MIDI LFOs sent by Max/MSP. Future versions of uwu-VS
-                    will add built-in modulation sources and server-side video export rendering, avoiding the dropped frames caused by video capture software.
+                <p>Below you can find a short demonstration in which uwu-VS is modulated by a quadrature MIDI LFO sent from Max/MSP. Future versions of uwu-VS
+                    will add built-in modulation sources and server-side video rendering for file export.
                 </p>
-                <iframe src="https://player.vimeo.com/video/445293885" width="640" height="564" style="display: block; margin-left: auto; margin-right:auto; margin-top:-3rem" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                <iframe id="video" src="https://player.vimeo.com/video/445293885" 
+                    style="display: block; margin-bottom:3rem; margin-top:1.5rem""
+                    frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                    <!--                    width="640" 
+                    height="564" 
+                    style="display: block; margin-left: auto; margin-right:auto; margin-top:-3rem" -->
             </div>
         </div>
         <!--Gradient background -->
@@ -82,6 +88,16 @@
                 crossorigin="anonymous"></script> 
         <!--Custom JS -->
         <script src="../../js/scripts.js"></script>
+        <script>
+            document.querySelector('#video').width = document.querySelector('.content').offsetWidth * 0.85
+            document.querySelector('#video').height = (1080 * document.querySelector('.content').offsetWidth)  / 1920
+
+            window.onresize = () => {
+                document.querySelector('#video').width = document.querySelector('.content').offsetWidth * 0.85
+                document.querySelector('#video').height = (1080 * document.querySelector('.content').offsetWidth)  / 1920
+            }
+
+        </script>
         <script>
             // On link hover, go dark
             $("a").hover(
