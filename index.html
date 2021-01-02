@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:title" content="D Putnam // home" />
         <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Portfolio site" />
@@ -26,10 +25,10 @@
         <div class="header">
             <ul class="nav">
                 <li id="logo_block" class="nav-item">
-                    <a class="logo" href=".">dan|putnam</a>
+                    <a class="logo reload" href="javascript:;">dan|putnam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=".">Work</a>
+                  <a class="nav-link reload" href="javascript:;">Work</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./about">About</a>
@@ -39,7 +38,7 @@
         <div class="content">
             <p>Welcome to my programming and design sandbox!<br>
                This site generates a 
-               <a id="reload" href="#">new color pallette</a> on each visit 
+               <a class="reload" href="javascript:;">new color pallette</a> on each visit 
                <span class="kana">&#12484;</span>
             </p>
             <p>Check out a few of my projects below:</p>
@@ -62,8 +61,6 @@
                     </div>
                 </a>
             </div>
-
-
             <div class="project">
                 <a href="./projects/polymtr">
                     <img src="./img/thumbs/poly_thm.png">
@@ -81,8 +78,6 @@
                     </div>
                 </a>
             </div>
-
-
             <div class="project">
                 <a href="./projects/gradient-mkr">
                     <img src="./img/thumbs/gradient-mkr_thm.png">
@@ -100,7 +95,6 @@
                     </div>
                 </a>
             </div>
-
             <div class="project">
                 <a href="./projects/tessellations">
                     <img src="./img/thumbs/tess.png">
@@ -117,7 +111,6 @@
                     </div>
                 </a>
             </div>
-
             <div class="project">
                 <a href="./projects/fetcher">
                     <img src="./img/thumbs/fetch_thm.png">
@@ -218,48 +211,7 @@
                 </svg>
             </div>
         </div>
-        <!--Include jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-                crossorigin="anonymous"></script> 
-        <!--Custom JS -->
+        <!--Shared JS -->
         <script src="js/scripts.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#reload").click(function(){
-                    open();
-                    return false;
-                })
-            });
-
-            // On link hover, go dark
-            $("a").hover(
-                function() {
-                    $(this).css("color", colors[4]);  
-                }, function() {
-                    $(this).css("color", colors[5]);  
-                }
-            );
-            // On hover, cycle text color through slightly more
-            // saturated versions of the background colors
-            let hover = false;
-            $(".logo").hover(
-                async function() {
-                    hover = true;
-                    let i = 0;
-                    while (hover === true) {
-                        $(this).css("color", colors[i+6]);
-                        i++;
-                        if (i === 5) {
-                            i = 0;
-                        }
-                        await sleep(100);
-                    };
-                    $(this).css("color", "#252525");
-                }, function(){
-                hover = false;
-                }
-            );
-        </script>
     </body>
 </html>

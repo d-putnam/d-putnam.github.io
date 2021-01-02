@@ -56,17 +56,6 @@
                 <p>Full documentation to come! In the meantime, send me an email if you have any questions.</p>
 
                 <b><a href="https://www.dropbox.com/sh/t2mn1mgj0jrid7x/AABMNm9qmYP2quz4bPV-Dw8Pa?dl=0" target="blank"> download OS X app (via dropbox) </a></b></p>
-                <!--
-                <p>This app is free for non-commercial use:<br>
-
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"  target="_blank">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="6Y68PC2NYSYYC" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
-                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>-->
             </div>
         </div>
         <!--Gradient background -->
@@ -100,41 +89,7 @@
                 </svg>
             </div>
         </div>
-        <!--Include jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-                crossorigin="anonymous"></script> 
-        <!--Custom JS -->
+        <!--Shared JS -->
         <script src="../../js/scripts.js"></script>
-        <script>
-            // On link hover, go dark
-            $("a").hover(
-                function() {
-                    $(this).css("color", colors[4]);  
-                }, function() {
-                    $(this).css("color", colors[5]);  
-                }
-            );
-            // On hover, cycle text color through slightly more
-            // saturated versions of the background colors
-            let hover = false;
-            $(".logo").hover(
-                async function() {
-                    hover = true;
-                    let i = 0;
-                    while (hover === true) {
-                        $(this).css("color", colors[i+6]);
-                        i++;
-                        if (i === 5) {
-                            i = 0;
-                        }
-                        await sleep(100);
-                    };
-                    $(this).css("color", "#252525");
-                }, function(){
-                hover = false;
-                }
-            );
-        </script>
     </body>
 </html>

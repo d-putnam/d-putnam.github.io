@@ -75,41 +75,7 @@
                 </svg>
             </div>
         </div>
-        <!--Include jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-                crossorigin="anonymous"></script> 
-        <!--Custom JS -->
+        <!--Shared JS -->
         <script src="../../js/scripts.js"></script>
-        <script>
-            // On link hover, go dark
-            $("a").hover(
-                function() {
-                    $(this).css("color", colors[4]);  
-                }, function() {
-                    $(this).css("color", colors[5]);  
-                }
-            );
-            // On hover, cycle text color through slightly more
-            // saturated versions of the background colors
-            let hover = false;
-            $(".logo").hover(
-                async function() {
-                    hover = true;
-                    let i = 0;
-                    while (hover === true) {
-                        $(this).css("color", colors[i+6]);
-                        i++;
-                        if (i === 5) {
-                            i = 0;
-                        }
-                        await sleep(100);
-                    };
-                    $(this).css("color", "#252525");
-                }, function(){
-                hover = false;
-                }
-            );
-        </script>
     </body>
 </html>

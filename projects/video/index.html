@@ -127,34 +127,6 @@
         <script>
             // Disable the carousel cycling
             $("#carouselvideo").carousel({interval: false});
-            // On link hover, go dark
-            $("a").hover(
-                function() {
-                    $(this).css("color", colors[4]);  
-                }, function() {
-                    $(this).css("color", colors[5]);  
-                }
-            );
-            // On hover, cycle text color through slightly more
-            // saturated versions of the background colors
-            let hover = false;
-            $(".logo").hover(
-                async function() {
-                    hover = true;
-                    let i = 0;
-                    while (hover === true) {
-                        $(this).css("color", colors[i+6]);
-                        i++;
-                        if (i === 5) {
-                            i = 0;
-                        }
-                        await sleep(100);
-                    };
-                    $(this).css("color", "#252525");
-                }, function(){
-                hover = false;
-                }
-            );
         </script>
     </body>
 </html>
