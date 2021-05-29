@@ -1,0 +1,83 @@
+.Project-Detail {
+  /*margin-right: 4rem;*/
+  max-width: 50rem;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.project-link {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  padding-right: 0.5rem;
+}
+
+.project-img {
+  max-width: 100%;
+  filter: drop-shadow(0px 0px 10px rgba(25, 25, 25, 0.25));
+}
+
+.floatRight {
+  float: right;
+  max-width: 50%;
+  padding-left: 1.5rem;
+}
+
+
+.player-wrapper {
+  width: 96%;
+  margin-top: 2rem;
+  position: relative;
+  filter: drop-shadow(-1px -1px 2px rgba(25, 25, 25, 0.35));
+  /*padding-top: 58%*/ /* Player ratio: 100 / (1280 / 720) */
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.carousel-root {
+  padding-left: 0px;
+  margin-top: 2rem;
+  /*margin-bottom: -0.5rem;*/
+  margin-bottom: -3rem;
+}
+
+.carousel-item-wrapper {
+  /*width: 80%;*/
+  /*margin-left: 5%;*/
+  position: relative;
+  padding-top: 56%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.carousel .slide iframe {
+  margin: 0px 0px 0px 0px;
+  width: 100%
+}
+
+.carousel-status {
+  display: none
+}
+
+.carousel .control-dots {
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel .control-dots {
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .floatRight  {
+    float:none;
+    max-width: 100%;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+}

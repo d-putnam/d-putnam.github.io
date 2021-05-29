@@ -1,0 +1,42 @@
+nav {
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #252525;
+  font-family: "Lora", serif;
+}
+.nav-item {
+  position: relative;
+  top: -1px;
+  margin-right: 2rem;
+  font-size: 1.3em;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 35px;
+  font-size: 2.4rem;
+  font-style: normal;
+  color: '#252525';
+  text-decoration: none;
+}
+.nav-item .logo:hover {
+  text-decoration: none;
+}
+
+#nav-links {
+  display:inline
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-links {
+    display: block;
+    margin-top: -1rem;
+    margin-left: 0rem;
+  }
+  .nav-item {
+    margin-right: 2rem;
+  }
+}

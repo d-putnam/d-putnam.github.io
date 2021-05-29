@@ -1,0 +1,79 @@
+:root {
+  --link: rgba(0,0,0,1);
+  --link-hover: rgba(100,100,100,1);
+}
+
+.inline-link, .project-link, .nav-item {
+  color: var(--link)
+}
+.inline-link:hover, .project-link:hover, .nav-item:hover {
+  color: var(--link-hover)
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  line-height: 1.75;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#content {
+  padding-top: 0.5rem;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 3rem;
+  max-width: 60rem;
+  transition: padding-left 1s;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.inline-link {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  padding-right: 0.35rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #content {
+    padding-left: 12%;
+    padding-right: 12%;
+    max-width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
