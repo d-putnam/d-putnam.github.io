@@ -7,7 +7,7 @@ const max = (arr) => {
 }
 
 const randomColor = (mixColor) => {
-  let max = 155;
+  let max = 200;
   let offset = 6;
   let color = [
     Math.floor(Math.random() * max) + offset,
@@ -26,9 +26,9 @@ const genColors = () => {
   let initColor = randomColor()
 
   let colors = [
-    randomColor(),//initColor),
-    randomColor(),//initColor),
-    randomColor(),//initColor),
+    randomColor(initColor),//initColor),
+    randomColor(initColor),//initColor),
+    randomColor(initColor),//initColor),
   ];
 
   colors[3] = [
@@ -46,7 +46,7 @@ const genColors = () => {
 
   // set the CSS variables for links
   let root = document.documentElement;
-  root.style.setProperty('--link', `rgba(${colors[3].join(',')}, 0.65)`);
+  root.style.setProperty('--link', `rgba(${colors[4].join(',')}, 1)`);
   root.style.setProperty('--link-hover', `rgba(${colors[3].join(',')}, 1)`);
 
   

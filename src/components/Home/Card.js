@@ -11,31 +11,6 @@ function Card(props) {
   let overlayColor = `rgba(${props.colors[3].join(',')}, 1.0)`
   let labelColor = `rgba(${props.colors[3].join(',')}, 0.15)`
 
-  /*
-  let linkColor = `rgba(${props.colors[3].join(',')}, 0.65)`
-
-  useEffect(() => {
-    let hoverColor = `rgba(${props.colors[3].join(',')}, 1)`
-    linkColor = `rgba(${props.colors[3].join(',')}, 0.65)`
-
-    let linkHover = (e) => {
-      e.target.style.color = hoverColor;
-    };
-    let linkExit = (e) => {
-      e.target.style.color = linkColor;
-    };
-    let linkClick = (e) => {
-      props.changeColors('data from the child');
-      e.preventDefault();
-    };
-
-    document.querySelectorAll('.inline-link').forEach(link => {
-      link.addEventListener("mouseover", linkHover);
-      link.addEventListener("mouseleave", linkExit);
-      link.addEventListener("click", linkClick);
-    }) 
-  }, [props.colors]);
-  */
   return (
     <Router>
       <div className="Card">
