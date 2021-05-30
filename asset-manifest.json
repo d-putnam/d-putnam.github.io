@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/d-putnam.github.io/static/css/main.b37aa99b.chunk.css",
+    "main.css": "/d-putnam.github.io/static/css/main.2c167729.chunk.css",
     "main.js": "/d-putnam.github.io/static/js/main.591341f4.chunk.js",
     "main.js.map": "/d-putnam.github.io/static/js/main.591341f4.chunk.js.map",
     "runtime-main.js": "/d-putnam.github.io/static/js/runtime-main.c9455424.js",
@@ -10,14 +10,14 @@
     "static/js/2.87ee596f.chunk.js.map": "/d-putnam.github.io/static/js/2.87ee596f.chunk.js.map",
     "index.html": "/d-putnam.github.io/index.html",
     "static/css/2.6b560088.chunk.css.map": "/d-putnam.github.io/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.b37aa99b.chunk.css.map": "/d-putnam.github.io/static/css/main.b37aa99b.chunk.css.map",
+    "static/css/main.2c167729.chunk.css.map": "/d-putnam.github.io/static/css/main.2c167729.chunk.css.map",
     "static/js/2.87ee596f.chunk.js.LICENSE.txt": "/d-putnam.github.io/static/js/2.87ee596f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9455424.js",
     "static/css/2.6b560088.chunk.css",
     "static/js/2.87ee596f.chunk.js",
-    "static/css/main.b37aa99b.chunk.css",
+    "static/css/main.2c167729.chunk.css",
     "static/js/main.591341f4.chunk.js"
   ]
 }
