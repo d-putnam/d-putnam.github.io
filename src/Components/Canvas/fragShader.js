@@ -1,4 +1,5 @@
-const fragShader = `
+const fragShader = 
+`
   #ifdef GL_ES
     precision highp float;
   #endif
@@ -34,4 +35,4 @@ const fragShader = `
   }
 `;
 
-export { fragShader }
+export default fragShader

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import { fragShader } from './fragShader.js'
-import { brcosaShader } from './brcosaShader.js'
-import { fbxShader } from './fbxShader.js'
+import fragShader from './fragShader.js';
+import brcosaShader from './brcosaShader.js';
+import fbxShader from './fbxShader.js';
+import styles from './Canvas.module.css';
 
 class Canvas extends Component {
   constructor(props) {
@@ -155,7 +156,10 @@ class Canvas extends Component {
 
   render() {
     return (
-      <div className="Canvas" ref={ref => (this.mount = ref)} />
+      <div className="Canvas-wrap">
+        <div className={styles.Canvas} ref={ref => (this.mount = ref)} />
+        <div className={styles.gradient} />
+      </div>
     );
   }
 }

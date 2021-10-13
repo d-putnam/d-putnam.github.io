@@ -1,4 +1,5 @@
-const brcosaShader = `
+const brcosaShader = 
+`
   #ifdef GL_ES
     precision highp float;
   #endif
@@ -13,12 +14,9 @@ const brcosaShader = `
   }
 
   void main() {
-    // u9 = cont
-    // u10 = saturation
-    // u11 = hue
-    float u_9 = 1.0;
-    float u_10 = 1.0;
-    float u_11 = 6.26;
+    float u_9 = 1.0; // contrast
+    float u_10 = 1.0; // saturation
+    float u_11 = 6.26; // hue
 
     vec2 st = gl_FragCoord.xy / (u_resolution);
     vec2 uv = st;
@@ -38,4 +36,4 @@ const brcosaShader = `
   }
 `
 
-export { brcosaShader }
+export default brcosaShader

@@ -1,17 +1,18 @@
-const fbxShader = `
+const fbxShader = 
+`
   #ifdef GL_ES
     precision highp float;
   #endif
 
-  uniform vec2 u_resolution; //The width and height of our screen
-  uniform sampler2D bufferTexture; //Our input texture
+  uniform vec2 u_resolution; 
+  uniform sampler2D bufferTexture; // input texture
   uniform sampler2D drawTexture;
 
   void main() {
     float u_12 = 0.211;
     float u_13 = 0.0988;
-    float u_14 = 0.104;
-    float u_15 = 1.0;
+    float u_14 = 0.205;
+    float u_15 = 1.0005;
 
 
     vec2 st = gl_FragCoord.xy / (u_resolution);
@@ -27,4 +28,4 @@ const fbxShader = `
   }
 `
 
-export { fbxShader }
+export default fbxShader
