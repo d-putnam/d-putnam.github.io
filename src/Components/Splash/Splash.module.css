@@ -1,3 +1,17 @@
+.Splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Splash > div {
+  width: 25.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,7 +19,7 @@
   justify-content: center;
 
   width: 22.5rem;
-  min-height: 100vh;
+  height: calc(100vh - 18px);
   margin-left: auto;
   margin-right: auto;
 
@@ -19,7 +33,7 @@
   font-weight: bold;
   -webkit-text-stroke: 0.25px rgba(0, 0, 0, 0.8);
   width: fit-content;
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 .logo {
@@ -34,12 +48,15 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.2rem;
+  position: relative;
 }
 
 .linkWrap {
   width: 100%;
+  margin-top: -2px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -57,15 +74,16 @@
 
   .linkInnerWrap {
     margin-top: 2rem;
+    margin-left: -2px;
     flex-direction: column;
   }
 }
 
-.linkWrap > div > div {
-  width: 6rem;
-}
+
 
 .linkItem {
+  position:relative;
+  width: 6rem;
   font-size: 22pt;
   padding: 2px;
   line-height: 1.2;
@@ -75,17 +93,73 @@
   height: 2.4rem;
 }
 
+.linkItemInnerWrap {
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  isolation: isolate;
+}
+
+
+.logoHover, .linkItem:hover {
+  background-size: 150% 150%;
+  -webkit-animation: GradientSwirl 1s ease infinite;
+  -moz-animation: GradientSwirl 1s ease infinite;
+  -o-animation: GradientSwirl 1s ease infinite;
+  animation: GradientSwirl 1s ease infinite;
+}
 .linkItem:hover {
-  text-decoration-thickness: 3px;
-  text-decoration-color: white;
-  /*text-decoration-line: line-through;*/
+  background-image: linear-gradient(to right, rgb(90 90 90 / 40%), rgb(89 219 116 / 40%));
+}
+@keyframes GradientSwirl {
+  0%{background-position:0% 50%}
+  50%{background-position:80% 30%}
+  100%{background-position:0% 50%}
+}
+
+.linkText {
+  color: rgb(0,255,0);
+  mix-blend-mode: screen;
+  position:relative;
+  z-index: -1;
+}
+.linkTextBefore, .linkTextAfter {
+  /*content: attr(title);*/
+  position: absolute;
+  mix-blend-mode: screen;
+  transition: all 0.25s;
+  /*-webkit-text-stroke: 0.25px rgba(0, 0, 0, 0.4);*/
+}
+
+.linkTextBefore {
+  color: rgb(0,0,255);
+  z-index: -1;
+}
+.itemHover:hover .linkItem .linkItemInnerWrap .linkTextBefore {
+  transform: translate(-2px, -1px);
+}
+
+.linkTextAfter {
+  color: rgb(255,0,0);
+  right: 0;
+  z-index: -1;
+}
+.itemHover:hover .linkItem .linkItemInnerWrap .linkTextAfter {
+  transform: translate(2px, 1px);
+} 
+
+
+.itemHover > div {
+  height: 2.98rem;
+  overflow: hidden;
 }
 
 
 /* SVG 'trees' */
 
 .treeHoriz {
-  width: 70%;
+  width: 71%;
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
 }
@@ -110,7 +184,7 @@
   }
   .treeVert {
     display: block;
-    height: 11.9rem;
+    height: 12.6rem;
     stroke-dasharray: 600;
     stroke-dashoffset: 600;
   }
@@ -153,7 +227,7 @@
   
   .textGlitch:before,
   .textGlitch:after{
-    content: attr(title);
+    content: attr(data-text);
     position: absolute;
   }
   .textGlitch:before{

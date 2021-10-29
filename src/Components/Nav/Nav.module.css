@@ -1,100 +1,98 @@
+.Nav {
+  margin-top: 8rem;
+  float: left;
+  position: absolute;
+}
+
 .container {
+  left: 0;
+  width: 2.9rem;
+  float:left;
+  color: rgba(255, 255, 255, 0.95);
+}
+.container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  left: 0;
-  margin-top: 10%;
-  width:fit-content;
-  float:left;
-
-  font-size: calc(10px + 2vmin);
-  color: rgba(255, 255, 255, 0.95);
+  gap: 1rem;
 }
 
+.navIconSVG {
+  fill: rgb(0,255,0);
+  mix-blend-mode: screen;
+  position:relative;
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(-1px 1px 0px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(1px -1px 0px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(-1px -1px 0px rgba(0, 0, 0, 0.5));
+}
+
+.navIconSVGBefore, .navIconSVGAfter {
+  mix-blend-mode: screen;
+  position: absolute;
+  mix-blend-mode: screen;
+  transition: all 0.25s;
+}
+.navIconSVGBefore{
+  fill: rgb(0,0,255);
+}
+.navIconSVGAfter{
+  fill: rgb(255,0,0);
+}
+.itemWrap:hover .navIconSVGBefore {
+  transform: translate(-2px, -1px);
+}
+.itemWrap:hover .navIconSVGAfter {
+  transform: translate(2px, 1px);
+} 
 
 .logo, .linkItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Days One', sans-serif;  
   font-weight: bold;
   -webkit-text-stroke: 0.25px rgba(0, 0, 0, 0.8);
-  width: fit-content;
-  border: 2px solid white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid white;
+  line-height: 1.2;
+  border: 3px solid rgba(255,255,255,0.9);
+  font-size: 1.8rem;
 }
 
 .logo {
-  line-height: 1.2;
-  padding: 2px;
-  border: 2px solid rgba(255,255,255,0.9);
   background-image: linear-gradient(to right, rgb(228 80 255 / 20%), rgb(44 195 251 / 15%));
 }
 
-
-
-
 .linkItem {
-  font-size: 22pt;
-  padding: 2px;
-  line-height: 1.2;
   background-image: linear-gradient(to right, rgb(90 90 90 / 28%), rgb(89 219 116 / 28%));
 }
-.linkItem > div {
-  height: 2.4rem;
+.linkItem > div, .logo > div {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.itemWrap > div {
+  height: 3rem;
+  overflow: hidden;
 }
 
+.logo:hover, .linkItem:hover {
+  background-size: 150% 150%;
+  -webkit-animation: GradientSwirl 1s ease infinite;
+  -moz-animation: GradientSwirl 1s ease infinite;
+  -o-animation: GradientSwirl 1s ease infinite;
+  animation: GradientSwirl 1s ease infinite;
+}
+.logo:hover{
+  background-image: linear-gradient(to right, rgb(228 80 255 / 30%), rgb(44 195 251 / 25%));
+}
 .linkItem:hover {
-  text-decoration-thickness: 3px;
-  text-decoration-color: white;
-  /*text-decoration-line: line-through;*/
+  background-image: linear-gradient(to right, rgb(90 90 90 / 40%), rgb(89 219 116 / 40%));
 }
-
-
-/* SVG 'trees' */
-
-.treeHoriz {
-  width: 70%;
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
+@keyframes GradientSwirl {
+  0%{background-position:0% 50%}
+  50%{background-position:80% 30%}
+  100%{background-position:0% 50%}
 }
-.treeHorizFirst {
-  animation: tree-draw-horiz 6s linear 0.2s forwards;
-}
-.treeHorizSecond {
-  animation: tree-draw-horiz 1.5s linear 0.5s forwards;
-}
-@keyframes tree-draw-horiz {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.treeVert {
-  display: none;
-}
-@media screen and (max-width: 414px) {
-  .treeHoriz {
-    display: none;
-  }
-  .treeVert {
-    display: block;
-    height: 11.9rem;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
-  }
-  .treeVertFirst {
-    animation: tree-draw-vert 2s linear forwards;
-  }
-  .treeVertSecond {
-    animation: tree-draw-vert 2s linear 1s forwards;
-  }
-  .treeVertThird { 
-    animation: tree-draw-vert 2s linear 1.3s forwards;
-  }
-  @keyframes tree-draw-vert {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-}
-
-

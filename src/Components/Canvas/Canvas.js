@@ -18,7 +18,8 @@ class Canvas extends Component {
     }
     this.state = {
       width: w, 
-      height: h
+      height: h,
+      uniforms: [1.0, 127.28, 42.53, 63.4],
     }
   }
 
@@ -35,6 +36,10 @@ class Canvas extends Component {
     window.removeEventListener('resize', this.handleWindowResize);
     window.cancelAnimationFrame(this.requestID);
     this.controls.dispose();
+  }
+
+  componentDidUpdate() {
+    this.updateUniforms();
   }
 
   handleWindowResize = () => {
@@ -77,7 +82,11 @@ class Canvas extends Component {
     this.drawMaterial = new THREE.ShaderMaterial({
       uniforms: {
         u_resolution: {value: {x: this.state.width, y: this.state.height}},
-        u_time: {value: this.now}
+        u_time: {value: this.now},
+        u_0: {value: this.state.uniforms[0]},
+        u_1: {value: this.state.uniforms[1]},
+        u_2: {value: this.state.uniforms[2]},
+        u_3: {value: this.state.uniforms[3]},
       },
       fragmentShader: fragShader
     });
@@ -154,11 +163,64 @@ class Canvas extends Component {
     this.requestID = window.requestAnimationFrame(this.startAnimationLoop);
   };
 
+  sliderHandler = (e) => {
+    let target = Number(e.target.dataset.target);
+    let uniforms = this.state.uniforms.map(u => u);
+    uniforms[target] = Number(e.target.value);
+    this.setState({uniforms: uniforms})
+  }
+
+  updateUniforms = () => {
+    for (let i=0; i<4; i++) {
+      let target = 'u_' + i;
+      let value = this.state.uniforms[i];
+      this.drawMaterial.uniforms[target] = {value: value};
+    }
+  }
+
   render() {
     return (
       <div className="Canvas-wrap">
         <div className={styles.Canvas} ref={ref => (this.mount = ref)} />
         <div className={styles.gradient} />
+        <div className={styles.controls}>
+          <input className={styles.slider}
+            type="range" 
+            min = {0}
+            max = {30}
+            step = {0}
+            data-target = '0'
+            value = {this.state.uniforms[0]} 
+            onChange = {this.sliderHandler} 
+          />
+          <input className={styles.slider}
+            type="range" 
+            min = {100}
+            max = {130}
+            step = {0}
+            data-target = '1'
+            value = {this.state.uniforms[1]} 
+            onChange = {this.sliderHandler} 
+          />                
+          <input className={styles.slider}
+            type="range" 
+            min = {30}
+            max = {100}
+            step = {0}
+            data-target = '2'
+            value = {this.state.uniforms[2]} 
+            onChange = {this.sliderHandler} 
+          />
+          <input className={styles.slider}
+            type="range" 
+            min = {30}
+            max = {100}
+            step = {0}
+            data-target = '3'
+            value = {this.state.uniforms[3]} 
+            onChange = {this.sliderHandler} 
+          />
+        </div>
       </div>
     );
   }
