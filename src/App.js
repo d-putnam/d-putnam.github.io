@@ -5,20 +5,18 @@ import Canvas from './Components/Canvas/Canvas.js';
 import Splash from './Components/Splash/Splash.js';
 import Nav from './Components/Nav/Nav.js';
 import About from './Components/About/About.js';
-import Code from './Components/Code/Code.js';
+import Contact from './Components/About/Contact.js';
 import Video from './Components/Video/Video.js';
+import Code from './Components/Code/Code.js';
 import Project from './Components/Project/Project.js';
 import projectData from './projectData.js'
 import './App.css';
-
-import Contact from './Components/About/Contact.js';
 
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    console.log(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))
     this.state = {
       fxDisabled: /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
     }
@@ -53,9 +51,9 @@ class App extends Component {
                 <Code fxDisabled={this.state.fxDisabled} />
               </Route>
               {
-                projectData.map(project => (
+                projectData.map((project, i) => (
                   <Route key={project.name} path={project.path}>
-                    <Project project={project} />
+                    <Project project={project} key={i}/>
                   </Route>
                 ))
               }

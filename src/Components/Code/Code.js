@@ -8,8 +8,8 @@ const Code = (props) => (
   <div className={styles.Code}>
     <GlitchClip iterationCount="1" disabled={props.fxDisabled}>
       <div className={styles.cardWrap}>
-        {projectData.map(project => (
-          <div className={styles.card}>
+        {projectData.map((project, i) => (
+          <div className={styles.card} key={i}>
             <Link to={project.path}>
               <div className={styles.crt}>
                 <img className={styles.thumbnail} alt={project.name} src={project.thumbPath} />

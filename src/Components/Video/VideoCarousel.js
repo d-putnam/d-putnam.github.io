@@ -11,10 +11,8 @@ function VideoSlide (props) {
               title={props.title} 
               id={props.title} 
               allow="autoplay; fullscreen; picture-in-picture" 
-              frameborder="0" 
-              allowfullscreen
-              mozallowfullscreen
-              webkitallowfullscreen />
+              frameBorder="0" 
+              />
     </div>
   )
 };
@@ -23,16 +21,12 @@ const onChange = (res) => {
   if (document.querySelector(`#video${res-1}`)) {
     const previousVideo = document.querySelector(`#video${res-1}`)
     let player = new Player(previousVideo);
-    player.pause().then(function() {
-      console.log(`paused #video${res-1}`)
-    })
+    player.pause()
   }
   if (document.querySelector(`#video${res+1}`)) {
     const nextVideo = document.querySelector(`#video${res+1}`)
     let player = new Player(nextVideo);
-    player.pause().then(function() {
-      console.log(`paused #video${res+1}`)
-    })
+    player.pause()
   }
 }
 
@@ -45,7 +39,7 @@ function VideoCarousel(props) {
         {
           props.vids.map((vid, i) => {
             return (
-              <VideoSlide url={vid} title={`video${i}`} />
+              <VideoSlide url={vid} title={`video${i}`} key={i} />
             )
           }
           )
