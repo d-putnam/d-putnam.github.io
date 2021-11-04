@@ -1,7 +1,13 @@
 .Nav {
-  margin-top: 8rem;
+  padding-top: 16vh;
   float: left;
-  position: absolute;
+  /*position: absolute;*/
+  width: fit-content;
+}
+@media screen and (max-height: 300px) and (min-width: 500px) {
+  .Nav {
+    padding-top: 6vh;
+  }
 }
 
 .container {
@@ -13,15 +19,21 @@
 .container > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 1rem;
+  /*gap: 1rem;*/
+}
+.container > div > a {
+  margin-bottom: 1rem;
 }
 
+
 .navIconSVG {
-  fill: rgb(0,255,0);
+  fill: rgba(0,255,0,0.9);
   mix-blend-mode: screen;
   position:relative;
+  z-index:5;
+  backface-visibility: hidden;
   filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5)) 
           drop-shadow(-1px 1px 0px rgba(0, 0, 0, 0.5)) 
           drop-shadow(1px -1px 0px rgba(0, 0, 0, 0.5)) 
@@ -31,21 +43,23 @@
 .navIconSVGBefore, .navIconSVGAfter {
   mix-blend-mode: screen;
   position: absolute;
-  mix-blend-mode: screen;
   transition: all 0.25s;
+  backface-visibility: hidden
 }
 .navIconSVGBefore{
-  fill: rgb(0,0,255);
+  fill: rgba(0,0,255,0.9);
 }
 .navIconSVGAfter{
-  fill: rgb(255,0,0);
+  fill: rgba(255,0,0,0.9);
 }
-.itemWrap:hover .navIconSVGBefore {
+.Link:hover .navIconSVGBefore {
   transform: translate(-2px, -1px);
 }
-.itemWrap:hover .navIconSVGAfter {
+.Link:hover .navIconSVGAfter {
   transform: translate(2px, 1px);
 } 
+
+
 
 .logo, .linkItem {
   display: flex;
@@ -56,26 +70,32 @@
   -webkit-text-stroke: 0.25px rgba(0, 0, 0, 0.8);
   width: 2.5rem;
   height: 2.5rem;
-  border: 3px solid white;
   line-height: 1.2;
-  border: 3px solid rgba(255,255,255,0.9);
+  border: 2px solid rgb(219, 219, 239);
+  border-radius: 5px;
   font-size: 1.8rem;
 }
 
 .logo {
-  background-image: linear-gradient(to right, rgb(228 80 255 / 20%), rgb(44 195 251 / 15%));
+  background-image: var(--blue-purple-gradient);
 }
 
 .linkItem {
-  background-image: linear-gradient(to right, rgb(90 90 90 / 28%), rgb(89 219 116 / 28%));
+  background-image: var(--green-gradient)
 }
 .linkItem > div, .logo > div {
   height: 2.5rem;
   width: 2.5rem;
 }
+
+/* itemWrap>div includes crt effect*/
 .itemWrap > div {
-  height: 3rem;
+  height: 2.8rem;
   overflow: hidden;
+  background: var(--crt-background);
+  z-index: 3;
+  background-size: var(--crt-size);
+  border-radius: 5px;
 }
 
 .logo:hover, .linkItem:hover {
@@ -85,10 +105,10 @@
   -o-animation: GradientSwirl 1s ease infinite;
   animation: GradientSwirl 1s ease infinite;
 }
-.logo:hover{
+.Link:hover .logo{
   background-image: linear-gradient(to right, rgb(228 80 255 / 30%), rgb(44 195 251 / 25%));
 }
-.linkItem:hover {
+.Link:hover .linkItem {
   background-image: linear-gradient(to right, rgb(90 90 90 / 40%), rgb(89 219 116 / 40%));
 }
 @keyframes GradientSwirl {

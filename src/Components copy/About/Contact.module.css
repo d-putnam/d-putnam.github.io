@@ -1,0 +1,187 @@
+.Contact, .confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+  height: calc(100vh - 18px);
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white);
+  font-family: 'Fira Code', Menlo, monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.confirmation .words > div {
+  margin-bottom: 1rem;
+}
+
+.Contact > div {
+  width: 80%;
+  min-width: 22rem;
+  max-width: 26rem;
+}
+.content {
+  background-image: var(--dark-grey-gradient);
+  /*background-color: var(--dark-grey);*/
+  border: 2px solid var(--white);
+  height: fit-content;
+}
+.content, .crt {
+  border-radius:30px;
+}
+.words {
+  mix-blend-mode: color-dodge;
+}
+
+
+.crt {
+  background: var(--crt-background);
+  background-size: var(--crt-size);
+  z-index: 2;
+  padding: 1.5rem;
+}
+
+.highlight {
+  background-color: var(--amber);
+  color: var(--dark-text);
+  mix-blend-mode: color-dodge;
+}
+
+
+.highlightWhite {
+  background-color: var(--white-alpha);
+  color: var(--dark-text);
+  mix-blend-mode: color-dodge;
+}
+
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white);
+  font-family: 'Fira Code', Menlo, monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.Contact h2 {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.Contact form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Contact input, .Contact textarea {
+  background-color: transparent;
+  color: var(--white);
+  font-weight: bolder;
+  font-family: 'Fira Code', Menlo, monospace;
+  mix-blend-mode: color-dodge;
+}
+.Contact input {
+  /*text-align: right;*/
+  padding-left: 0.25rem;
+  width: 100%;
+  /*width: 5rem;*/
+}
+.inputWrap {
+  flex-basis: calc(100% - 7.5rem);
+}
+.email {
+  width: 17.84rem;
+  margin-bottom: 1rem;
+}
+.Contact textarea {
+  width: 100%;
+  height: 6rem;
+  min-height: 4rem;
+  max-height: 20rem;
+  padding-top: 0.25rem;
+  resize:vertical;
+}
+
+.Contact button {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Fira Code', Menlo, monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-color: rgb(155, 157, 170)
+}
+
+
+.windowClose {
+  float:right;
+  position:absolute;
+  top:10px;
+  right:5px;
+  mix-blend-mode: color-dodge;
+  fill: var(--white-alpha);
+  stroke: var(--white-alpha);
+  mix-blend-mode: color-dodge;
+}
+
+.smile, .smileAfter, .smileBefore {
+  transform-box: fill-box;
+  transform-origin:50% 50%;
+  fill: var(--white);
+  stroke: var(--white);
+  stroke-width: 0;
+}
+.smile {
+  animation: spin 8s linear infinite;
+}
+.smileBefore {
+  animation: spin 13s linear infinite;
+}
+.smileAfter {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% {  transform: rotate(359deg); }
+}
+
+
+
+
+
+.content {
+  animation: skewWave 7s linear infinite;
+  transform: skew(1deg, 1deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes skewWave{
+    0%{
+      transform: skew(0deg, 0deg);
+    }
+    25%{
+      transform: skew(0.2deg, 0.2deg);
+    }
+    50%{
+      transform: skew(0deg, 0deg); 
+    }
+    75%{
+      transform: skew(-0.2deg, -0.2deg);
+    }
+    100%{
+      transform: skew(0deg, 0deg); 
+    }
+  }
+}

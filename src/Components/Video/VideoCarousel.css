@@ -1,0 +1,40 @@
+/* from inside carousel import */
+.carousel-root {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item-wrapper {
+  position: relative;
+  padding-top: 69%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.carousel-status {
+  display: none
+}
+
+.carousel.carousel-slider {
+  overflow: visible
+}
+
+.carousel .control-dots {
+  margin: -18px 0px
+}
+
+.carousel .control-prev.control-arrow {
+  left: 13px;
+}
+
+.carousel .control-next.control-arrow {
+  right: 13px;
+}
+
+.carousel.carousel-slider .control-arrow {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none;
+}
