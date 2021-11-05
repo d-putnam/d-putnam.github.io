@@ -1,8 +1,8 @@
 .Contact, .confirmation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
 
   width: 80%;
   height: calc(100vh - 18px);
@@ -14,15 +14,19 @@
   font-weight: 600;
   font-size: 0.9rem;
 }
-.confirmation .words > div {
-  margin-bottom: 1rem;
-}
 
 .Contact > div {
+  margin: auto;
   width: 80%;
   min-width: 22rem;
   max-width: 26rem;
 }
+
+.confirmation .words > div {
+  margin-bottom: 1rem;
+}
+
+
 .content {
   background-image: var(--dark-grey-gradient);
   /*background-color: var(--dark-grey);*/
@@ -135,6 +139,8 @@
   stroke: var(--white-alpha);
   mix-blend-mode: color-dodge;
 }
+
+
 
 .smile, .smileAfter, .smileBefore {
   transform-box: fill-box;

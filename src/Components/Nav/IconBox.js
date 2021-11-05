@@ -8,22 +8,22 @@ const IconBox = (props) =>
         <div className={(props.title === 'home') ? styles.logo : styles.linkItem} title={props.title}>
           <svg className={styles.navIconSVG} viewBox="0 0 1024 1024" height="1em" width="1em">
             {
-              props.d.map(path => {
-                return <path d={path} key={path} />
+              props.d.map((path, i) => {
+                return <path d={path} key={i} />
               })
             }          
           </svg>     
           <svg className={styles.navIconSVGBefore} viewBox="0 0 1024 1024" height="1em" width="1em">
             {
-              props.d.map(path => {
-                return <path d={path} key={path} />
+              props.d.map((path, i) => {
+                return <path d={path} key={i} />
               })
             }
           </svg>  
           <svg className={styles.navIconSVGAfter} viewBox="0 0 1024 1024" height="1em" width="1em">
             {
-              props.d.map(path => {
-                return <path d={path} key={path} />
+              props.d.map((path, i) => {
+                return <path d={path} key={i} />
               })
             }    
           </svg>           

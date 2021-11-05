@@ -14,8 +14,9 @@ const Project = (props) => {
               <div>
                 {
                   <img src={props.project.imgPath} 
-                      className={styles.projImg}
-                      alt={`${props.project.name} preview`} />
+                       className={styles.projImg}
+                       alt={props.project.name} 
+                  />
                 }
               </div>
             }
@@ -25,6 +26,17 @@ const Project = (props) => {
                     props.project.content()
                   }
               </div>
+              {
+                props.project.iframe && 
+                <div className={styles.iframeContainer}>
+                  <iframe src={props.project.iframe} 
+                          title={props.project.name} 
+                          id={props.project.name} 
+                          allow="fullscreen" 
+                          frameBorder="0"
+                  />
+                </div>
+              }
             </div>
           </div>
         </GlitchClip>

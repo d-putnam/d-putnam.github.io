@@ -10,7 +10,7 @@ function VideoSlide (props) {
       <iframe src={props.url} 
               title={props.title} 
               id={props.title} 
-              allow="autoplay; fullscreen; picture-in-picture" 
+              allow="fullscreen" 
               frameBorder="0" 
               />
     </div>

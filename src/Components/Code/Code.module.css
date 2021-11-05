@@ -1,8 +1,8 @@
 .Code {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
 
   width: 85%;
   height: calc(100vh - 18px);
@@ -17,6 +17,7 @@
   isolation:isolate;
 }
 .Code > div {
+  margin: auto;
   width: 100%;
 }
 
