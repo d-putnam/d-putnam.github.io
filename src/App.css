@@ -56,7 +56,14 @@ input[type="range"]:disabled {
   background-color: var(--amber);
   color: var(--dark-text);
   mix-blend-mode: color-dodge;
+  display:inline-block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .projectLink:hover {
   color: var(--white)
+}
+.or {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }

@@ -23,10 +23,10 @@ const projectData = [
         </p>
         <p>
           <a href="https://dputnam.net/uwuVS/" target="blank" className="projectLink">
-            &nbsp;Try it out here </a>
-          &nbsp;or&nbsp;
+            Try it out here</a>
+          <span className="or">or</span>
           <a href="https://github.com/d-putnam/uwuVS"     
-          target="blank" className="projectLink"> view the source code&nbsp;</a>
+          target="blank" className="projectLink">view the source code</a>
         </p>
         <p>
           Below you can find a short demo in which uwu-VS is modulated by a quadrature MIDI LFO sent from Max/MSP.
@@ -64,10 +64,10 @@ const projectData = [
         <p>
             <a href="https://dputnam.net/polymtr/" target="blank" 
                className="projectLink">
-              &nbsp;Try it out here </a> 
-            &nbsp;or&nbsp;
+              Try it out here</a> 
+            <span className="or">or</span>
             <a href="https://github.com/d-putnam/polymtr" target="blank" 
-               className="projectLink"> view the source code&nbsp;
+               className="projectLink">view the source code
             </a>
         </p>
       </div>
@@ -97,10 +97,10 @@ const projectData = [
         <p>
           <a href="https://dputnam.net/tessellations/" target="blank" 
              className="projectLink">
-            &nbsp;Check it out here </a>
-          &nbsp;or&nbsp;
+            Check it out here</a>
+          <span className="or">or</span>
           <a href="https://github.com/d-putnam/tessellations" target="blank" 
-             className="projectLink"> view the source code&nbsp;
+             className="projectLink">view the source code
           </a>
         </p>
       </div>
@@ -134,10 +134,10 @@ const projectData = [
       <p>
         <a href="https://dputnam.net/gradient-mkr/" target="blank" 
            className="projectLink">
-          &nbsp;Try it out here </a>
-        &nbsp;or&nbsp; 
+          Try it out here</a>
+        <span className="or">or</span> 
         <a href="https://github.com/d-putnam/gradient-mkr" target="blank" 
-           className="projectLink"> view the source code&nbsp;
+           className="projectLink">view the source code
         </a>
       </p>
     </div>     
@@ -222,7 +222,7 @@ const projectData = [
         </p>
         <a href="https://www.dropbox.com/s/zbs5qqj7nl9029c/CVX-1%20Video%20Processor.zip?dl=0" 
            target="blank" 
-           className="projectLink">&nbsp;download macOS app (via dropbox)&nbsp;</a>
+           className="projectLink">download macOS app (via dropbox)</a>
       </div>
     )}
   },

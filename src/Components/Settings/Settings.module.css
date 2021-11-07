@@ -17,7 +17,11 @@
 .controlsOpen {
   background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 8%), hsl(100deg 41% 31%));
   background-size: var(--crt-size);
-  
+}
+@media only screen and (max-width: 414px) {
+  .controls, .controlsOpen {
+    display: none;
+  }
 }
 
 .hundo {

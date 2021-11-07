@@ -34,7 +34,8 @@ const About = (props) => {
               </div>
               <Link to={'/contact'} title="contact me">
                 <span className={styles.contactLink}>
-                  let's talk {`=>`}&nbsp;<span className={styles.highlight}>&nbsp;dan@dputnam.net&nbsp;</span>
+                  <span style={{lineBreak: 'anywhere'}}>let's talk {`=>`}&nbsp;</span>
+                  <span className={styles.highlight}>&nbsp;dan@dputnam.net&nbsp;</span>
                 </span>
               </Link>
             </div>

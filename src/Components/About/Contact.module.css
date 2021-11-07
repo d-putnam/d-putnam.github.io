@@ -1,10 +1,7 @@
 .Contact, .confirmation {
   display: flex;
   flex-direction: column;
-  /*align-items: center;
-  justify-content: center;*/
 
-  width: 80%;
   height: calc(100vh - 18px);
   margin-left: auto;
   margin-right: auto;
@@ -13,6 +10,14 @@
   font-family: 'Fira Code', Menlo, monospace;
   font-weight: 600;
   font-size: 0.9rem;
+}
+.Contact {
+  width: 80%;
+}
+.confirmation {
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .Contact > div {
@@ -189,5 +194,22 @@
     100%{
       transform: skew(0deg, 0deg); 
     }
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .Contact {
+    width: 95%;
+    height: calc(100vh - 4rem);
+  }
+  .confirmation {
+    height: calc(100vh - 4rem);
+  }
+  .Contact > div {
+    margin: auto;
+    width: 95%;
+    min-width: 15rem;
+    max-width: none;
   }
 }

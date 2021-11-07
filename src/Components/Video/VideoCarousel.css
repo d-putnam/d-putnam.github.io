@@ -5,6 +5,7 @@
   margin-right: auto;
 }
 
+
 .carousel-item-wrapper {
   position: relative;
   padding-top: 69%; /* Player ratio: 100 / (1280 / 720) */
@@ -37,4 +38,13 @@
 
 .carousel.carousel-slider .control-arrow:hover {
   background: none;
+}
+
+
+@media only screen and (max-width: 414px) {
+  .carousel-root {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
 }

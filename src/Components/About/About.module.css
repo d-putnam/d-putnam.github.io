@@ -17,6 +17,7 @@
 .About > div {
   margin: auto;
 }
+
 .flexCol {
   display: flex;
   flex-direction: column;
@@ -148,5 +149,16 @@ a {
     100%{
       transform: skew(0deg, 0deg); 
     }
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .About {
+    width: 90%;
+    height: calc(100vh - 4rem);
+  }
+  .crt {
+    padding: 1rem;
   }
 }

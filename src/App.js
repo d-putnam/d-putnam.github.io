@@ -4,6 +4,7 @@ import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import Canvas from './Components/Canvas/Canvas.js';
 import Splash from './Components/Splash/Splash.js';
 import Nav from './Components/Nav/Nav.js';
+import MobileNav from './Components/Nav/MobileNav.js';
 import About from './Components/About/About.js';
 import Contact from './Components/About/Contact.js';
 import Video from './Components/Video/Video.js';
@@ -47,6 +48,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <Nav fxDisabled={this.state.fxDisabled} />
+          <MobileNav fxDisabled={this.state.fxDisabled} />
           <GlitchSquiggly baseFrequency={0.32} scaleNoise={0.8} duration={400} disabled={this.state.fxDisabled}>
             <Switch>
               <Route exact path="/">

@@ -1,4 +1,4 @@
-.Project, .confirmation {
+.Project {
   display: flex;
   flex-direction: column;
   /*align-items: center;
@@ -115,5 +115,19 @@
     100%{
       transform: skew(0deg, 0deg); 
     }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .Project {
+    width: 95%;
+    height: auto;
+  }
+  .Project > div {
+    width: 100%;
+  }
+  .content {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
   }
 }
