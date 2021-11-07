@@ -6,6 +6,7 @@
 
   width: 85%;
   height: calc(100vh - 18px);
+  /*height: 100vh;*/
   margin-left: auto;
   margin-right: auto;
 
@@ -13,6 +14,8 @@
   font-family: 'Fira Code', Menlo, monospace;
   font-weight: 600;
   font-size: 0.9rem;
+
+  z-index: 200;
 
   isolation:isolate;
 }

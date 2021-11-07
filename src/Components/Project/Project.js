@@ -28,7 +28,7 @@ const Project = (props) => {
               </div>
               {
                 props.project.iframe && 
-                <div className={styles.iframeContainer}>
+                <div className={styles.iframeContainer} style={{paddingTop: props.project.iframeRatio+'%'}}>
                   <iframe src={props.project.iframe} 
                           title={props.project.name} 
                           id={props.project.name} 

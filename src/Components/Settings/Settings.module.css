@@ -1,0 +1,146 @@
+.controls, .controlsOpen {
+  display:flex;
+  position: absolute;
+  justify-content: flex-end;
+  bottom: 0;
+  right: 0;
+
+  overflow: hidden;
+  /*height:2rem;*/
+  height:34px;
+
+  color: var(--white);
+  font-family: 'Fira Code', Menlo, monospace;
+  font-weight:normal;
+  z-index: 0;
+}
+.controlsOpen {
+  background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 8%), hsl(100deg 41% 31%));
+  background-size: var(--crt-size);
+  
+}
+
+.hundo {
+  width: 100%;
+}
+.controlWrapWrap {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.crt {
+  background: var(--crt-background);
+  background-size: var(--crt-size);
+}
+.controlWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /*gap: 1.5rem;*/
+  flex-basis: 100%;
+  font-size: 0.9rem;
+  max-width: 55rem;
+  opacity: 0.75;
+  z-index: 1;
+}
+.labelWrap {
+  /*
+  position: absolute;
+  right: .75rem;
+  bottom: 3px;*/
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 8px;
+  height: 1em;
+}
+.controlLabel {
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  margin-top: 1px;
+}
+
+
+.slider {
+  width: 4rem;
+}
+
+@media only screen and (max-width: 630px) {
+  .slider {
+    display: none;
+  }
+}
+
+
+/* https://codepen.io/noahblon/pen/OyajvN */
+input[type="range"] { 
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 16px;
+  width: 75px;
+  cursor: pointer;
+  border-radius: 2px; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+* 1. Set to 0 width and remove border for a slider without a thumb
+*/
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px; /* 1 */
+  height: 40px;
+  background: #fff;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
+  border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+  height: 40px;
+  background: #ddd;
+}
+
+::-moz-range-thumb {
+  background: #fff;
+  height: 40px;
+  width: 15px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
+  box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+  background: dodgerblue;
+}
+
+::-ms-thumb { 
+  background: #fff;
+  border: 2px solid #999;
+  height: 40px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+  display: none; 
+}
+
+::-ms-ticks-before { 
+  display: none; 
+}
+
+::-ms-track { 
+  background: #ddd;
+  color: transparent;
+  height: 40px;
+  border: none;
+}
+
+::-ms-tooltip { 
+  display: none;
+}

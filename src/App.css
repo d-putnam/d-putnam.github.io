@@ -51,3 +51,12 @@ body {
 input[type="range"]:disabled {
     opacity: 0.35;
 }
+
+.projectLink {
+  background-color: var(--amber);
+  color: var(--dark-text);
+  mix-blend-mode: color-dodge;
+}
+.projectLink:hover {
+  color: var(--white)
+}

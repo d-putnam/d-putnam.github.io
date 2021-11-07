@@ -1,9 +1,12 @@
 .Nav {
-  padding-top: 16vh;
-  float: left;
+  /*padding-top: 16vh;
+  float: left;*/
   /*position: absolute;*/
   width: fit-content;
-
+  position: fixed;
+  top: 16vh;
+  left: 0;
+  z-index: 1000;
 }
 @media screen and (max-height: 300px) and (min-width: 500px) {
   .Nav {
