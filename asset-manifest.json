@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/newsite/static/css/main.32384d8b.chunk.css",
-    "main.js": "/newsite/static/js/main.8ebb0fad.chunk.js",
-    "main.js.map": "/newsite/static/js/main.8ebb0fad.chunk.js.map",
-    "runtime-main.js": "/newsite/static/js/runtime-main.d4d31978.js",
-    "runtime-main.js.map": "/newsite/static/js/runtime-main.d4d31978.js.map",
-    "static/css/2.eac740f3.chunk.css": "/newsite/static/css/2.eac740f3.chunk.css",
-    "static/js/2.b950f3fe.chunk.js": "/newsite/static/js/2.b950f3fe.chunk.js",
-    "static/js/2.b950f3fe.chunk.js.map": "/newsite/static/js/2.b950f3fe.chunk.js.map",
-    "index.html": "/newsite/index.html",
-    "static/css/2.eac740f3.chunk.css.map": "/newsite/static/css/2.eac740f3.chunk.css.map",
-    "static/css/main.32384d8b.chunk.css.map": "/newsite/static/css/main.32384d8b.chunk.css.map",
-    "static/js/2.b950f3fe.chunk.js.LICENSE.txt": "/newsite/static/js/2.b950f3fe.chunk.js.LICENSE.txt",
-    "static/media/pic.d1b261b4.jpg": "/newsite/static/media/pic.d1b261b4.jpg"
+    "main.css": "/d-putnam.github.io/static/css/main.32384d8b.chunk.css",
+    "main.js": "/d-putnam.github.io/static/js/main.c8f5642a.chunk.js",
+    "main.js.map": "/d-putnam.github.io/static/js/main.c8f5642a.chunk.js.map",
+    "runtime-main.js": "/d-putnam.github.io/static/js/runtime-main.67eb7329.js",
+    "runtime-main.js.map": "/d-putnam.github.io/static/js/runtime-main.67eb7329.js.map",
+    "static/css/2.eac740f3.chunk.css": "/d-putnam.github.io/static/css/2.eac740f3.chunk.css",
+    "static/js/2.94c570cd.chunk.js": "/d-putnam.github.io/static/js/2.94c570cd.chunk.js",
+    "static/js/2.94c570cd.chunk.js.map": "/d-putnam.github.io/static/js/2.94c570cd.chunk.js.map",
+    "index.html": "/d-putnam.github.io/index.html",
+    "static/css/2.eac740f3.chunk.css.map": "/d-putnam.github.io/static/css/2.eac740f3.chunk.css.map",
+    "static/css/main.32384d8b.chunk.css.map": "/d-putnam.github.io/static/css/main.32384d8b.chunk.css.map",
+    "static/js/2.94c570cd.chunk.js.LICENSE.txt": "/d-putnam.github.io/static/js/2.94c570cd.chunk.js.LICENSE.txt",
+    "static/media/pic.d1b261b4.jpg": "/d-putnam.github.io/static/media/pic.d1b261b4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d4d31978.js",
+    "static/js/runtime-main.67eb7329.js",
     "static/css/2.eac740f3.chunk.css",
-    "static/js/2.b950f3fe.chunk.js",
+    "static/js/2.94c570cd.chunk.js",
     "static/css/main.32384d8b.chunk.css",
-    "static/js/main.8ebb0fad.chunk.js"
+    "static/js/main.c8f5642a.chunk.js"
   ]
 }
