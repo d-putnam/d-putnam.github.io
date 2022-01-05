@@ -15,8 +15,6 @@ class Settings extends Component {
     this.setState({showControls: !this.state.showControls})
   }
 
-  isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
-
   render() {
     return (
         <div className={this.state.showControls ? styles.controlsOpen : styles.controls} 
@@ -90,34 +88,6 @@ class Settings extends Component {
                   onChange = {this.props.sliderHandler} 
                   disabled={this.props.videoDisabled}
                 />
-                {
-                  !this.isSafari &&
-                  <div className="flex">
-                    <label htmlFor="fx">glitch fx:&nbsp;</label>
-                    <span className={styles.toggle}>
-                      <ToggleButton name="fx"
-                        value={ !this.props.fxDisabled }
-                        thumbStyle={{ borderRadius: 2 }}
-                        trackStyle={{ borderRadius: 2 }}
-                        onToggle={this.props.toggleFX}
-                        colors={{
-                          active: {
-                            base: 'hsl(210deg 100% 28%)',
-                            hover: 'hsl(210deg 100% 28%)'
-                            //base: 'rgb(199 149 0)',
-                            //hover: 'rgb(199 149 0)',
-                          },
-                          activeThumb: {
-                            base: 'rgb(219, 219, 239)',
-                          },
-                          inactiveThumb: {
-                            base: 'rgb(219, 219, 239)',
-                          },
-                        }}
-                      />
-                    </span>
-                  </div>
-                }
               </div>
             </div>
           }

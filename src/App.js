@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import Canvas from './Components/Canvas/Canvas.js';
 import Splash from './Components/Splash/Splash.js';
 import Nav from './Components/Nav/Nav.js';
@@ -21,16 +20,10 @@ class App extends Component {
     super(props);
     this.state = {
       videoDisabled: false,
-      fxDisabled: /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
       uniforms: [6.0, 114, 86, 81],
     }
   }
 
-  toggleFX = (e) => {
-    this.setState({
-      fxDisabled: !this.state.fxDisabled
-    })
-  }
   toggleVideo = (e) => {
     this.setState({
       videoDisabled: !this.state.videoDisabled
@@ -47,24 +40,23 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Nav fxDisabled={this.state.fxDisabled} />
-          <MobileNav fxDisabled={this.state.fxDisabled} />
-          <GlitchSquiggly baseFrequency={0.32} scaleNoise={0.8} duration={400} disabled={this.state.fxDisabled}>
+          <Nav />
+          <MobileNav />
             <Switch>
               <Route exact path="/">
-                <Splash fxDisabled={this.state.fxDisabled} />
+                <Splash />
               </Route>
               <Route className='flex' path="/about">
-                <About fxDisabled={this.state.fxDisabled} />
+                <About />
               </Route>
               <Route className='flex' path="/contact">
-                <Contact fxDisabled={this.state.fxDisabled} />
+                <Contact />
               </Route>
               <Route className='flex' path="/video">
-                <Video fxDisabled={this.state.fxDisabled} />
+                <Video />
               </Route>
               <Route className='flex' exact path="/code">
-                <Code fxDisabled={this.state.fxDisabled} />
+                <Code />
               </Route>
               {
                 projectData.map((project, i) => (
@@ -74,8 +66,7 @@ class App extends Component {
                 ))
               }
             </Switch>
-          </GlitchSquiggly>
-          <Settings uniforms={this.state.uniforms} toggleFX={this.toggleFX} toggleVideo={this.toggleVideo} sliderHandler={this.sliderHandler} fxDisabled={this.state.fxDisabled} videoDisabled={this.state.videoDisabled}/>
+          <Settings uniforms={this.state.uniforms} toggleVideo={this.toggleVideo} sliderHandler={this.sliderHandler} fxDisabled={this.state.fxDisabled} videoDisabled={this.state.videoDisabled}/>
         </Router>
         <Canvas uniforms={this.state.uniforms} videoDisabled={this.state.videoDisabled}  />
       </div>

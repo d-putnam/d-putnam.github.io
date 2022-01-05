@@ -7,12 +7,11 @@ import styles from './Splash.module.css';
 const Splash = (props) => (
 
   <div className={styles.Splash} >
-    <GlitchClip iterationCount="1" duration={9000} disabled={props.fxDisabled}>
       <div className={styles.container}>
         <div className={styles.crt}>
           <div className={styles.logo} alt="logo">
             <div className={styles.logoInnerBorder}>
-              <GlitchClip iterationCount="1" onHover={!props.fxDisabled} disabled={props.fxDisabled}>
+              <GlitchClip iterationCount="1" onHover={true}>
                 <div className={styles.textGlitch} data-text="d_putnam">d_putnam</div>
               </GlitchClip>
             </div>
@@ -31,7 +30,7 @@ const Splash = (props) => (
             </svg>          
           <div className={styles.linkInnerWrap}>
             <Link to={'/code'}>
-              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={!props.fxDisabled} duration={500} disabled={props.fxDisabled}>
+              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={true} duration={500}>
                 <div className={styles.crt}>
                   <div className={styles.linkItem} title="code">
                     <div className={styles.linkItemInnerWrap}>
@@ -44,7 +43,7 @@ const Splash = (props) => (
               </GlitchSquiggly>
             </Link>
             <Link to={'/video'}>
-              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={!props.fxDisabled} duration={500} disabled={props.fxDisabled}>
+              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={true} duration={500}>
                 <div className={styles.crt}>
                   <div className={styles.linkItem} title="video">
                     <div className={styles.linkItemInnerWrap}>
@@ -57,7 +56,7 @@ const Splash = (props) => (
               </GlitchSquiggly>          
             </Link>          
             <Link to={'/about'}>
-              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={!props.fxDisabled} duration={500} disabled={props.fxDisabled}>
+              <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={true} duration={500}>
                 <div className={styles.crt}>
                   <div className={styles.linkItem} title="about">
                     <div className={styles.linkItemInnerWrap}>
@@ -72,7 +71,6 @@ const Splash = (props) => (
           </div>
         </div>
       </div>         
-    </GlitchClip>
   </div>
   
 )

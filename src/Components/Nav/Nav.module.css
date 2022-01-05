@@ -27,7 +27,7 @@
   justify-content: center;
   /*gap: 1rem;*/
 }
-.container > div > a {
+.container > div {
   margin-bottom: 1rem;
 }
 

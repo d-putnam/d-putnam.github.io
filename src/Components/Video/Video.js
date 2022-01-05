@@ -1,4 +1,4 @@
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+//import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import VideoCarousel from './VideoCarousel'
 import styles from './Video.module.css';
 
@@ -14,7 +14,6 @@ const Video = (props) => {
 
   return (
     <div className={styles.Video}>
-      <GlitchClip iterationCount="1" disabled={props.fxDisabled}>
         <div className={styles.content}>
           <div className={styles.crt}>
             <div className={styles.flexCol}>
@@ -36,7 +35,6 @@ const Video = (props) => {
             </div>
           </div>
         </div>
-      </GlitchClip>
     </div>
   );
   
