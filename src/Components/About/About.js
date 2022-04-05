@@ -22,13 +22,10 @@ const About = (props) => {
                 I'm a programmer and media artist living in Providence, Rhode Island.
               </span>
               <span>
-                I have an obscure degree from a fancy school.
+                I have a strange degree from a fancy school.
               </span>
               <span>
                 My interests include synthesis, lost futures, and object-oriented ontology.
-              </span>
-              <span>
-                I used to make music, but now I make websites.
               </span>
             </div>
             <Link to={'/contact'} title="contact me">
