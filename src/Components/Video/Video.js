@@ -22,13 +22,13 @@ const Video = (props) => {
                   Below is a collection of video works created using Max/MSP and OpenGL.
                 </span>
                 <span>
-                  Source footage is mangled through a feedback loop of effects, mapped to a control surface, and manipulated in real-time.
+                  Source footage is mangled through a feedback loop of shader effects and manipulated in real-time using a musical control surface.
                 </span>
                 <span>
-                  The accompanying audio is comprised of modular synthesizer, extended bass guitar, and more feedback.
+                  The audio environments are comprised of modular synthesizer, extended bass guitar, and audio effects in various feedback configurations.
                 </span>
                 <span>
-                  *Photosensitivity warning* frequent strobing effects
+                  Photosensitivity warning - frequent strobing effects
                 </span>
                 <VideoCarousel vids={vids} />
               </div>

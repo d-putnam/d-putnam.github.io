@@ -77,7 +77,7 @@ const projectData = [
 
 
   {
-    "name": "DZ-Looper",
+    "name": "DZ-Looper: image to video",
     "path": "/code/dzlooper",
     "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
     "imgPath" : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
@@ -92,8 +92,8 @@ const projectData = [
           DZ-Looper is a macOS app, written in Swift, for stitching together a set of still images into looping video content.
         </p> 
         <p>
-          I began this project to overcome a limitation of Adobe Media Encoder in which still image duration cannot be changed. 
-          Adobe Premiere handles this task well, but is a heavy app with long loading times unsuitable to the task.
+          I began this project to overcome a limitation of Adobe Media Encoder in which still image duration is fixed. 
+          Adobe Premiere and AfterEffects handle this task well, but they are heavy apps with long loading times unsuitable to this simple task.
         </p>
         <p>
           Early versions of this project relied on the FFmpeg library, but it is now fully written using the macOS SDK.
@@ -149,7 +149,7 @@ const projectData = [
     )}
   },
 
-  
+
 
   {
     "name": "Tessellation Studies: SVG animations",
