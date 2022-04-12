@@ -7,10 +7,11 @@
 .MobileNavOpen {
   height: 14rem;
   text-align:right;
-  background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 8%), hsl(100deg 41% 31%));
+  background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 8%), hsl(280deg 2% 28%));
   background-size: var(--crt-size);
   margin-left: auto;
   z-index: 1000;
+  opacity: 0.75;
 }
 
 .mobileToggle{
