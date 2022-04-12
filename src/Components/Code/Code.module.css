@@ -58,6 +58,8 @@
   margin-bottom: 1.5rem;
   width: 100%;
   max-width: 40rem;
+  transform: skew(.1deg, .1deg);
+
 }
 .card:hover, .card:focus-within {
   border: 2px solid var(--amber);

@@ -25,7 +25,9 @@
   /*background-color: var(--dark-grey);*/
   border: 2px solid var(--white);
   height: fit-content;
+  transform: skew(.1deg, .1deg);
 }
+
 .content, .crt {
   border-radius:50px;
 }

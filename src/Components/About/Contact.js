@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useForm, ValidationError } from '@formspree/react';
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import styles from './Contact.module.css';
 
 

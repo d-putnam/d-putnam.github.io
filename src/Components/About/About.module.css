@@ -128,30 +128,8 @@ a {
 
 
 .content {
-  animation: skewWave 7s linear infinite;
-  transform: skew(1deg, 1deg);
+  transform: skew(.1deg, .1deg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  @keyframes skewWave{
-    0%{
-      transform: skew(0deg, 0deg);
-    }
-    25%{
-      transform: skew(0.2deg, 0.2deg);
-    }
-    50%{
-      transform: skew(0deg, 0deg); 
-    }
-    75%{
-      transform: skew(-0.2deg, -0.2deg);
-    }
-    100%{
-      transform: skew(0deg, 0deg); 
-    }
-  }
-}
-
 
 @media only screen and (max-width: 414px) {
   .About {
