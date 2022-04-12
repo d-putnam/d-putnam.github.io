@@ -38,7 +38,7 @@ const projectData = [
 
 
   {
-    "name": "Polymtr: drum sequencer for web",
+    "name": "Polymtr: drum machine for web",
     "path": "/code/polymtr",
     "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.png`,
     "imgPath" : "none",
@@ -75,37 +75,42 @@ const projectData = [
   },
 
 
+
   {
-    "name": "Tessellation Studies: SVG animations",
-    "path": "/code/tessellations",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/tess.png`,
-    "url": "https://dputnam.net/tessellations",
+    "name": "DZ-Looper",
+    "path": "/code/dzlooper",
+    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
+    "imgPath" : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
     "description" : () => {return (
       <span>
-        JavaScript-generated animations
+        Create looping video from still images (macOS/Swift app)
       </span>
     )},
     "content": () => {return (   
       <div className="content">
         <p>
-          Tessellation Studies is a collection of SVG animations, created by rotating the forms of regular tessellations.
+          DZ-Looper is a macOS app, written in Swift, for stitching together a set of still images into looping video content.
         </p> 
         <p>
-          Slowly progressing through all possible permutations, these simple patterns give rise to recognizable higher-level structures.
+          I began this project to overcome a limitation of Adobe Media Encoder in which still image duration cannot be changed. 
+          Adobe Premiere handles this task well, but is a heavy app with long loading times unsuitable to the task.
         </p>
         <p>
-          <a href="https://dputnam.net/tessellations/" target="blank" 
+          Early versions of this project relied on the FFmpeg library, but it is now fully written using the macOS SDK.
+        </p>
+        <p>
+          <a href="https://github.com/d-putnam/DZ-Looper/releases/tag/v.1.3.3" target="blank" 
              className="projectLink">
-            Check it out here</a>
+            Download it here</a>
           <span className="or">or</span>
-          <a href="https://github.com/d-putnam/tessellations" target="blank" 
-             className="projectLink">view the source code
+          <a href="https://github.com/d-putnam/DZ-Looper" target="blank" 
+             className="projectLink">view the Xcode project
           </a>
         </p>
       </div>
     )}
   },
+
 
 
   {
@@ -141,6 +146,40 @@ const projectData = [
         </a>
       </p>
     </div>     
+    )}
+  },
+
+  
+
+  {
+    "name": "Tessellation Studies: SVG animations",
+    "path": "/code/tessellations",
+    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.png`,
+    "imgPath" : `${process.env.PUBLIC_URL}/img/tess.png`,
+    "url": "https://dputnam.net/tessellations",
+    "description" : () => {return (
+      <span>
+        JavaScript-generated animations
+      </span>
+    )},
+    "content": () => {return (   
+      <div className="content">
+        <p>
+          Tessellation Studies is a collection of SVG animations, created by rotating the forms of regular tessellations.
+        </p> 
+        <p>
+          Slowly progressing through all possible permutations, these simple patterns give rise to recognizable higher-level structures.
+        </p>
+        <p>
+          <a href="https://dputnam.net/tessellations/" target="blank" 
+             className="projectLink">
+            Check it out here</a>
+          <span className="or">or</span>
+          <a href="https://github.com/d-putnam/tessellations" target="blank" 
+             className="projectLink">view the source code
+          </a>
+        </p>
+      </div>
     )}
   },
 
@@ -193,7 +232,7 @@ const projectData = [
   },
 */
 
-
+/*
   {
     "name": "CVX-1 Chaotic Video Processor",
     "path": "/code/video-processor",
@@ -226,7 +265,7 @@ const projectData = [
       </div>
     )}
   },
-
+*/
 
 /*
   {
