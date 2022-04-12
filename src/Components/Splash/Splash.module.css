@@ -75,8 +75,8 @@ path {
 }
 
 .linkInnerWrap > a {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
 }
 
 @media screen and (max-width: 414px) {
