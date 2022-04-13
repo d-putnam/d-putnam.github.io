@@ -57,6 +57,7 @@
 
 .iframeContainer {
   width: 100%;
+  opacity: 0.75;
   padding-top: 50%;
   overflow: hidden;
   position: relative;
