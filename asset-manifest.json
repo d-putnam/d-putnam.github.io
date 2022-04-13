@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/d-putnam.github.io/static/css/main.99f06fd2.chunk.css",
+    "main.css": "/d-putnam.github.io/static/css/main.3e716c32.chunk.css",
     "main.js": "/d-putnam.github.io/static/js/main.b4691116.chunk.js",
     "main.js.map": "/d-putnam.github.io/static/js/main.b4691116.chunk.js.map",
     "runtime-main.js": "/d-putnam.github.io/static/js/runtime-main.67eb7329.js",
@@ -10,7 +10,7 @@
     "static/js/2.110f61d6.chunk.js.map": "/d-putnam.github.io/static/js/2.110f61d6.chunk.js.map",
     "index.html": "/d-putnam.github.io/index.html",
     "static/css/2.eac740f3.chunk.css.map": "/d-putnam.github.io/static/css/2.eac740f3.chunk.css.map",
-    "static/css/main.99f06fd2.chunk.css.map": "/d-putnam.github.io/static/css/main.99f06fd2.chunk.css.map",
+    "static/css/main.3e716c32.chunk.css.map": "/d-putnam.github.io/static/css/main.3e716c32.chunk.css.map",
     "static/js/2.110f61d6.chunk.js.LICENSE.txt": "/d-putnam.github.io/static/js/2.110f61d6.chunk.js.LICENSE.txt",
     "static/media/pic.d1b261b4.jpg": "/d-putnam.github.io/static/media/pic.d1b261b4.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.67eb7329.js",
     "static/css/2.eac740f3.chunk.css",
     "static/js/2.110f61d6.chunk.js",
-    "static/css/main.99f06fd2.chunk.css",
+    "static/css/main.3e716c32.chunk.css",
     "static/js/main.b4691116.chunk.js"
   ]
 }
