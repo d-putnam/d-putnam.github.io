@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import styles from './About.module.css';
 import pic from './pic.jpg';
 
-// My interests include synthesis, cybernetics, solarpunk, and object-oriented ontology.
+// My interests include cybernetics, object-oriented ontology, and speculative realism.
 // I exchange much of my time for currency, which I use to meet my needs
 // I have a human body, but something else is missing
-// I have an obscure degree from a very fancy institution
 
 const About = (props) => {
 
@@ -22,10 +21,10 @@ const About = (props) => {
                 I'm a programmer and media artist living in Providence, Rhode Island.
               </span>
               <span>
-                I have an obscure degree from a fancy school.
+                I have an obscure degree from a fancy school nearby.
               </span>
               <span>
-                My interests include synthesis, object-oriented ontology, and speculative realism.
+                I like building systems that mimic nature, contemplating the desire of inanimate objects, and figuring out what that all means.
               </span>
             </div>
             <Link to={'/contact'} title="contact me">
