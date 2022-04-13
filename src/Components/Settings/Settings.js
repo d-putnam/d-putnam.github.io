@@ -70,7 +70,7 @@ class Settings extends Component {
                 />                
                 <input className={styles.slider}
                   type="range" 
-                  min = {30}
+                  min = {0}
                   max = {100}
                   step = {0}
                   data-target = '2'
