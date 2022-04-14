@@ -37,7 +37,7 @@ const Nav = (props) => {
           </div>
           <div>
             <Link to={'/about'} className={styles.Link} tabIndex="0">
-              <IconBox title='about' active={location.pathname.indexOf('/about') ? false : true} d={[
+              <IconBox title='about' active={location.pathname.indexOf('/about') ? location.pathname.indexOf('/contact') ? false : true : true} d={[
                   'M 512 64 C 264.6 64 64 264.6 64 512 s 200.6 448 448 448 s 448 -200.6 448 -448 S 759.4 64 512 64 Z m 0 820 c -205.4 0 -372 -166.6 -372 -372 s 166.6 -372 372 -372 s 372 166.6 372 372 s -166.6 372 -372 372 Z',
                   'M 464 336 a 48 48 0 1 0 96 0 a 48 48 0 1 0 -96 0 Z m 72 112 h -48 c -4.4 0 -8 3.6 -8 8 v 272 c 0 4.4 3.6 8 8 8 h 48 c 4.4 0 8 -3.6 8 -8 V 456 c 0 -4.4 -3.6 -8 -8 -8 Z'
                 ]} />    
