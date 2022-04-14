@@ -23,21 +23,21 @@ const Nav = (props) => {
           </div>
           <div>
             <Link to={'/code'} className={styles.Link}>
-              <IconBox title='code' d={[
+              <IconBox title='code' active={location.pathname.indexOf('/code') ? false : true} d={[
                   'M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 0 0 308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 0 0-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z',
                 ]} />  
             </Link>
           </div>
           <div>
             <Link to={'/video'} className={styles.Link}>
-              <IconBox title='video' d={[
+              <IconBox title='video' active={location.pathname.indexOf('/video') ? false : true} d={[
                   'M 912 302.3 L 784 376 V 224 c 0 -35.3 -28.7 -64 -64 -64 H 128 c -35.3 0 -64 28.7 -64 64 v 576 c 0 35.3 28.7 64 64 64 h 592 c 35.3 0 64 -28.7 64 -64 V 648 l 128 73.7 c 21.3 12.3 48 -3.1 48 -27.6 V 330 c 0 -24.6 -26.7 -40 -48 -27.7 Z M 712 792 H 136 V 232 h 576 v 560 Z m 176 -167 l -104 -59.8 V 458.9 L 888 399 v 226 Z M 208 360 h 112 c 4.4 0 8 -3.6 8 -8 v -48 c 0 -4.4 -3.6 -8 -8 -8 H 208 c -4.4 0 -8 3.6 -8 8 v 48 c 0 4.4 3.6 8 8 8 Z',
                 ]} />    
             </Link>
           </div>
           <div>
             <Link to={'/about'} className={styles.Link}>
-              <IconBox title='about' d={[
+              <IconBox title='about' active={location.pathname.indexOf('/about') ? false : true} d={[
                   'M 512 64 C 264.6 64 64 264.6 64 512 s 200.6 448 448 448 s 448 -200.6 448 -448 S 759.4 64 512 64 Z m 0 820 c -205.4 0 -372 -166.6 -372 -372 s 166.6 -372 372 -372 s 372 166.6 372 372 s -166.6 372 -372 372 Z',
                   'M 464 336 a 48 48 0 1 0 96 0 a 48 48 0 1 0 -96 0 Z m 72 112 h -48 c -4.4 0 -8 3.6 -8 8 v 272 c 0 4.4 3.6 8 8 8 h 48 c 4.4 0 8 -3.6 8 -8 V 456 c 0 -4.4 -3.6 -8 -8 -8 Z'
                 ]} />    

@@ -80,9 +80,15 @@
 .Link:hover .navIconSVGBefore {
   transform: translate(-2px, -1px);
 }
+.navIconSVGBeforeActive{
+  transform: translate(-3px, -2px);
+}
 .Link:hover .navIconSVGAfter {
   transform: translate(2px, 1px);
 } 
+.navIconSVGAfterActive {
+  transform: translate(3px, 2px);
+}
 
 
 
@@ -107,6 +113,9 @@
 
 .linkItem {
   background-image: var(--green-gradient)
+}
+.linkItem.active {
+  border: 2px solid var(--green);
 }
 .linkItem > div, .logo > div {
   height: 2.5rem;
