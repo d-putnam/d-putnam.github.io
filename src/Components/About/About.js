@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-//import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import styles from './About.module.css';
 import pic from './pic.jpg';
 
@@ -24,7 +23,7 @@ const About = (props) => {
                 I have an obscure degree from a fancy school nearby.
               </span>
               <span>
-                I like building systems that mimic nature, contemplating the desire of inanimate objects, and figuring out what that all means.
+                I like building systems that mimic nature, contemplating the desires of inanimate objects, and figuring out what that all means.
               </span>
             </div>
             <Link to={'/contact'} title="contact me">
