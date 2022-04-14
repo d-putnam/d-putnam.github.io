@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/d-putnam.github.io/static/css/main.57b1af53.chunk.css",
-    "main.js": "/d-putnam.github.io/static/js/main.f216cb6e.chunk.js",
-    "main.js.map": "/d-putnam.github.io/static/js/main.f216cb6e.chunk.js.map",
+    "main.js": "/d-putnam.github.io/static/js/main.7bcfba6b.chunk.js",
+    "main.js.map": "/d-putnam.github.io/static/js/main.7bcfba6b.chunk.js.map",
     "runtime-main.js": "/d-putnam.github.io/static/js/runtime-main.67eb7329.js",
     "runtime-main.js.map": "/d-putnam.github.io/static/js/runtime-main.67eb7329.js.map",
     "static/css/2.eac740f3.chunk.css": "/d-putnam.github.io/static/css/2.eac740f3.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.eac740f3.chunk.css",
     "static/js/2.7a28b041.chunk.js",
     "static/css/main.57b1af53.chunk.css",
-    "static/js/main.f216cb6e.chunk.js"
+    "static/js/main.7bcfba6b.chunk.js"
   ]
 }
