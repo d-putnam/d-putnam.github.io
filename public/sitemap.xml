@@ -5,35 +5,19 @@
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://www.dputnam.net/code</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.dputnam.net/video</loc>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.dputnam.net/about</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.dputnam.net/code/uwuVS</loc>
+    <loc>https://www.dputnam.net/uwuVS/</loc>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://www.dputnam.net/code/polymtr</loc>
+    <loc>https://www.dputnam.net/polymtr/</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.dputnam.net/code/dzlooper</loc>
-    <priority>0.7</priority>
+    <loc>https://www.dputnam.net/gradient-mkr/</loc>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.dputnam.net/code/svg-gradients</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dputnam.net/code/tessellations</loc>
-    <priority>0.9</priority>
+    <loc>https://www.dputnam.net/tessellations/</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>
