@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 //import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import styles from './Code.module.css';

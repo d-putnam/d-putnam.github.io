@@ -1,3 +1,5 @@
+import React from 'react';
+
 const projectData = [
   {
     "name": "uwu-VS: video synthesizer for web",

@@ -1,4 +1,5 @@
 //import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import React from 'react';
 import styles from './Project.module.css';
 
 

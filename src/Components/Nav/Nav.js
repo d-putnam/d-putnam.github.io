@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
 //import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 //import GlitchClip from 'react-glitch-effect/core/GlitchClip';

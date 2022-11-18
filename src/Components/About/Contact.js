@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { useForm, ValidationError } from '@formspree/react';
 import styles from './Contact.module.css';

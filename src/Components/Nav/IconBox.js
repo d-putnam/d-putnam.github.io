@@ -1,3 +1,4 @@
+import React from 'react';
 import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import styles from './Nav.module.css';
 
