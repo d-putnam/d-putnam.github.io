@@ -44,10 +44,10 @@ path {
 }
 
 .logo {
-  font-size: 28pt;
+  font-size: 33pt;
   line-height: 1.2;
   padding: 2px;
-  background-image: var(--blue-purple-gradient);
+  background-image: var(--blue-purple-gradient-splash);
 }
 
 .logoInnerBorder {
@@ -102,11 +102,11 @@ path {
 
 .linkItem {
   position:relative;
-  width: 6rem;
-  font-size: 22pt;
+  width: 8rem;
+  font-size: 27pt;
   padding: 2px;
-  line-height: 1.2;
-  background-image: var(--green-gradient);
+  line-height: 1;
+  background-image: var(--green-gradient-splash);
 }
 .linkItem > div {
   height: 2.4rem;
@@ -185,7 +185,7 @@ path {
 /* SVG 'trees' */
 
 .treeHoriz {
-  width: 71%;
+  width: 87%;
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
 }
@@ -205,6 +205,9 @@ path {
   display: none;
 }
 @media screen and (max-width: 414px) {
+  .Splash > div {
+    width: auto;
+  }
   .treeHoriz {
     display: none;
   }
