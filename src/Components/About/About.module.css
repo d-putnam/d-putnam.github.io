@@ -117,7 +117,7 @@
 }
 */
 .highlight {
-    background-color: var(--white);
+    background-color: var(--amber);
     color: rgba(0,0,0,0.9);
     mix-blend-mode: color-dodge;
 }
@@ -126,7 +126,7 @@ a {
   color: var(--white);
 }
 .highlight:hover {
-    background-color: var(--amber);
+    background-color: var(--white);
 }
 /*
 .contactLink:hover {

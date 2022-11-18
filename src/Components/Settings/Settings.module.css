@@ -1,6 +1,7 @@
 .controls, .controlsOpen {
   display:flex;
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   justify-content: flex-end;
   bottom: 0;
   right: 0;
@@ -15,7 +16,7 @@
   z-index: 0;
 }
 .controlsOpen {
-  background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 8%), hsl(280deg 2% 10%));
+  background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 10%), hsl(280deg 2% 15%));
   background-size: var(--crt-size);
   border-radius: 5px 5px 0px 0px;
   opacity: 0.75;
