@@ -12,7 +12,8 @@
   color: var(--white);
   font-family: 'Fira Code', Menlo, monospace;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 .About > div {
   margin: auto;
@@ -106,26 +107,35 @@
   background: var(--crt-background);
   background-size: var(--crt-size);
   z-index: 2;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem;
 }
-
+/*
 .highlight {
   background-color: var(--amber);
   color: rgba(0,0,0,0.9);
   mix-blend-mode: color-dodge;
 }
+*/
+.highlight {
+    background-color: var(--white);
+    color: rgba(0,0,0,0.9);
+    mix-blend-mode: color-dodge;
+}
 
 a {
   color: var(--white);
 }
-
+.highlight:hover {
+    background-color: var(--amber);
+}
+/*
 .contactLink:hover {
   border: 1px solid var(--white);
   border-radius: 3px;
-  padding: 0.25rem;
+  padding: -0.25rem;
   color: var(--white)
 }
-
+*/
 
 .content {
   transform: skew(.1deg, .1deg);

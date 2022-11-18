@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import styles from './About.module.css';
 import pic from './pic.jpg';
 
-// My interests include cybernetics, object-oriented ontology, and speculative realism.
-// I exchange much of my time for currency, which I use to meet my needs
-// I have a human body, but something else is missing
+// I like building systems that mimic nature, contemplating the desires of inanimate objects, and figuring out what that all means.
+
 
 const About = (props) => {
 
@@ -18,21 +17,29 @@ const About = (props) => {
           <div className={styles.flexCol}>
             <div className={styles.words}>
               <span>
-                I'm a programmer and media artist living in Providence, Rhode Island.
+                I'm a programmer and media artist with an enthusiasm for toolmaking and augmenting existing resources.
               </span>
               <span>
-                I have an obscure degree from a fancy school nearby.
+                I studied Computer Music & Mutlimedia at Brown University, where I gained an interest in circuit bending, arduino programming, and analog-digital feedback systems.
               </span>
               <span>
-                I like building systems that mimic nature, contemplating the desires of inanimate objects, and figuring out what that all means.
+                Now I mostly make websites and digital tools. They take up a lot less space.
+              </span>
+              <span>
+                Talk to me about useful things, Rhode Island seafood, or postmodern philosophy {`=>`}&nbsp;
+                <Link to={'/contact'} title="contact me">
+                  <span className={styles.contactLink}>
+                    <span className={styles.highlight}>&nbsp;dan@dputnam.net&nbsp;</span>
+                  </span>
+                </Link>
+                &nbsp;
+                <a href={'http://dputnam.net/cv.pdf'} title="contact me">
+                  <span className={styles.contactLink}>
+                    <span className={styles.highlight}>&nbsp;CV&nbsp;</span>
+                  </span>
+                </a>
               </span>
             </div>
-            <Link to={'/contact'} title="contact me">
-              <span className={styles.contactLink}>
-                <span style={{lineBreak: 'anywhere'}}>let's talk {`=>`}&nbsp;</span>
-                <span className={styles.highlight}>&nbsp;dan@dputnam.net&nbsp;</span>
-              </span>
-            </Link>
           </div>
           <div className={styles.picDiv} style={isSafari ? {"mixBlendMode": "color-dodge"} : {"midBlendMode": "normal"}}>
             <img src={pic} alt="d putnam"/>
