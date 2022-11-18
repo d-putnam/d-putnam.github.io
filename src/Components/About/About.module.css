@@ -107,7 +107,7 @@
   background: var(--crt-background);
   background-size: var(--crt-size);
   z-index: 2;
-  padding: 3rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 /*
 .highlight {
