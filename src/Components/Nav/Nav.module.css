@@ -26,8 +26,15 @@
     margin: 1rem;
     font-size: 1.25rem;
 }
-.Link:hover {
+.LinkActive {
     opacity: 0.85;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+.Link:hover {
+    opacity: 0.9;
     /*text-decoration: underline;*/
 }
 
