@@ -98,9 +98,6 @@ const projectData = [
           Adobe Premiere and AfterEffects handle this task well, but they are heavy apps with long loading times unsuitable to this simple task.
         </p>
         <p>
-          Early versions of this project relied on the FFmpeg library, but it is now fully written using the macOS SDK.
-        </p>
-        <p>
           <a href="https://github.com/d-putnam/DZ-Looper/releases/tag/v.1.3.3" target="blank" 
              className="projectLink">
             Download it here</a>
