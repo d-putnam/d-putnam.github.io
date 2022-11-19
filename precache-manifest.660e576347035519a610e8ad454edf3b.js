@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d4fa98b135e4009b6075",
+    "revision": "71f96485590813c2f827",
     "url": "/d-putnam.github.io/static/css/main.edc48567.chunk.css"
   },
   {
-    "revision": "d4fa98b135e4009b6075",
-    "url": "/d-putnam.github.io/static/js/main.d4fa98b1.chunk.js"
+    "revision": "71f96485590813c2f827",
+    "url": "/d-putnam.github.io/static/js/main.71f96485.chunk.js"
   },
   {
     "revision": "0944d1df9db63c4d73c7",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/d-putnam.github.io/static/media/pic.77c93710.jpg"
   },
   {
-    "revision": "7e89b4a164d91e6fbcc26e048708db09",
+    "revision": "0c103dced8e268bb08c8e3533f109208",
     "url": "/d-putnam.github.io/index.html"
   }
 ];
