@@ -17,7 +17,7 @@ const About = (props) => {
           <div className={styles.flexCol}>
             <div className={styles.words}>
               <span>
-                I'm a programmer and media artist with an enthusiasm for toolmaking and augmenting existing resources.
+                I'm a programmer and media artist with an enthusiasm for building and augmenting tools.
               </span>
               <span>
                 I studied Computer Music & Mutlimedia at Brown University, where I gained an interest in circuit bending, arduino programming, and analog-digital feedback systems.
