@@ -20,7 +20,7 @@ const About = (props) => {
                 I'm a programmer and media artist with an enthusiasm for building and augmenting tools.
               </span>
               <span>
-                I studied Computer Music & Mutlimedia at Brown University, where I gained an interest in circuit bending, arduino programming, and analog-digital feedback systems.
+                I studied Computer Music & Multimedia at Brown University, where I gained an interest in circuit bending, arduino programming, and analog-digital feedback systems.
               </span>
               <span>
                 Now I mostly make websites and digital tools. They take up a lot less space.
