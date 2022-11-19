@@ -27,14 +27,14 @@
     font-size: 1.25rem;
 }
 .LinkActive {
-    opacity: 0.85;
+    opacity: 0.9;
     display: flex;
     align-items: center;
     margin: 1rem;
     font-size: 1.25rem;
 }
 .Link:hover {
-    opacity: 0.9;
+    opacity: 0.95;
     /*text-decoration: underline;*/
 }
 
