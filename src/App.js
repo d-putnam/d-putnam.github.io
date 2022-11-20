@@ -1,18 +1,17 @@
-import React, { Component, lazy } from 'react';
+import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import projectData from './projectData.js'
 import Canvas from './Components/Canvas/Canvas.js';
+import Splash from './Components/Splash/Splash.js';
+import Nav from './Components/Nav/Nav.js';
+import MobileNav from './Components/Nav/MobileNav.js';
+import About from './Components/About/About.js';
+import Contact from './Components/About/Contact.js';
+import Video from './Components/Video/Video.js';
+import Code from './Components/Code/Code.js';
+import Project from './Components/Project/Project.js';
 import Settings from './Components/Settings/Settings.js';
+import projectData from './projectData.js'
 import './App.css';
-
-const Splash = lazy(() => import('./Components/Splash/Splash.js'));
-const Nav = lazy(() => import('./Components/Nav/Nav.js'));
-const MobileNav = lazy(() => import('./Components/Nav/MobileNav.js'));
-const About = lazy(() => import('./Components/About/About.js'));
-const Contact = lazy(() => import('./Components/About/Contact.js'));
-const Video = lazy(() => import('./Components/Video/Video.js'));
-const Code = lazy(() => import('./Components/Code/Code.js'));
-const Project = lazy(() => import('./Components/Project/Project.js'));
 
 
 class App extends Component {
