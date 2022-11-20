@@ -24,7 +24,7 @@ class Settings extends Component {
             <div className={styles.controlWrapWrap}>
               <div className={styles.controlWrap}>
                 <div className="flex">
-                  <label htmlFor="video">video:&nbsp;</label>
+                  <label htmlFor="video">animation:&nbsp;</label>
                   <ToggleButton name="video"
                     className={styles.toggle}
                     value={ !this.props.videoDisabled }
