@@ -3,6 +3,8 @@
   --white-alpha: rgb(219, 219, 239, 0.85);
   --amber: rgb(228 201 11 / 85%);
   --green: rgb(106, 198, 106);
+  --blue: rgb(4, 93, 137);
+  --f: hsl(210deg 100% 28%);
   --dark-grey: rgba(40,40,40,0.9);
   --dark-text: rgba(0,0,0,0.9);
   --blue-purple-gradient: linear-gradient(to right, rgb(228 80 255 / 30%), rgb(44 195 251 / 25%));
@@ -13,10 +15,10 @@
   --dark-grey-gradient-highlight: radial-gradient(rgba(50,50,50,0.65), rgba(50,50,50,0.85));
   --crt-background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   --crt-size: 100% 2px, 9px 100%;
-
-  --scrollbarWidth: 12px;
+  --scrollbarWidth: none;
+  /*
   --scrollbarBg: rgb(99, 102, 241);
-  --scrollbarThumb: rgb(244, 63, 94);
+  --scrollbarThumb: rgb(244, 63, 94);*/
 }
 
 ::selection {

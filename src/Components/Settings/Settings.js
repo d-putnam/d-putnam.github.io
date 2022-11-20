@@ -33,8 +33,8 @@ class Settings extends Component {
                     onToggle={this.props.toggleVideo}
                     colors={{
                       active: {
-                        base: 'hsl(210deg 100% 28%)',
-                        hover: 'hsl(210deg 100% 28%)'
+                        base: 'rgba(54, 137, 72, .95)',
+                        hover: 'rgba(54, 137, 72, .95)'
                         //base: 'rgb(199 149 0)',
                         //hover: 'rgb(199 149 0)',
                       },

@@ -102,7 +102,7 @@ input[type="range"] {
   width: 15px; /* 1 */
   height: 40px;
   background: #fff;
-  box-shadow: -100vw 0 0 100vw dodgerblue;
+  box-shadow: -100vw 0 0 100vw var(--blue);
   border: 2px solid #999; /* 1 */
 }
 
@@ -117,12 +117,12 @@ input[type="range"] {
   width: 15px;
   border: 3px solid #999;
   border-radius: 0 !important;
-  box-shadow: -100vw 0 0 100vw dodgerblue;
+  box-shadow: -100vw 0 0 100vw var(--blue);
   box-sizing: border-box;
 }
 
 ::-ms-fill-lower { 
-  background: dodgerblue;
+  background: var(--blue);
 }
 
 ::-ms-thumb { 
