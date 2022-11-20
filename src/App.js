@@ -13,6 +13,8 @@ import Settings from './Components/Settings/Settings.js';
 import projectData from './projectData.js'
 import './App.css';
 
+// swap slider 0 + 1
+// 
 
 class App extends Component {
 
@@ -20,7 +22,7 @@ class App extends Component {
     super(props);
     this.state = {
       videoDisabled: false,
-      uniforms: [6.0, 114, 10.64, 81],
+      uniforms: [0.2, 250, 200, 81],
     }
   }
 

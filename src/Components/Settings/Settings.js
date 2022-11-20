@@ -47,31 +47,20 @@ class Settings extends Component {
                     }}
                   />
                 </div>
-
                 <input className={styles.slider}
                   type="range" 
-                  min = {0}
-                  max = {30}
-                  step = {0}
-                  data-target = '0'
-                  value = {this.props.uniforms[0]} 
-                  onChange = {this.props.sliderHandler} 
-                  disabled={this.props.videoDisabled}
-                />
-                <input className={styles.slider}
-                  type="range" 
-                  min = {100}
-                  max = {130}
+                  min = {83}
+                  max = {300}
                   step = {0}
                   data-target = '1'
                   value = {this.props.uniforms[1]} 
                   onChange = {this.props.sliderHandler} 
                   disabled={this.props.videoDisabled}
-                />                
+                />     
                 <input className={styles.slider}
                   type="range" 
                   min = {0}
-                  max = {100}
+                  max = {240}
                   step = {0}
                   data-target = '2'
                   value = {this.props.uniforms[2]} 
@@ -80,11 +69,21 @@ class Settings extends Component {
                 />
                 <input className={styles.slider}
                   type="range" 
-                  min = {30}
+                  min = {60}
                   max = {100}
                   step = {0}
                   data-target = '3'
                   value = {this.props.uniforms[3]} 
+                  onChange = {this.props.sliderHandler} 
+                  disabled={this.props.videoDisabled}
+                />
+                <input className={styles.slider}
+                  type="range" 
+                  min = {0.2}
+                  max = {1.35}
+                  step = {0.05}
+                  data-target = '0'
+                  value = {this.props.uniforms[0]} 
                   onChange = {this.props.sliderHandler} 
                   disabled={this.props.videoDisabled}
                 />
