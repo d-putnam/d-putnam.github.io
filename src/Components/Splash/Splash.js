@@ -20,12 +20,12 @@ const Splash = (props) => (
         </div>
         <svg viewBox = "0 0 500 100" version = "1.1" className={styles.treeHoriz}>
           <path d = "M 250 0 L 250 100" strokeWidth = "6" fill = "none" className={styles.treeHorizFirst}/>
-          <path d = "M 250 50 L 498 50 L 498 100" strokeWidth = "6" fill = "none" className={styles.treeHorizSecond}/>
-          <path d = "M 250 50 L 2 50 L 2 100" strokeWidth = "6" fill = "none" className={styles.treeHorizSecond}/>
+          <path d = "M 250 50 L 498 50 L 498 100" strokeWidth = "6" fill = "none" strokeLinejoin="round" className={styles.treeHorizSecond}/>
+          <path d = "M 250 50 L 2 50 L 2 100" strokeWidth = "6" fill = "none" strokeLinejoin="round" className={styles.treeHorizSecond}/>
         </svg>
         <div className={styles.linkWrap}>
             <svg viewBox = "0 0 60 200" version = "1.1" className={styles.treeVert}>
-              <path d = "M 20 0 L 20 197 L 60 197" strokeWidth = "3" fill = "none" className={styles.treeVertFirst}/>
+              <path d = "M 20 0 L 20 197 L 60 197" strokeWidth = "3" fill = "none" strokeLinejoin="round" className={styles.treeVertFirst}/>
               <path d = "M 20 127 L 60 127" strokeWidth = "3" fill = "none" className={styles.treeVertSecond}/>
               <path d = "M 20 57 L 60 57" strokeWidth = "3" fill = "none" className={styles.treeVertThird}/>
             </svg>          

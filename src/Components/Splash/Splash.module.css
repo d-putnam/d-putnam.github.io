@@ -186,6 +186,7 @@ path {
 
 .treeHoriz {
   width: 87%;
+  margin-top: -1px;
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
 }
