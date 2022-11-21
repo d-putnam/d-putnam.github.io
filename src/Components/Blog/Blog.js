@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Video from '../Video/Video.js';
 import styles from './Blog.module.css';
 import blogData from '../../blogData.js'
 

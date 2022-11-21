@@ -11,6 +11,7 @@ import Code from './Components/Code/Code.js';
 import Project from './Components/Project/Project.js';
 import Settings from './Components/Settings/Settings.js';
 import projectData from './projectData.js'
+import blogData from './blogData.js'
 import './App.css';
 
 
@@ -52,9 +53,16 @@ class App extends Component {
               <Route className='flex' path="/contact">
                 <Contact />
               </Route>
-              <Route className='flex' path="/blog">
+              <Route className='flex' exact path="/blog">
                 <Blog />
               </Route>
+              {
+                blogData.map((project, i) => (
+                  <Route key={project.name} path={project.path}>
+                    <Project project={project} key={i} fxDisabled={this.state.fxDisabled}/>
+                  </Route>
+                ))
+              }
               <Route className='flex' exact path="/code">
                 <Code />
               </Route>

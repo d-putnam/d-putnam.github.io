@@ -2,12 +2,12 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import Player from '@vimeo/player';
-import styles from './Video.module.css';
+import styles from './Project.module.css';
 import './VideoCarousel.css';
 
 function VideoSlide (props) {
   return (
-    <div className={styles.iframeContainer}>
+    <div className={styles.iframeContainerCarousel}>
       <iframe src={props.url} 
               title={props.title} 
               id={props.title} 
