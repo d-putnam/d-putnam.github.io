@@ -22,7 +22,7 @@ class App extends Component {
     super(props);
     this.state = {
       videoDisabled: false,
-      uniforms: [0.2, 250, 200, 81],
+      uniforms: [0.25, 250, 200, 81],
     }
   }
 

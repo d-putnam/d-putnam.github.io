@@ -17,7 +17,12 @@
   mix-blend-mode: saturation;
 }
 .gradient {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(255,255,255,0) 250%);
+  /*background-image: radial-gradient(
+    rgba(0, 0, 0, 0.7), rgba(255,255,255,0) 250%
+  );*/
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.12), black 120%
+  );
   z-index: -1;
   mix-blend-mode: hard-light;
 }
