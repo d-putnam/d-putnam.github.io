@@ -13,8 +13,6 @@ import Settings from './Components/Settings/Settings.js';
 import projectData from './projectData.js'
 import './App.css';
 
-// swap slider 0 + 1
-// 
 
 class App extends Component {
 

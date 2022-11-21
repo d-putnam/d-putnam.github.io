@@ -3,35 +3,24 @@ import React from 'react';
 const blogData = [
   {
     "name": "about this site",
-    "path": "/code/uwuVS",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.png`,
+    "path": "/blog/site",
+    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/site.png`,
     "imgPath": "none",
     "url": "https://dputnam.net/uwuVS",
     "iframe": "https://player.vimeo.com/video/445293885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0",
     "iframeRatio": "47.9",
     "description" : () => {return (
       <span>
-        In-browser video synthesizer written in JavaScript/WebGL (React app)
+        admittedly overengineered
       </span>
     )},
     "content": () => {
       return (        
       <div>
         <p>
-         uwu-VS is an in-browser video instrument inspired by analog video synthesis, built using Three.JS and React.
-        </p>
-        <p>
-          Shader settings can be controlled via the provided user interface or external MIDI control. Slider presets can be saved and sequenced via MIDI.
-        </p>
-        <p>
-          <a href="https://dputnam.net/uwuVS/" target="blank" className="projectLink">
-            Try it out here</a>
-          <span className="or">or</span>
-          <a href="https://github.com/d-putnam/uwuVS"     
-          target="blank" className="projectLink">view the source code</a>
-        </p>
-        <p>
-          Below you can find a short demo in which uwu-VS is modulated by a quadrature MIDI LFO sent from Max/MSP.
+         My first programming memory is writing elaborate Myspace layouts in high school. 
+         I loved to spend time tweaking the HTML & CSS to reflect my own strange aesthetic.
+         I don't use much social media these days, but I do miss the 
         </p>
       </div>
     )}
@@ -40,16 +29,16 @@ const blogData = [
 
 
   {
-    "name": "a failed project...",
-    "path": "/code/polymtr",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.png`,
+    "name": 'a failed project...',
+    "path": "/blog/motor",
+    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/motor.png`,
     "imgPath" : "none",
     "url": "https://dputnam.net/polymtr",
     "iframe": "https://player.vimeo.com/video/457362064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0",
     "iframeRatio": "55.0",
     "description" : () => {return (
       <span>
-        Polymetric drum sequencer written in JavaScript/Tone.JS (React app)
+        motors, voltage, bleeps & bloops
       </span>
     )},
     "content": () => {return (        
@@ -79,13 +68,13 @@ const blogData = [
 
 
   {
-    "name": "Video synthesis",
-    "path": "/code/dzlooper",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
+    "name": "video synthesis",
+    "path": "/blog/video",
+    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/video.png`,
     "imgPath" : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
     "description" : () => {return (
       <span>
-        Create looping video from still images (macOS/Swift app)
+        real-time video programming
       </span>
     )},
     "content": () => {return (   
