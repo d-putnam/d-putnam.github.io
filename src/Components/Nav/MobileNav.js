@@ -27,7 +27,7 @@ const MobileNav = (props) => {
                   code
                 </div>
               </Link>
-              <Link to={'/video'} onClick={closeNav}>
+              <Link to={'/blog'} onClick={closeNav}>
                 <div className={styles.linkItem}>
                   blog
                 </div>

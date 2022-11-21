@@ -1,0 +1,115 @@
+.Blog {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: center;*/
+  height: calc(100vh - 55px);
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white);
+  font-family: 'Fira Code', Menlo, monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  z-index: 200;
+
+  isolation:isolate;
+}
+.Blog > div {
+  margin: auto;
+  width: 100%;
+}
+
+.content {
+  background-image: var(--dark-grey-gradient);
+  /*background-color: var(--dark-grey);*/
+  height: fit-content;
+  border: 2px solid var(--white);
+}
+
+.content, .crt, .card {
+  border-radius:12px;
+}
+.thumbnail {
+  border-radius:10px 0px 0px 10px;
+}
+.words {
+  mix-blend-mode: color-dodge;
+}
+.crt {
+  background: var(--crt-background);
+  background-size: var(--crt-size);
+  z-index: 2;
+  display: flex;
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  border: 2px solid var(--white);
+  background-image: var(--dark-grey-gradient);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 45rem;
+  transform: skew(.1deg, .1deg);
+
+}
+.card:hover, .card:focus-within {
+  border: 2px solid var(--amber);
+  background-image: var(--dark-grey-gradient-highlight);
+}
+.description {
+  font-size: 0.75rem;
+  /*flex-basis: 50%;*/
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 0.75rem;
+  text-align: left;
+}
+
+.thumbnail {
+  width: 9rem;
+  opacity: 0.65;
+}
+
+.detailWrap {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  mix-blend-mode: color-dodge;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  /*flex-basis: 50%;*/
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .Blog {
+    width: 95%;
+    font-size: 0.85rem;
+  }
+  .title {
+    padding-left: 0.25rem;
+    padding-bottom: 0rem;
+  }
+  .description {
+    padding-left: 0.25rem;
+  }
+  .cardWrap {
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+}

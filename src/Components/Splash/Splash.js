@@ -43,10 +43,10 @@ const Splash = (props) => (
                 </div>
               </GlitchSquiggly>
             </Link>
-            <Link to={'/video'}>
+            <Link to={'/blog'}>
               <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={true} duration={500}>
                 <div className={styles.crt}>
-                  <div className={styles.linkItem} title="video">
+                  <div className={styles.linkItem} title="blog">
                     <div className={styles.linkItemInnerWrap}>
                       <span className={styles.linkTextBefore}>blog</span>
                       <span className={styles.linkText}>blog</span>

@@ -6,7 +6,7 @@ import Nav from './Components/Nav/Nav.js';
 import MobileNav from './Components/Nav/MobileNav.js';
 import About from './Components/About/About.js';
 import Contact from './Components/About/Contact.js';
-import Video from './Components/Video/Video.js';
+import Blog from './Components/Blog/Blog.js';
 import Code from './Components/Code/Code.js';
 import Project from './Components/Project/Project.js';
 import Settings from './Components/Settings/Settings.js';
@@ -54,8 +54,8 @@ class App extends Component {
               <Route className='flex' path="/contact">
                 <Contact />
               </Route>
-              <Route className='flex' path="/video">
-                <Video />
+              <Route className='flex' path="/blog">
+                <Blog />
               </Route>
               <Route className='flex' exact path="/code">
                 <Code />
