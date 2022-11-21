@@ -23,7 +23,7 @@ const About = (props) => {
                 I studied Computer Music & Multimedia at Brown University, where I gained an interest in circuit bending, arduino programming, and analog-digital feedback systems.
               </span>
               <span>
-                Now I mostly make websites and digital tools, inspired by the flexibility and openness of musical instruments.
+                Now I mostly make websites and digital tools, inspired by the openness and flexibility of musical instruments.
               </span>
               <span>
                 Talk to me about useful things, Rhode Island seafood, or postmodern philosophy {`=>`}&nbsp;
