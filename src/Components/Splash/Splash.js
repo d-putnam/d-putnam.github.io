@@ -48,9 +48,9 @@ const Splash = (props) => (
                 <div className={styles.crt}>
                   <div className={styles.linkItem} title="video">
                     <div className={styles.linkItemInnerWrap}>
-                      <span className={styles.linkTextBefore}>video</span>
-                      <span className={styles.linkText}>video</span>
-                      <span className={styles.linkTextAfter}>video</span>
+                      <span className={styles.linkTextBefore}>blog</span>
+                      <span className={styles.linkText}>blog</span>
+                      <span className={styles.linkTextAfter}>blog</span>
                     </div>
                   </div> 
                 </div>

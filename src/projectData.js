@@ -132,7 +132,7 @@ const projectData = [
         The user can manipulate the gradient via the UI, and the changes will be reflected in the page background.
       </p>
       <p>
-        The "show code" button will reveal the inline SVG code producing the current image. 
+        The "show code" button will reveal the inline HTML producing the current image. 
         Alternatively, the user can export the image to a static PNG (without animation).
       </p>
       <p>
