@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import styles from './Splash.module.css';

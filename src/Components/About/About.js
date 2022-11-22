@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import styles from './About.module.css';
 
 
@@ -38,7 +38,7 @@ const About = (props) => {
               </span>
             </div>
           </div>
-          <div className={styles.picDiv} style={isSafari ? {"mixBlendMode": "color-dodge"} : {"midBlendMode": "normal"}}>
+          <div className={styles.picDiv} style={isSafari ? {'mixBlendMode': 'color-dodge'} : {'midBlendMode': 'normal'}}>
             <img src={`${process.env.PUBLIC_URL}/img/pic.jpg`} alt="d putnam"/>
           </div>
         </div>

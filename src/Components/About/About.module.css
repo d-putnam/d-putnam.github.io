@@ -56,7 +56,7 @@
     filter: contrast(1.0) 
             sepia(0.13) 
             hue-rotate(185deg) 
-            saturate(0.59) 
+            saturate(0.49) 
             brightness(0.925)
             opacity(0.9)
   }
@@ -64,7 +64,7 @@
     filter: contrast(1.0) 
             sepia(0.13) 
             hue-rotate(210deg) 
-            saturate(0.59) 
+            saturate(0.49) 
             brightness(0.925)
             opacity(0.9)
   }
@@ -72,7 +72,7 @@
     filter: contrast(1.0) 
             sepia(0.13) 
             hue-rotate(160deg) 
-            saturate(0.59) 
+            saturate(0.49) 
             brightness(0.925)
             opacity(0.9)
   }
@@ -80,7 +80,7 @@
     filter: contrast(1.0) 
             sepia(0.13) 
             hue-rotate(185deg) 
-            saturate(0.59) 
+            saturate(0.49) 
             brightness(0.925)
             opacity(0.9)
   }

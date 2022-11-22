@@ -1,5 +1,5 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
 import Player from '@vimeo/player';
 import styles from './Project.module.css';
@@ -8,14 +8,14 @@ import './VideoCarousel.css';
 function VideoSlide (props) {
   return (
     <div className={styles.iframeContainerCarousel}>
-      <iframe src={props.url} 
-              title={props.title} 
-              id={props.title} 
-              allow="fullscreen" 
-              frameBorder="0" 
-              />
+      <iframe src={props.url}
+              title={props.title}
+              id={props.title}
+              allow="fullscreen"
+              frameBorder="0"
+      />
     </div>
-  )
+  );
 };
 
 const onChange = (res) => {
@@ -29,7 +29,7 @@ const onChange = (res) => {
     let player = new Player(nextVideo);
     player.pause()
   }
-}
+};
 
 function VideoCarousel(props) {
   return (
@@ -42,8 +42,7 @@ function VideoCarousel(props) {
             return (
               <VideoSlide url={vid} title={`video${i}`} key={i} />
             )
-          }
-          )
+          })
         }
       </Carousel>
   );

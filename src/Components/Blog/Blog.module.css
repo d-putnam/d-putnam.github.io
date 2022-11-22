@@ -107,6 +107,9 @@
 }
 
 @media only screen and (min-width: 414px) {
+    .cardWrap {
+        height: 100%;
+      }
     .cardWrap::-webkit-scrollbar {
         display: none;
         background: transparent;
