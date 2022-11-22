@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Code.module.css';
-import projectData from '../../projectData.js'
+import styles from './Blog.module.css';
+import blogData from '../../blogData.js'
 
-const Code = (props) => (
+const Blog = (props) => (
 
-  <div className={styles.Code}>
+  <div className={styles.Blog}>
     <div className={styles.cardWrap}>
-      {projectData.map((project, i) => (
+      {blogData.map((project, i) => (
         <div className={styles.card} key={i}>
           <Link to={project.path}>
             <div className={styles.crt}>
@@ -29,4 +29,4 @@ const Code = (props) => (
     
 )
 
-export default Code;
+export default Blog;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import styles from './Splash.module.css';
@@ -43,14 +43,14 @@ const Splash = (props) => (
                 </div>
               </GlitchSquiggly>
             </Link>
-            <Link to={'/video'}>
+            <Link to={'/blog'}>
               <GlitchSquiggly className={styles.itemHover} baseFrequency={0.01} scaleNoise={2.8} onHover={true} duration={500}>
                 <div className={styles.crt}>
-                  <div className={styles.linkItem} title="video">
+                  <div className={styles.linkItem} title="blog">
                     <div className={styles.linkItemInnerWrap}>
-                      <span className={styles.linkTextBefore}>video</span>
-                      <span className={styles.linkText}>video</span>
-                      <span className={styles.linkTextAfter}>video</span>
+                      <span className={styles.linkTextBefore}>blog</span>
+                      <span className={styles.linkText}>blog</span>
+                      <span className={styles.linkTextAfter}>blog</span>
                     </div>
                   </div> 
                 </div>

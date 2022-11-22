@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Canvas from './Components/Canvas/Canvas.js';
 import Splash from './Components/Splash/Splash.js';
 import Nav from './Components/Nav/Nav.js';
 import MobileNav from './Components/Nav/MobileNav.js';
 import About from './Components/About/About.js';
 import Contact from './Components/About/Contact.js';
-import Video from './Components/Video/Video.js';
+import Blog from './Components/Blog/Blog.js';
 import Code from './Components/Code/Code.js';
 import Project from './Components/Project/Project.js';
 import Settings from './Components/Settings/Settings.js';
 import projectData from './projectData.js'
+import blogData from './blogData.js'
 import './App.css';
 
-// swap slider 0 + 1
-// 
 
 class App extends Component {
 
@@ -54,9 +53,16 @@ class App extends Component {
               <Route className='flex' path="/contact">
                 <Contact />
               </Route>
-              <Route className='flex' path="/video">
-                <Video />
+              <Route className='flex' exact path="/blog">
+                <Blog />
               </Route>
+              {
+                blogData.map((project, i) => (
+                  <Route key={project.name} path={project.path}>
+                    <Project project={project} key={i} fxDisabled={this.state.fxDisabled}/>
+                  </Route>
+                ))
+              }
               <Route className='flex' exact path="/code">
                 <Code />
               </Route>

@@ -1,5 +1,6 @@
 //import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import React from 'react';
+import VideoCarousel from './VideoCarousel'
 import styles from './Project.module.css';
 
 
@@ -10,7 +11,7 @@ const Project = (props) => {
       <div className={styles.content}>
         <div className={styles.crt}>
         {
-          props.project.imgPath !== 'none' &&
+          props.project.imgPath &&
           <div>
             {
               <img src={props.project.imgPath} 
@@ -35,6 +36,14 @@ const Project = (props) => {
                       allow="fullscreen" 
                       frameBorder="0"
               />
+            </div>
+          }
+          {
+            props.project.vidList &&
+            <div>
+              {
+                <VideoCarousel vids={props.project.vidList} />
+              }
             </div>
           }
         </div>

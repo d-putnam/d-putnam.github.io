@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 import styles from './MobileNav.module.css';
 
 const MobileNav = (props) => {
@@ -27,9 +27,9 @@ const MobileNav = (props) => {
                   code
                 </div>
               </Link>
-              <Link to={'/video'} onClick={closeNav}>
+              <Link to={'/blog'} onClick={closeNav}>
                 <div className={styles.linkItem}>
-                  video
+                  blog
                 </div>
               </Link>
               <Link to={'/about'} onClick={closeNav}>

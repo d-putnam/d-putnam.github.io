@@ -2,19 +2,18 @@ import React from 'react';
 
 const projectData = [
   {
-    "name": "uwu-VS: video synthesizer for web",
-    "path": "/code/uwuVS",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.png`,
-    "imgPath": "none",
-    "url": "https://dputnam.net/uwuVS",
-    "iframe": "https://player.vimeo.com/video/445293885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0",
-    "iframeRatio": "47.9",
-    "description" : () => {return (
+    'name': 'uwu-VS: video synthesizer for web',
+    'path': '/code/uwuVS',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.png`,
+    'url': 'https://dputnam.net/uwuVS',
+    'iframe': 'https://player.vimeo.com/video/445293885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
+    'iframeRatio': '47.9',
+    'description' : () => {return (
       <span>
         In-browser video synthesizer written in JavaScript/WebGL (React app)
       </span>
     )},
-    "content": () => {
+    'content': () => {
       return (        
       <div>
         <p>
@@ -38,21 +37,19 @@ const projectData = [
   },
 
 
-
   {
-    "name": "Polymtr: drum machine for web",
-    "path": "/code/polymtr",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.png`,
-    "imgPath" : "none",
-    "url": "https://dputnam.net/polymtr",
-    "iframe": "https://player.vimeo.com/video/457362064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0",
-    "iframeRatio": "55.0",
-    "description" : () => {return (
+    'name': 'Polymtr: drum machine for web',
+    'path': '/code/polymtr',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.png`,
+    'url': 'https://dputnam.net/polymtr',
+    'iframe': 'https://player.vimeo.com/video/457362064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
+    'iframeRatio': '55.0',
+    'description' : () => {return (
       <span>
         Polymetric drum sequencer written in JavaScript/Tone.JS (React app)
       </span>
     )},
-    "content": () => {return (        
+    'content': () => {return (        
       <div className="content">
         <p>
             Polymtr is an algorithmic, polymetric drum sequencer. 
@@ -77,18 +74,17 @@ const projectData = [
   },
 
 
-
   {
-    "name": "DZ-Looper: image to video",
-    "path": "/code/dzlooper",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
-    "description" : () => {return (
+    'name': 'DZ-Looper: image to video',
+    'path': '/code/dzlooper',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
+    'imgPath' : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
+    'description' : () => {return (
       <span>
         Create looping video from still images (macOS/Swift app)
       </span>
     )},
-    "content": () => {return (   
+    'content': () => {return (   
       <div className="content">
         <p>
           DZ-Looper is a macOS app, written in Swift, for stitching together a set of still images into looping video content.
@@ -111,19 +107,18 @@ const projectData = [
   },
 
 
-
   {
-    "name": "gradient-mkr//SVG",
-    "path": "/code/svg-gradients",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/svg_thumb.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/gradient-mkr.png`,
-    "url": "https://dputnam.net/gradient-mkr",
-    "description" : () => {return (
+    'name': 'gradient-mkr//SVG',
+    'path': '/code/svg-gradients',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/svg_thumb.png`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/gradient-mkr.png`,
+    'url': 'https://dputnam.net/gradient-mkr',
+    'description' : () => {return (
       <span>
         UI for animated gradients written in JavaScript (web app)
       </span>
     )},
-    "content": () => {return (       
+    'content': () => {return (       
     <div className="content">
       <p>
         gradient-mkr is a JavaScript web app designed to simplify the process of making SVG gradients.
@@ -132,7 +127,7 @@ const projectData = [
         The user can manipulate the gradient via the UI, and the changes will be reflected in the page background.
       </p>
       <p>
-        The "show code" button will reveal the inline SVG code producing the current image. 
+        The "show code" button will reveal the inline HTML producing the current image. 
         Alternatively, the user can export the image to a static PNG (without animation).
       </p>
       <p>
@@ -149,19 +144,18 @@ const projectData = [
   },
 
 
-
   {
-    "name": "Tessellation Studies: SVG animations",
-    "path": "/code/tessellations",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/tess.png`,
-    "url": "https://dputnam.net/tessellations",
-    "description" : () => {return (
+    'name': 'Tessellation Studies: SVG animations',
+    'path': '/code/tessellations',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.png`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/tess.png`,
+    'url': 'https://dputnam.net/tessellations',
+    'description': () => {return (
       <span>
         JavaScript-generated animations
       </span>
     )},
-    "content": () => {return (   
+    'content': () => {return (   
       <div className="content">
         <p>
           Tessellation Studies is a collection of SVG animations, created by rotating the forms of regular tessellations.
@@ -181,21 +175,19 @@ const projectData = [
       </div>
     )}
   },
-
-
 /*
   {
-    "name": "Fetcher: AI storyteller",
-    "path": "/code/fetcher",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/fetch_thm.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/fetcher.png`,
-    "url": "https://dputnam.net/fetcher",
-    "description" : () => {return (
+    'name': 'Fetcher: AI storyteller',
+    'path': '/code/fetcher',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/fetch_thm.png`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/fetcher.png`,
+    'url': 'https://dputnam.net/fetcher',
+    'description': () => {return (
       <span>
         AI-powered storyteller<br/>written in JavaScript<br/>(web app)
       </span>
     )},
-    "content": () => {return (   
+    'content': () => {return (   
       <div className="content">
         <p>
           <a href="https://dputnam.net/fetcher" target="blank" 
@@ -230,21 +222,19 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
-    "name": "CVX-1 Chaotic Video Processor",
-    "path": "/code/video-processor",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/cvx_thumb.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/CVX1.png`,
-    "imgClass": "floatRight",
-    "url": "none",
-    "description" : () => {return (
+    'name': 'CVX-1 Chaotic Video Processor',
+    'path': '/code/video-processor',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/cvx_thumb.png`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/CVX1.png`,
+    'imgClass': 'floatRight',
+    'description': () => {return (
       <span>
         Real-time video manipulator (Max/MSP app)
       </span>
     )},
-    "content": () => {return (   
+    'content': () => {return (   
       <div className="content">
         <p>
           <b className="title">
@@ -265,21 +255,19 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
-    "name": "MT-10 Stereo Multi-Tap Delay",
-    "path": "/code/mt10-delay",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/mt10_thm.png`,
-    "imgPath" : `${process.env.PUBLIC_URL}/img/MT10.png`,
-    "imgClass": "floatRight",
-    "url": "none",
-    "description" : () => {return (
+    'name': 'MT-10 Stereo Multi-Tap Delay',
+    'path': '/code/mt10-delay',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/mt10_thm.png`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/MT10.png`,
+    'imgClass': 'floatRight',
+    'description' : () => {return (
       <span>
         Experimental audio effect<br/>(Max/MSP app)
       </span>
     )},
-    "content": () => {return (   
+    'content': () => {return (   
       <div>
         <p>
           <b className="title">
@@ -302,27 +290,24 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
-    "name": "Audio-Visual Synthesis",
-    "path": "/code/video",
-    "thumbPath": `${process.env.PUBLIC_URL}/img/thumbs/video_thm.png`,
-    "imgPath" : "none",
-    "url": "none",
-    "vids": [
+    'name': 'Audio-Visual Synthesis',
+    'path': '/code/video',
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/video_thm.png`,
+    'vids': [
       'https://player.vimeo.com/video/184250772?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
       'https://player.vimeo.com/video/183585614?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
       'https://player.vimeo.com/video/198124962?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
       'https://player.vimeo.com/video/210262791?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
       'https://player.vimeo.com/video/197636138?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0'
     ],
-    "description" : () => {return (
+    'description' : () => {return (
       <span>
         Collection of audio/visual<br/>experiments<br/>(video)
       </span>
     )},
-    "content": () => {return ( 
+    'content': () => {return ( 
       <div className="content">
         <div>
           <p>

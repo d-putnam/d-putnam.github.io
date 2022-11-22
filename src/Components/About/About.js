@@ -1,9 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import styles from './About.module.css';
-import pic from './pic.jpg';
-
-// I like building systems that mimic nature, contemplating the desires of inanimate objects, and figuring out what that all means.
 
 
 const About = (props) => {
@@ -41,8 +38,8 @@ const About = (props) => {
               </span>
             </div>
           </div>
-          <div className={styles.picDiv} style={isSafari ? {"mixBlendMode": "color-dodge"} : {"midBlendMode": "normal"}}>
-            <img src={pic} alt="d putnam"/>
+          <div className={styles.picDiv} style={isSafari ? {'mixBlendMode': 'color-dodge'} : {'midBlendMode': 'normal'}}>
+            <img src={`${process.env.PUBLIC_URL}/img/pic.jpg`} alt="d putnam"/>
           </div>
         </div>
       </div>

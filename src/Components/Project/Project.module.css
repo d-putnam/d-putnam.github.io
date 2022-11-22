@@ -96,6 +96,40 @@
   width: 100%;
 }
 
+.iframeContainerCarousel {
+    width: 100%;
+    opacity: 0.75;
+    padding-top: 50%;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(-1px -1px 2px rgba(25, 25, 25, 0.35));
+}
+.iframeContainerCarousel iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.iframeContainerCarouselVertical {
+    width: 100%;
+    opacity: 0.75;
+    padding-top: 125%;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(-1px -1px 2px rgba(25, 25, 25, 0.35));
+}
+.iframeContainerCarouselVertical iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+  
 
 .content {
   transform: skew(.1deg, .1deg);
@@ -103,7 +137,7 @@
 
 @media only screen and (max-width: 414px) {
   .Project {
-    width: 95%;
+    width: 85%;
     height: auto;
   }
   .Project > div {
@@ -112,5 +146,8 @@
   .content {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
+  }
+  .iframeContainerCarousel {
+    padding-top: 43%;
   }
 }
