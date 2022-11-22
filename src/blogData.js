@@ -16,14 +16,14 @@ const blogData = [
       return (        
       <div>
         <p>
-         My first experience with programming was building elaborate Myspace layouts in high school —
-         learning how to hide most of the default sections and reposition the others. 
+         My first experience with programming was tweaking the HTML & CSS on my high school Myspace profile,
+         learning how to hide most of the ugly default interface and rebuild my own. 
         </p>
         <p>
-         I wanted to bring a similar energy to this portfolio and build a "minimal" site 16-year-old me could be proud of.
+         I wanted to bring a similar energy to this portfolio and build a "minimal" site my 16 (or 30) year-old self could be proud of.
         </p>
         <p>
-         The background animation is rendered real-time, and you can tweak (or disable) it in the settings menu to the bottom right.
+         The background animation is rendered in real-time, and you can tweak (or disable) it within the settings menu found in the bottom right.
          The changes will follow you throughout the session. If you find that fun, check out my <i><Link to="/code/uwuVS">uwu-VS project</Link></i>.
         </p>
         <p>
@@ -35,7 +35,6 @@ const blogData = [
       </div>
     )}
   },
-
 
 
   {
@@ -56,12 +55,26 @@ const blogData = [
     'content': () => {return (        
       <div className="content">
         <p>
-            Laurem laurem ipsum ipsum
+            I spent most of 2017 in Chicago, attending SAIC to study under one of my favorite artists, 
+            circuit-bender extraordinaire <a href="https://www.nicolascollins.com/" target="blank">Nicolas Collins</a>.
+        </p>
+        <p>
+            I chose to cut that program short and head back to the east coast, 
+            but I was thankful for the opportunity to incubate the ideas below,
+            which I hope to revisit some day.
+        </p>
+        <p>
+            The plan was to augment my existing performance setup (modular synthesizer, digital video projection), 
+            by means of an interactive physical structure (a sculpture made of two-way mirror material). 
+            The sculpture is mounted to a motor, which is powered by an arduino microcontroller receiving a 0-5v signal from the synthesizer. 
+        </p>
+        <p>
+            This opens up the option to modulate the geometric arrangement of the projection using signal sources related to the simultaneous 
+            creation of the audio/visual source.
         </p>
       </div>
     )}
   },
-
 
 
   {

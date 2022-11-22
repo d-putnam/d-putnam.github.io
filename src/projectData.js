@@ -37,7 +37,6 @@ const projectData = [
   },
 
 
-
   {
     'name': 'Polymtr: drum machine for web',
     'path': '/code/polymtr',
@@ -75,7 +74,6 @@ const projectData = [
   },
 
 
-
   {
     'name': 'DZ-Looper: image to video',
     'path': '/code/dzlooper',
@@ -107,7 +105,6 @@ const projectData = [
       </div>
     )}
   },
-
 
 
   {
@@ -147,7 +144,6 @@ const projectData = [
   },
 
 
-
   {
     'name': 'Tessellation Studies: SVG animations',
     'path': '/code/tessellations',
@@ -179,8 +175,6 @@ const projectData = [
       </div>
     )}
   },
-
-
 /*
   {
     'name': 'Fetcher: AI storyteller',
@@ -228,7 +222,6 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
     'name': 'CVX-1 Chaotic Video Processor',
@@ -262,7 +255,6 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
     'name': 'MT-10 Stereo Multi-Tap Delay',
@@ -298,7 +290,6 @@ const projectData = [
     )}
   },
 */
-
 /*
   {
     'name': 'Audio-Visual Synthesis',
