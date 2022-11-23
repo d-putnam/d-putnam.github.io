@@ -39,7 +39,7 @@ const About = (props) => {
             </div>
           </div>
           <div className={styles.picDiv} style={isSafari ? {'mixBlendMode': 'color-dodge'} : {'midBlendMode': 'normal'}}>
-            <img src={`${process.env.PUBLIC_URL}/img/pic.jpg`} alt="d putnam"/>
+            <img src={`${process.env.PUBLIC_URL}/img/pic.webp`} alt="d putnam"/>
           </div>
         </div>
       </div>

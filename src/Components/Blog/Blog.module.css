@@ -18,7 +18,19 @@
 .Blog > div {
   margin: auto;
 }
-
+.blogLink {
+    color: var(--white);
+    font-style:italic;
+    text-decoration: underline;
+    /*background-color: var(--white);
+    color: rgba(0,0,0,0.9);
+    mix-blend-mode: color-dodge;*/
+}
+.blogLink:hover {
+    text-decoration: underline;
+    color: var(--amber);
+    /*background-color: var(--amber);*/
+  }
 .content {
   background-image: var(--dark-grey-gradient);
   /*background-color: var(--dark-grey);*/

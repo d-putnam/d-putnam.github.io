@@ -4,7 +4,7 @@ const projectData = [
   {
     'name': 'uwu-VS: video synthesizer for web',
     'path': '/code/uwuVS',
-    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.png`,
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.webp`,
     'url': 'https://dputnam.net/uwuVS',
     'iframe': 'https://player.vimeo.com/video/445293885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
     'iframeRatio': '47.9',
@@ -40,7 +40,7 @@ const projectData = [
   {
     'name': 'Polymtr: drum machine for web',
     'path': '/code/polymtr',
-    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.png`,
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.webp`,
     'url': 'https://dputnam.net/polymtr',
     'iframe': 'https://player.vimeo.com/video/457362064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
     'iframeRatio': '55.0',
@@ -77,8 +77,8 @@ const projectData = [
   {
     'name': 'DZ-Looper: image to video',
     'path': '/code/dzlooper',
-    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.png`,
-    'imgPath' : `${process.env.PUBLIC_URL}/img/dzlooper.png`,
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/dzlooper_thumb.webp`,
+    'imgPath' : `${process.env.PUBLIC_URL}/img/dzlooper.webp`,
     'description' : () => {return (
       <span>
         Create looping video from still images (macOS/Swift app)
@@ -110,8 +110,8 @@ const projectData = [
   {
     'name': 'gradient-mkr//SVG',
     'path': '/code/svg-gradients',
-    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/svg_thumb.png`,
-    'imgPath': `${process.env.PUBLIC_URL}/img/gradient-mkr.png`,
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/svg_thumb.webp`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/gradient-mkr.webp`,
     'url': 'https://dputnam.net/gradient-mkr',
     'description' : () => {return (
       <span>
@@ -147,8 +147,8 @@ const projectData = [
   {
     'name': 'Tessellation Studies: SVG animations',
     'path': '/code/tessellations',
-    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.png`,
-    'imgPath': `${process.env.PUBLIC_URL}/img/tess.png`,
+    'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.webp`,
+    'imgPath': `${process.env.PUBLIC_URL}/img/tess.webp`,
     'url': 'https://dputnam.net/tessellations',
     'description': () => {return (
       <span>
