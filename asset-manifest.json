@@ -1,15 +1,13 @@
 {
-  "main.css": "/d-putnam.github.io/static/css/main.af9cf917.chunk.css",
-  "main.js": "/d-putnam.github.io/static/js/main.6e30cd63.chunk.js",
-  "main.js.map": "/d-putnam.github.io/static/js/main.6e30cd63.chunk.js.map",
-  "static/css/1.07710239.chunk.css": "/d-putnam.github.io/static/css/1.07710239.chunk.css",
-  "static/js/1.93687e58.chunk.js": "/d-putnam.github.io/static/js/1.93687e58.chunk.js",
-  "static/js/1.93687e58.chunk.js.map": "/d-putnam.github.io/static/js/1.93687e58.chunk.js.map",
-  "runtime~main.js": "/d-putnam.github.io/static/js/runtime~main.f403a79d.js",
-  "runtime~main.js.map": "/d-putnam.github.io/static/js/runtime~main.f403a79d.js.map",
-  "static/css/main.af9cf917.chunk.css.map": "/d-putnam.github.io/static/css/main.af9cf917.chunk.css.map",
-  "static/css/1.07710239.chunk.css.map": "/d-putnam.github.io/static/css/1.07710239.chunk.css.map",
-  "index.html": "/d-putnam.github.io/index.html",
-  "precache-manifest.f8774180c8df57a39730bf8c4682f798.js": "/d-putnam.github.io/precache-manifest.f8774180c8df57a39730bf8c4682f798.js",
-  "service-worker.js": "/d-putnam.github.io/service-worker.js"
+  "files": {
+    "main.css": "/d-putnam.github.io/static/css/main.f7587b03.css",
+    "main.js": "/d-putnam.github.io/static/js/main.1bdef238.js",
+    "index.html": "/d-putnam.github.io/index.html",
+    "main.f7587b03.css.map": "/d-putnam.github.io/static/css/main.f7587b03.css.map",
+    "main.1bdef238.js.map": "/d-putnam.github.io/static/js/main.1bdef238.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7587b03.css",
+    "static/js/main.1bdef238.js"
+  ]
 }
