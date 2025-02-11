@@ -2,11 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './About.module.css';
 
-
-const About = (props) => {
-
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
-
+const About = () => {
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   return(
     <div className={styles.About}>
       <div className={styles.content}>
@@ -44,6 +41,7 @@ const About = (props) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
+
 export default About;

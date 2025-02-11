@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Code.module.css';
-import projectData from '../../projectData.js'
+import projectData from '../../projectData.js';
 
-const Code = (props) => (
-
+const Code = () => (
   <div className={styles.Code}>
     <div className={styles.cardWrap}>
       {projectData.map((project, i) => (
@@ -26,7 +25,6 @@ const Code = (props) => (
       ))}
     </div>
   </div>
-    
 )
 
 export default Code;

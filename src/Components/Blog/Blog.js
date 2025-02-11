@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Blog.module.css';
-import blogData from '../../blogData.js'
+import blogData from '../../blogData.js';
 
-const Blog = (props) => (
-
+const Blog = () => (
   <div className={styles.Blog}>
     <div className={styles.cardWrap}>
       {blogData.map((project, i) => (
@@ -26,7 +25,6 @@ const Blog = (props) => (
       ))}
     </div>
   </div>
-    
-)
+);
 
 export default Blog;

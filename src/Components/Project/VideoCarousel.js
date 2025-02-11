@@ -5,47 +5,41 @@ import Player from '@vimeo/player';
 import styles from './Project.module.css';
 import './VideoCarousel.css';
 
-function VideoSlide (props) {
-  return (
-    <div className={styles.iframeContainerCarousel}>
-      <iframe src={props.url}
-              title={props.title}
-              id={props.title}
-              allow="fullscreen"
-              frameBorder="0"
-      />
-    </div>
-  );
-};
+const VideoSlide = ({ url, title }) => (
+  <div className={styles.iframeContainerCarousel}>
+    <iframe src={url}
+            title={title}
+            id={title}
+            allow="fullscreen"
+            frameBorder="0"
+    />
+  </div>
+);
 
 const onChange = (res) => {
   if (document.querySelector(`#video${res-1}`)) {
-    const previousVideo = document.querySelector(`#video${res-1}`)
+    const previousVideo = document.querySelector(`#video${res-1}`);
     let player = new Player(previousVideo);
-    player.pause()
+    player.pause();
   }
   if (document.querySelector(`#video${res+1}`)) {
-    const nextVideo = document.querySelector(`#video${res+1}`)
+    const nextVideo = document.querySelector(`#video${res+1}`);
     let player = new Player(nextVideo);
-    player.pause()
+    player.pause();
   }
 };
 
-function VideoCarousel(props) {
-  return (
-      <Carousel dynamicHeight="true" 
-                showThumbs={false} 
-                swipeable={true} 
-                onChange={onChange}>
-        {
-          props.vids.map((vid, i) => {
-            return (
-              <VideoSlide url={vid} title={`video${i}`} key={i} />
-            )
-          })
-        }
-      </Carousel>
-  );
-};
+const VideoCarousel = ({ vids }) => (
+  <Carousel dynamicHeight="true" 
+            showThumbs={false} 
+            swipeable={true} 
+            onChange={onChange}>
+    {
+      vids.map((vid, i) => (
+        <VideoSlide url={vid} title={`video${i}`} key={i} />
+      ))
+    }
+  </Carousel>
+);
 
-export default VideoCarousel
+export default VideoCarousel;

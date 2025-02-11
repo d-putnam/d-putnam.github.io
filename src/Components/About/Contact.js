@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import styles from './Contact.module.css';
 
-
-const Contact = (props) => {
-
+const Contact = () => {
   const [state, handleSubmit] = useForm("meqvbqql");
 
   if (state.succeeded) {
@@ -45,7 +43,6 @@ const Contact = (props) => {
             </svg>
           </Link>
           <div className={styles.words}>
-
             <form onSubmit={handleSubmit}>
               <h2 className={styles.highlightWhite}>&nbsp;CONTACT ME&nbsp;</h2>
               <div className={styles.email}>
@@ -57,7 +54,6 @@ const Contact = (props) => {
                 </div>
                 <ValidationError prefix="Email" field="email"errors={state.errors}/>
               </div>
-
               <label htmlFor="message" className={styles.highlight}>&nbsp;your message:&nbsp;</label>
               <textarea id="message" name="message"/>
               <ValidationError prefix="Message" field="message"errors={state.errors}/>
@@ -69,7 +65,6 @@ const Contact = (props) => {
       </div>
     </div>
   );
-  
 }
 
 export default Contact;
