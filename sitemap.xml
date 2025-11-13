@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.d-putnam.com/</loc>
+    <loc>https://www.dputnam.net/</loc>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://www.d-putnam.com/uwuVS/</loc>
+    <loc>https://www.dputnam.net/uwuVS/</loc>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://www.d-putnam.com/polymtr/</loc>
+    <loc>https://www.dputnam.net/polymtr/</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.d-putnam.com/gradient-mkr/</loc>
+    <loc>https://www.dputnam.net/gradient-mkr/</loc>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.d-putnam.com/tessellations/</loc>
+    <loc>https://www.dputnam.net/tessellations/</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
