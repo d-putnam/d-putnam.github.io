@@ -27,7 +27,7 @@ const About = () => {
                   </span>
                 </Link>
                 &nbsp;
-                <a href={'http://dputnam.net/cv.pdf'} target="_blank" rel="noopener noreferrer" title="CV">
+                <a href={'http://d-putnam.com/cv.pdf'} target="_blank" rel="noopener noreferrer" title="CV">
                   <span className={styles.contactLink}>
                     <span className={styles.highlight}>&nbsp;CV&nbsp;</span>
                   </span>

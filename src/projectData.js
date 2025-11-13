@@ -5,7 +5,7 @@ const projectData = [
     'name': 'uwu-VS: video synthesizer for web',
     'path': '/code/uwuVS',
     'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/uwu_thumb.webp`,
-    'url': 'https://dputnam.net/uwuVS',
+    'url': 'https://d-putnam.com/uwuVS',
     'iframe': 'https://player.vimeo.com/video/445293885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
     'iframeRatio': '47.9',
     'description' : () => {return (
@@ -23,7 +23,7 @@ const projectData = [
           Shader settings can be controlled via the provided user interface or external MIDI control. Slider presets can be saved and sequenced via MIDI.
         </p>
         <p>
-          <a href="https://dputnam.net/uwuVS/" target="blank" className="projectLink">
+          <a href="https://d-putnam.com/uwuVS/" target="blank" className="projectLink">
             Try it out here</a>
           <span className="or">or</span>
           <a href="https://github.com/d-putnam/uwuVS"     
@@ -41,7 +41,7 @@ const projectData = [
     'name': 'Polymtr: drum machine for web',
     'path': '/code/polymtr',
     'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/poly_thumb.webp`,
-    'url': 'https://dputnam.net/polymtr',
+    'url': 'https://d-putnam.com/polymtr',
     'iframe': 'https://player.vimeo.com/video/457362064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0',
     'iframeRatio': '55.0',
     'description' : () => {return (
@@ -61,7 +61,7 @@ const projectData = [
           Non-divisible pattern lengths will result in longer, more complicated phrases.
         </p>
         <p>
-            <a href="https://dputnam.net/polymtr/" target="blank" 
+            <a href="https://d-putnam.com/polymtr/" target="blank" 
                className="projectLink">
               Try it out here</a> 
             <span className="or">or</span>
@@ -112,7 +112,7 @@ const projectData = [
     'path': '/code/svg-gradients',
     'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/svg_thumb.webp`,
     'imgPath': `${process.env.PUBLIC_URL}/img/gradient-mkr.webp`,
-    'url': 'https://dputnam.net/gradient-mkr',
+    'url': 'https://d-putnam.com/gradient-mkr',
     'description' : () => {return (
       <span>
         UI for animated gradients written in JavaScript (web app)
@@ -131,7 +131,7 @@ const projectData = [
         Alternatively, the user can export the image to a static PNG (without animation).
       </p>
       <p>
-        <a href="https://dputnam.net/gradient-mkr/" target="blank" 
+        <a href="https://d-putnam.com/gradient-mkr/" target="blank" 
            className="projectLink">
           Try it out here</a>
         <span className="or">or</span> 
@@ -149,7 +149,7 @@ const projectData = [
     'path': '/code/tessellations',
     'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/tess_thumb.webp`,
     'imgPath': `${process.env.PUBLIC_URL}/img/tess.webp`,
-    'url': 'https://dputnam.net/tessellations',
+    'url': 'https://d-putnam.com/tessellations',
     'description': () => {return (
       <span>
         JavaScript-generated animations
@@ -164,7 +164,7 @@ const projectData = [
           Slowly progressing through all possible permutations, these simple patterns give rise to recognizable higher-level structures.
         </p>
         <p>
-          <a href="https://dputnam.net/tessellations/" target="blank" 
+          <a href="https://d-putnam.com/tessellations/" target="blank" 
              className="projectLink">
             Check it out here</a>
           <span className="or">or</span>
@@ -181,7 +181,7 @@ const projectData = [
     'path': '/code/fetcher',
     'thumbPath': `${process.env.PUBLIC_URL}/img/thumbs/fetch_thm.png`,
     'imgPath': `${process.env.PUBLIC_URL}/img/fetcher.png`,
-    'url': 'https://dputnam.net/fetcher',
+    'url': 'https://d-putnam.com/fetcher',
     'description': () => {return (
       <span>
         AI-powered storyteller<br/>written in JavaScript<br/>(web app)
@@ -190,7 +190,7 @@ const projectData = [
     'content': () => {return (   
       <div className="content">
         <p>
-          <a href="https://dputnam.net/fetcher" target="blank" 
+          <a href="https://d-putnam.com/fetcher" target="blank" 
                 className="project-link title">
             Fetcher
           </a>  
@@ -208,7 +208,7 @@ const projectData = [
           The resulting story is printed one character at a time at random intervals, producing the effect of chatting with a bot.
         </p>
         <p>
-          <a href="https://dputnam.net/fetcher/" target="blank" 
+          <a href="https://d-putnam.com/fetcher/" target="blank" 
              className="project-link">
             Try it out here
           </a> 
