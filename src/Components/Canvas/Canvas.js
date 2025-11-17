@@ -20,10 +20,11 @@ class Canvas extends React.PureComponent {
     this.state = {
       width: w, 
       height: h,
-    }
+    };
   }
 
   componentDidMount() {
+    if (!this.props.webglSupported) return;
     this.sceneSetup();
     this.drawSceneSetup();
     this.brcosaSceneSetup();
@@ -35,10 +36,11 @@ class Canvas extends React.PureComponent {
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowResize);
     window.cancelAnimationFrame(this.requestID);
-    this.controls.dispose();
+    if (this.controls) this.controls.dispose();
   }
 
   componentDidUpdate(prevProps) {
+    if (!this.props.webglSupported) return;
     if (this.props.uniforms !== prevProps.uniforms) {
       this.updateUniforms();
     }
@@ -178,6 +180,18 @@ class Canvas extends React.PureComponent {
   }
 
   render() {
+    if (!this.props.webglSupported) {
+      console.log('WebGL not supported! Please enable hardware acceleration in your browser settings or try a different device.');
+      return (
+        <div className="Canvas-wrap">
+          <div className={styles.CanvasFallback}>
+            <h2>WebGL Not Supported</h2>
+            <p>Your browser or device does not support hardware-accelerated graphics.<br />
+            Please enable hardware acceleration in your browser settings or try a different device.</p>
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="Canvas-wrap">
         <div className={styles.Canvas} ref={ref => (this.mount = ref)} />

@@ -16,6 +16,9 @@ class Settings extends React.PureComponent {
   }
 
   render() {
+    // Hide Settings if WebGL is not supported
+    if (this.props.webglSupported === false) return null;
+
     return (
         <div className={this.state.showControls ? styles.controlsOpen : styles.controls} 
              style={{width: this.state.showControls ? '100%' : 'auto'}}>

@@ -16,12 +16,23 @@ import './App.css';
 
 
 class App extends React.PureComponent {
+  static checkWebGLSupport() {
+    try {
+      const canvas = document.createElement('canvas');
+      return !!(window.WebGLRenderingContext && (
+        canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+      ));
+    } catch (e) {
+      return false;
+    }
+  }
 
   constructor(props) {
     super(props);
     this.state = {
       videoDisabled: false,
       uniforms: [0.25, 250, 200, 81],
+      webglSupported: App.checkWebGLSupport(),
     }
   }
 
@@ -78,9 +89,20 @@ class App extends React.PureComponent {
                 ))
               }
             </Switch>
-          <Settings uniforms={this.state.uniforms} toggleVideo={this.toggleVideo} sliderHandler={this.sliderHandler} fxDisabled={this.state.fxDisabled} videoDisabled={this.state.videoDisabled}/>
+          <Settings
+            uniforms={this.state.uniforms}
+            toggleVideo={this.toggleVideo}
+            sliderHandler={this.sliderHandler}
+            fxDisabled={this.state.fxDisabled}
+            videoDisabled={this.state.videoDisabled}
+            webglSupported={this.state.webglSupported}
+          />
         </Router>
-        <Canvas uniforms={this.state.uniforms} videoDisabled={this.state.videoDisabled}  />
+        <Canvas
+          uniforms={this.state.uniforms}
+          videoDisabled={this.state.videoDisabled}
+          webglSupported={this.state.webglSupported}
+        />
       </div>
     );
   }
