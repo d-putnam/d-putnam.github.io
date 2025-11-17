@@ -14,16 +14,16 @@ const fbxShader =
     float u_14 = 0.205;
     float u_15 = 1.0005;
 
-
-    vec2 st = gl_FragCoord.xy / (u_resolution);
-    vec2 uv = st;
-    uv *= u_15;
-
+    vec2 uv = (gl_FragCoord.xy / u_resolution) * u_15;
     vec4 sum = texture2D(bufferTexture, uv);
     vec4 src = texture2D(drawTexture, uv);
-    sum.r = mix(sum.r, src.r,  sin(u_12));
-    sum.g = mix(sum.g, src.g,  sin(u_13));
-    sum.b = mix(sum.b, src.b,  sin(u_14));
+    float s12 = sin(u_12);
+    float s13 = sin(u_13);
+    float s14 = sin(u_14);
+    // Mix channels
+    sum.r = mix(sum.r, src.r, s12);
+    sum.g = mix(sum.g, src.g, s13);
+    sum.b = mix(sum.b, src.b, s14);
     gl_FragColor = sum;
   }
 `
