@@ -42,4 +42,4 @@ const VideoCarousel = ({ vids }) => (
   </Carousel>
 );
 
-export default VideoCarousel;
+export default React.memo(VideoCarousel);

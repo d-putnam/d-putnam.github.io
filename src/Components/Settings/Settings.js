@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ToggleButton from 'react-toggle-button'
 import styles from './Settings.module.css';
 
-class Settings extends Component {
+class Settings extends React.PureComponent {
 
   constructor(props) {
     super(props);

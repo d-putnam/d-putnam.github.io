@@ -15,7 +15,7 @@ import blogData from './blogData.js'
 import './App.css';
 
 
-class App extends Component {
+class App extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -26,15 +26,19 @@ class App extends Component {
   }
 
   toggleVideo = (e) => {
+    if (this.state.videoDisabled === !this.state.videoDisabled) return;
     this.setState({
       videoDisabled: !this.state.videoDisabled
-    })
+    });
   }
+
   sliderHandler = (e) => {
     let target = Number(e.target.dataset.target);
     let uniforms = this.state.uniforms.map(u => u);
-    uniforms[target] = Number(e.target.value);
-    this.setState({uniforms: uniforms})
+    const newValue = Number(e.target.value);
+    if (uniforms[target] === newValue) return;
+    uniforms[target] = newValue;
+    this.setState({ uniforms });
   }
 
   render() {

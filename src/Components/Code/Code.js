@@ -27,4 +27,4 @@ const Code = () => (
   </div>
 )
 
-export default Code;
+export default React.memo(Code);

@@ -27,4 +27,4 @@ const Blog = () => (
   </div>
 );
 
-export default Blog;
+export default React.memo(Blog);

@@ -49,4 +49,4 @@ const MobileNav = () => {
     </div>
   );
 }
-export default MobileNav;
+export default React.memo(MobileNav);

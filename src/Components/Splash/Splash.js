@@ -53,4 +53,4 @@ const Splash = () => (
   </div>
 );
   
-export default Splash;
+export default React.memo(Splash);

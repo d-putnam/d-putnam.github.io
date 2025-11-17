@@ -5,7 +5,7 @@ import brcosaShader from './shaders/brcosaShader.js';
 import fbxShader from './shaders/fbxShader.js';
 import styles from './Canvas.module.css';
 
-class Canvas extends Component {
+class Canvas extends React.PureComponent {
 
   constructor(props) {
     super(props);
