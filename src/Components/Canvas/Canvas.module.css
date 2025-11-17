@@ -27,7 +27,11 @@
   mix-blend-mode: hard-light;
 }
 .CanvasFallback {
-  background-color: black;
+  background: var(--crt-background);
+  background-size: var(--crt-size);
+  background-color: #525264;
+  /*padding: 1.5rem;*/
+  padding: 1.5rem 1rem 1rem 1rem;
   overflow:hidden;
   position: fixed; 
   top: 0px; 
@@ -36,4 +40,5 @@
   height: 100vh;
   max-width:100%;
   z-index: -2;
+  box-shadow: 0 0 120px 40px rgba(0,0,0,0.45) inset;
 }
