@@ -128,14 +128,10 @@
       }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 1000px) {
   .Blog {
     width: 95%;
     font-size: 0.85rem;
-    margin-top: auto;
-  }
-  .Blog > div {
-    margin-top: 2rem;
   }
   .title {
     padding-left: 0.25rem;
@@ -148,10 +144,11 @@
     margin-top: 0.25rem;
     margin-bottom: 0.75rem;
     flex-direction: column;
+    justify-content: flex-end;
   }
   .card {
     margin-bottom: 2rem;
-    width: calc(100vw - 4rem);
+    /* width: calc(100vw - 4rem); */
   }
   .card:first-child {
     margin-left: 1rem;
@@ -159,7 +156,7 @@
   .card:last-child {
     margin-right: 1rem;
   }
-  .thumbnail {
+  /* .thumbnail {
     width: calc(100vw - 4rem);
-  }
+  } */
 }

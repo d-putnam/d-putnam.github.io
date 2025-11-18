@@ -14,12 +14,15 @@
   font-family: 'Fira Code', Menlo, monospace;
   font-weight:normal;
   z-index: 0;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .controlsOpen {
   background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 10%), hsl(280deg 2% 15%));
   background-size: var(--crt-size);
   border-radius: 5px 5px 0px 0px;
-  opacity: 0.75;
+  opacity: 0.98;
+  padding-top:.5rem;
 }
 @media only screen and (max-width: 414px) {
   .controls, .controlsOpen {
@@ -67,6 +70,12 @@
   margin-top: 1px;
 }
 
+.settings {
+  transition: color 0.2s;
+}
+.settings:hover {
+  color: hsl(0, 0%, 55%);
+}
 
 .slider {
   width: 4rem;

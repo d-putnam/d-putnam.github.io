@@ -3,6 +3,9 @@
   margin-left: auto;
   z-index: 1000;
   text-align:right;
+  top: 0;
+  right: 0;
+  position: absolute
 }
 .MobileNavOpen {
   height: 14rem;
@@ -11,13 +14,20 @@
   background-size: var(--crt-size);
   margin-left: auto;
   z-index: 1000;
-  opacity: 0.75;
+  opacity: 0.98;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding-bottom: 1rem;
 }
 
 .mobileToggle{
   fill: var(--white);
   cursor: pointer;
   padding-right: 0.25rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
 }
 
 .linkItem {
@@ -30,7 +40,7 @@
   margin-left: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  padding-right: 0.25rem;
+  padding-right: 1.5rem;
 }
 
 @media only screen and (min-width: 415px) {
