@@ -6,7 +6,7 @@ import styles from './Nav.module.css';
 const Nav = () => {
   let location = useLocation();
   return (
-    <div>
+    <>
     { location.pathname !== '/' &&
       <div className={styles.Nav}>
         <div>
@@ -43,7 +43,7 @@ const Nav = () => {
         </div>
       </div>
     }
-    </div>
+    </>
   );
 }
   

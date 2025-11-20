@@ -3,9 +3,9 @@
   flex-direction: column;
   /*align-items: center;
   justify-content: center;*/
-  height: calc(100vh - 55px);
-  margin-top: 40px;
-  margin-bottom: 15px;
+  height: 100vh;
+  /* margin-top: 40px; */
+  /* margin-bottom: 15px; */
   margin-left: auto;
   margin-right: auto;
   width: 95%;
@@ -102,6 +102,7 @@
 @media only screen and (max-width: 414px) {
   .Code {
     font-size: 0.85rem;
+    height: auto;
   }
   .title {
     padding-left: 0.25rem;
@@ -111,7 +112,7 @@
     padding-left: 0.25rem;
   }
   .cardWrap {
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
   }
 }

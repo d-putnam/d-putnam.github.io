@@ -30,9 +30,7 @@
   background: var(--crt-background);
   background-size: var(--crt-size);
   background-color: #525264;
-  /*padding: 1.5rem;*/
-  padding: 1.5rem 1rem 1rem 1rem;
-  overflow:hidden;
+  overflow: hidden;
   position: fixed; 
   top: 0px; 
   left: 0px;

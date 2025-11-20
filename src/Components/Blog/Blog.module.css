@@ -1,10 +1,11 @@
 .Blog {
   display: flex;
-  height: calc(100vh - 55px);
-  margin-top: 40px;
-  margin-bottom: 15px;
+  height: 100vh;
+  /* margin-top: 40px;
+  margin-bottom: 40px; */
   margin-left: auto;
   margin-right: auto;
+  /* padding-bottom: 4rem; */
 
   color: var(--white);
   font-family: 'Fira Code', Menlo, monospace;
@@ -16,7 +17,8 @@
   isolation:isolate;
 }
 .Blog > div {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .blogLink {
     color: var(--white);
@@ -141,8 +143,8 @@
     padding-left: 0.25rem;
   }
   .cardWrap {
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
     flex-direction: column;
     justify-content: flex-end;
   }
