@@ -41,7 +41,7 @@
 }
 
 .content, .crt, .card {
-  border-radius:12px;
+  border-radius:10px;
 }
 .thumbnail {
   border-radius:10px 10px 0px 0px;

@@ -94,7 +94,7 @@
   height: fit-content;
 }
 .content, .crt {
-  border-radius:50px;
+  border-radius:10px;
 }
 
 .words > span {
@@ -146,6 +146,11 @@ a {
     width: 95%;
     height: calc(100vh - 4rem);
   }
+  .About > div {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
   .crt {
     padding: 1rem;
   }

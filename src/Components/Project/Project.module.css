@@ -32,7 +32,7 @@
   height: fit-content;
 }
 .content, .crt {
-  border-radius:30px;
+  border-radius: 10px;
 }
 .words {
   mix-blend-mode: color-dodge;
