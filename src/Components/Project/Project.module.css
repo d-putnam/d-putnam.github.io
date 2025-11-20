@@ -5,7 +5,6 @@
   justify-content: center;*/
 
   /*width: 80%;*/
-  height: calc(100vh - 74px);
   margin-top: 37px;
   margin-bottom: 37px;
   margin-left: auto;
@@ -20,7 +19,7 @@
 }
 .Project > div {
   margin: auto;
-  width: 80%;
+  width: 90%;
   /*min-width: 22rem;
   max-width: 26rem;*/
 }
@@ -135,10 +134,17 @@
   transform: skew(.1deg, .1deg);
 }
 
+@media only screen and (min-width: 414px) {
+  .Project {
+    height: calc(100vh - 74px);
+  }
+}
+
 @media only screen and (max-width: 414px) {
   .Project {
-    width: 85%;
-    height: auto;
+    width: 95%;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
   }
   .Project > div {
     width: 100%;
