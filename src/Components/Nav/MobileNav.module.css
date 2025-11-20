@@ -1,25 +1,21 @@
 .MobileNav {
-  /* width: fit-content; */
   margin-left: auto;
   z-index: 1000;
-  /* position: static; */
-  /* top: 0;
-  right: 0; */
   display: flex;
+  align-items: flex-end;
+  height: fit-content
 }
 .MobileNavOpen {
-  /* height: 14rem; */
-  text-align:right;
   background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 10%), hsl(280deg 2% 15%));
   background-size: var(--crt-size);
-  margin-left: auto;
-  z-index: 1000;
   opacity: 0.98;
-  top: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  /* transition: height 5s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.4,0,0.2,1); */
 }
 
 .mobileToggle{
@@ -29,10 +25,10 @@
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: .5rem;
-  /* position: relative; */
   margin-left: auto;
-  /* width: 2rem;
-  height: 2rem; */
+  position: relative;
+  top: 0;
+  right: 0
 }
 
 .linkItem {
@@ -46,6 +42,19 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-right: 1.5rem;
+}
+
+.panelContent {
+  transition: opacity 2s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+.MobileNavOpen .panelContent {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 @media only screen and (min-width: 415px) {
