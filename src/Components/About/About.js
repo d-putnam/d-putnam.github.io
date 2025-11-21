@@ -36,7 +36,7 @@ const About = () => {
             </div>
           </div>
           <div className={styles.picDiv} style={isSafari ? {'mixBlendMode': 'color-dodge'} : {'midBlendMode': 'normal'}}>
-            <img src={`${process.env.PUBLIC_URL}/img/pic.webp`} alt="d putnam"/>
+            <img src={`${process.env.PUBLIC_URL}/img/dp_james-lastowski.jpg`} alt="photo by james lastowski"/>
           </div>
         </div>
       </div>

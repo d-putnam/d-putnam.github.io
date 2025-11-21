@@ -1,6 +1,6 @@
 .Nav {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   justify-content: flex-end;
   align-items: center;
