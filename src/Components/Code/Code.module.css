@@ -4,7 +4,7 @@
   /*align-items: center;
   justify-content: center;*/
   height: 100vh;
-  /* margin-top: 40px; */
+  margin-top: 2rem;
   /* margin-bottom: 15px; */
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +51,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
 }
 .card {
   border: 2px solid var(--white);
@@ -112,9 +111,9 @@
   .description {
     padding-left: 0.25rem;
   }
-  .cardWrap {
+  /* .cardWrap {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
     padding-top: 0rem;
-  }
+  } */
 }

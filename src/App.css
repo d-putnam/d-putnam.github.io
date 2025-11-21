@@ -49,6 +49,10 @@ body {
 
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between
 }
 
 .flex {
@@ -74,4 +78,10 @@ input[type="range"]:disabled {
 .or {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .About {
+  justify-content:unset
+  }
 }

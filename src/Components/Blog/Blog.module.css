@@ -1,8 +1,8 @@
 .Blog {
   display: flex;
   height: 100vh;
-  /* margin-top: 40px;
-  margin-bottom: 40px; */
+  margin-top: 2rem;
+  /* margin-bottom: 40px; */
   margin-left: auto;
   margin-right: auto;
   /* padding-bottom: 4rem; */
@@ -63,7 +63,7 @@
   overflow-y: hidden;
   /*flex-direction: row;*/
   align-items: center;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   /*justify-content: space-between;*/
 }
 
@@ -122,9 +122,6 @@
 }
 
 @media only screen and (min-width: 414px) {
-    .Blog {
-      margin-top: 2rem;
-    }
     .cardWrap {
         height: 100%;
       }
@@ -133,7 +130,7 @@
         background: transparent;
       }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1130px) {
   .Blog {
     margin-top: 0;
   }
@@ -142,7 +139,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1130px) {
   .Blog {
     width: 95%;
     font-size: 0.85rem;
@@ -156,14 +153,13 @@
     padding-left: 0.25rem;
   }
   .cardWrap {
-    margin-top: 2rem;
-    padding-bottom: 3rem;
+    /* margin-top: 2rem; */
+    /* padding-bottom: 3rem; */
     flex-direction: column;
     justify-content: flex-end;
   }
   .card {
     margin-bottom: 2rem;
-    /* width: calc(100vw - 4rem); */
   }
   .card:first-child {
     margin-left: 1rem;
@@ -171,7 +167,4 @@
   .card:last-child {
     margin-right: 1rem;
   }
-  /* .thumbnail {
-    width: calc(100vw - 4rem);
-  } */
 }

@@ -3,7 +3,7 @@
   z-index: 1000;
   display: flex;
   align-items: flex-end;
-  height: fit-content
+  height: fit-content;
 }
 .MobileNavOpen {
   background: var(--crt-background), linear-gradient(to top, hsl(169deg 15% 10%), hsl(280deg 2% 15%));

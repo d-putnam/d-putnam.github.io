@@ -1,20 +1,17 @@
 .About {
   display: flex;
   flex-direction: column;
-  /*align-items: center;
-  justify-content: center;*/
-
+  height: fit-content;
   width: 80%;
-  height: calc(100vh - 30px);
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 2rem;
   color: var(--white);
   font-family: 'Fira Code', Menlo, monospace;
   font-weight: 600;
   font-size: 0.95rem;
   line-height: 1.5;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .About > div {
   margin: auto;
@@ -146,11 +143,10 @@ a {
 @media only screen and (max-width: 414px) {
   .About {
     width: 95%;
-    height: calc(100vh - 4rem);
   }
   .About > div {
     margin: auto;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .crt {
