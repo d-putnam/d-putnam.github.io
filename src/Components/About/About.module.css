@@ -41,7 +41,7 @@
   /* mix-blend-mode: color-dodge; */
   mix-blend-mode: luminosity;
   /* animation: filter-animation 10s linear infinite; */
-  opacity: 0.7;
+  opacity: 0.75;
   pointer-events: none;
   user-select: none;
 }

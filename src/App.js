@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Canvas from './Components/Canvas/Canvas.js';
 import Splash from './Components/Splash/Splash.js';
@@ -29,11 +29,40 @@ class App extends React.PureComponent {
 
   constructor(props) {
     super(props);
+    this.handleOrientationChange = this.handleOrientationChange.bind(this);
     this.state = {
       videoDisabled: false,
       uniforms: [0.25, 250, 200, 81],
       webglSupported: App.checkWebGLSupport(),
     }
+  }
+
+  componentDidMount() {
+    // Attempt to hide the address bar when the component mounts
+    this.hideSafariAddressBar();
+    // Add event listener to re-run the function if the user rotates the device
+    window.addEventListener('orientationchange', this.handleOrientationChange);
+  }
+
+  componentWillUnmount() {
+    // Clean up the event listener when the component is removed
+    window.removeEventListener('orientationchange', this.handleOrientationChange);
+  }
+
+  handleOrientationChange() {
+    this.hideSafariAddressBar();
+  }
+  
+  hideSafariAddressBar() {
+    // This timeout is crucial. It gives the browser a moment to render
+    // and calculate the viewport dimensions correctly on mobile devices.
+    setTimeout(() => {
+      // If the user is at the very top of the page, scroll down 1 pixel.
+      if (window.scrollY === 0) {
+        // Scrolling 1px down forces Safari to start the address bar hiding mechanism.
+        window.scrollTo(0, 1);
+      }
+    }, 100);
   }
 
   toggleVideo = (e) => {

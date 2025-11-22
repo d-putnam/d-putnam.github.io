@@ -31,8 +31,10 @@ html {
 }
 
 html,body {
-  width: 100svw;
-  height: 100svh;  
+  height: 100dvh; 
+  height: 100vh; 
+  padding-bottom: 60px; 
+  overflow: auto;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
